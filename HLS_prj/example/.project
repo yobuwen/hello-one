@@ -42,6 +42,31 @@
 			<location>/home/yobuwen/hello-one/HLS_prj/example/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/example_gemv.c</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_prj/example_gemv.c</location>
+		</link>
+		<link>
+			<name>testbench/A.h</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_prj/A.h</location>
+		</link>
+		<link>
+			<name>testbench/b.h</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_prj/b.h</location>
+		</link>
+		<link>
+			<name>testbench/c.h</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_prj/c.h</location>
+		</link>
+		<link>
+			<name>testbench/test_gemv.c</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_prj/test_gemv.c</location>
+		</link>
+		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>/home/yobuwen/hello-one/HLS_prj/example/solution1/solution1.directive</location>

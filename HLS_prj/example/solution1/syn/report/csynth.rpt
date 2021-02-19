@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'example_gemv'
+================================================================
++ General Information: 
+    * Date:           Fri Feb 19 14:44:37 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        example
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+-------+---------+---------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |         Modules        | Issue|       | Latency | Latency | Iteration|         | Trip |          |      |    |           |          |     |
+    |         & Loops        | Type | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT   | URAM|
+    +------------------------+------+-------+---------+---------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |+ example_gemv          |     -|  -0.39|       23|  230.000|         -|       24|     -|        no|     -|   -|  1364 (3%)|  618 (3%)|    -|
+    | o example_gemv_label1  |    II|  -7.30|       18|  180.000|         7|        3|     5|       yes|     -|   -|          -|         -|    -|
+    +------------------------+------+-------+---------+---------+----------+---------+------+----------+------+----+-----------+----------+-----+
+

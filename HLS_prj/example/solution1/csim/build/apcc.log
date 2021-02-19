@@ -1,0 +1,6 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yobuwen' on host 'yobuwen' (Linux_x86_64 version 4.15.0-126-generic) on Fri Feb 19 14:38:00 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 16.04.7 LTS
+INFO: [HLS 200-10] In directory '/home/yobuwen/hello-one/HLS_prj/example/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_yobuwen/268141613716680276671
+INFO: [APCC 202-1] APCC is done.

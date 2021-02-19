@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source/>
-  <testbench/>
+  <source>
+    <originFiles name="example_gemv.c" path="/home/yobuwen/hello-one/HLS_prj/example_gemv.c"/>
+  </source>
+  <testbench>
+    <originFiles name="A.h" path="/home/yobuwen/hello-one/HLS_prj/A.h"/>
+    <originFiles name="b.h" path="/home/yobuwen/hello-one/HLS_prj/b.h"/>
+    <originFiles name="c.h" path="/home/yobuwen/hello-one/HLS_prj/c.h"/>
+    <originFiles name="test_gemv.c" path="/home/yobuwen/hello-one/HLS_prj/test_gemv.c"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
