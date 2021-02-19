@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="example_gemv" xd:componentRef="example_gemv" xd:initiationInterval="24" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="A_q0" xd:originalName="A_q0" xd:direction="in" xd:interfaceRef="A_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="A_q1" xd:originalName="A_q1" xd:direction="in" xd:interfaceRef="A_q1" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="b_q0" xd:originalName="b_q0" xd:direction="in" xd:interfaceRef="b_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="b_q1" xd:originalName="b_q1" xd:direction="in" xd:interfaceRef="b_q1" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="c_d0" xd:originalName="c_d0" xd:direction="out" xd:interfaceRef="c_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="23" xd:worst-case="23" xd:average-case="23"/>
+  <xd:resourceEstimates xd:LUT="618" xd:FF="1364" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 19 15:10:47 2021
+# Process ID: 28174
+# Current directory: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.dir/example_gemv/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/webtalk.log
+# Journal file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.dir/example_gemv/webtalk/xsim_webtalk.tcl -notrace

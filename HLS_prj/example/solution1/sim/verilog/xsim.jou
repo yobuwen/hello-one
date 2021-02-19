@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 19 15:10:49 2021
+# Process ID: 28224
+# Current directory: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/example_gemv/xsim_script.tcl}
+# Log file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.log
+# Journal file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/example_gemv/xsim_script.tcl
+source example_gemv.tcl

@@ -1,0 +1,16 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'yobuwen' on host 'yobuwen' (Linux_x86_64 version 4.15.0-126-generic) on Fri Feb 19 15:10:26 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 16.04.7 LTS
+INFO: [HLS 200-10] In directory '/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/yobuwen/hello-one/HLS_prj/test_gemv.c:1:
+/home/yobuwen/hello-one/HLS_prj/test_gemv.c:29:14: warning: passing 'const data_type [5]' to parameter of type 'data_type *' (aka 'int *') discards qualifiers [-Wincompatible-pointer-types]
+ ceck_result(CorrectResult_c, HLSResult_c);
+             ^~~~~~~~~~~~~~~
+/home/yobuwen/hello-one/HLS_prj/test_gemv.c:20:29: note: passing argument to parameter 'CorrectResult' here
+void ceck_result(data_type *CorrectResult, data_type *HLSResult){
+                            ^
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_yobuwen/280251613718626611072
+INFO: [APCC 202-1] APCC is done.

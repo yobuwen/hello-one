@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 19 15:10:49 2021
+# Process ID: 28224
+# Current directory: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/example_gemv/xsim_script.tcl}
+# Log file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.log
+# Journal file: /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/example_gemv/xsim_script.tcl
+# xsim {example_gemv} -autoloadwcfg -tclbatch {example_gemv.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source example_gemv.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "375000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 415 ns : File "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/example_gemv.autotb.v" Line 338
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Feb 19 15:11:02 2021...

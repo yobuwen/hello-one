@@ -1,0 +1,7 @@
+Running: xsim.dir/example_gemv/xsimk -simmode gui -wdb example_gemv.wdb -simrunnum 0 -socket 55521
+Design successfully loaded
+Design Loading Memory Usage: 36800 KB (Peak: 36800 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 119504 KB (Peak: 176068 KB)
+Simulation CPU Usage: 10 ms

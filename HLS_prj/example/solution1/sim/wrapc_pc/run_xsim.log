@@ -1,0 +1,101 @@
+checking result:
+Idx 0: ERROR = 0 
+Idx 1: ERROR = 0 
+Idx 2: ERROR = 0 
+Idx 3: ERROR = 0 
+Idx 4: ERROR = 0 
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_example_gemv_top glbl -prj example_gemv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s example_gemv 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/example_gemv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_gemv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/AESL_automem_c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/example_gemv.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_example_gemv_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/example_gemv_mul_32s_32s_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_gemv_mul_32s_32s_32_2_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module example_gemv_mul_32s_32s_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/AESL_automem_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/df_fifo_interface.sv:4]
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [df_process_interface.sv:4]
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [nodf_module_interface.sv:4]
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.example_gemv_mul_32s_32s_32_2_1_...
+Compiling module xil_defaultlib.example_gemv_mul_32s_32s_32_2_1(...
+Compiling module xil_defaultlib.example_gemv
+Compiling module xil_defaultlib.AESL_automem_A
+Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.AESL_automem_c
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_example_gemv_top
+Compiling module work.glbl
+Built simulation snapshot example_gemv
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/xsim.dir/example_gemv/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 19 15:10:47 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/example_gemv/xsim_script.tcl
+# xsim {example_gemv} -autoloadwcfg -tclbatch {example_gemv.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source example_gemv.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "375000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 415 ns : File "/home/yobuwen/hello-one/HLS_prj/example/solution1/sim/verilog/example_gemv.autotb.v" Line 338
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Feb 19 15:11:02 2021...
+checking result:
+Idx 0: ERROR = 0 
+Idx 1: ERROR = 0 
+Idx 2: ERROR = 0 
+Idx 3: ERROR = 0 
+Idx 4: ERROR = 0 

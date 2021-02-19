@@ -17,4 +17,4 @@ create_clock -period 10 -name default
 csim_design -clean
 csynth_design
 cosim_design
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog -output /home/yobuwen/hello-one/example_gemv.zip
