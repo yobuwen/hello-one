@@ -19,7 +19,7 @@ const data_type CorrectResult_c[] = {
 data_type HLSResult_c[M] = {0};
 void ceck_result(data_type *CorrectResult, data_type *HLSResult){
 	for(int i=0; i<M; i++){
-		printf("Idx %d:ERROR = %d \r\n", i, CorrectResult[i] - HLSResult[i]);
+		printf("Idx %d: ERROR = %d \r\n", i, CorrectResult[i] - HLSResult[i]);
 	}
 }
 
