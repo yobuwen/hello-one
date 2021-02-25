@@ -4,7 +4,7 @@
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Release/a.out"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="conv_acc"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.release.298889871"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.release.1124660582"/>
     <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="/home/yobuwen/hello-one/HLS_Convolution/conv_acc"/>
     <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
     <stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.cdt.debug.core.sourceLocator"/>

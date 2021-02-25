@@ -37,29 +37,39 @@
 			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/.apc/.tb</location>
 		</link>
 		<link>
-			<name>solution1/constraints</name>
+			<name>solution2/constraints</name>
 			<type>2</type>
-			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/.tcls</location>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/.tcls</location>
 		</link>
 		<link>
-			<name>source/conv_acc.cpp</name>
+			<name>source/main.cpp</name>
 			<type>1</type>
-			<location>/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc.cpp</location>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/source/main.cpp</location>
 		</link>
 		<link>
-			<name>solution1/constraints/.xml.directive</name>
+			<name>source/main.h</name>
 			<type>1</type>
-			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/solution1.directive</location>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/source/main.h</location>
 		</link>
 		<link>
-			<name>solution1/constraints/directives.tcl</name>
+			<name>testbench/testbench.c</name>
 			<type>1</type>
-			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/directives.tcl</location>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/testbench/testbench.c</location>
 		</link>
 		<link>
-			<name>solution1/constraints/script.tcl</name>
+			<name>solution2/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/script.tcl</location>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/solution2.directive</location>
+		</link>
+		<link>
+			<name>solution2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
