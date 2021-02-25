@@ -6,4 +6,4 @@
 vitis 2020.2
 
 # 综合结果
-PICTURE:/home/yobuwen/.config/tencent-qq//AppData/file//sendpix1.jpg
+![image]()
