@@ -6,4 +6,4 @@
 vitis 2020.2
 
 # 综合结果
-![image]()
+![image](https://github.com/yobuwen/hello-one/blob/main/image/%E4%BC%98%E5%8C%96solution1.jpg)
