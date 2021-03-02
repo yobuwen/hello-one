@@ -1,0 +1,850 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.690 MB.
+INFO: [HLS 200-10] Analyzing design file 'source/conv_acc2t.cpp' ... 
+WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
+INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
+INFO: [HLS 200-10] Analyzing design file 'source/conv_acc1t.cpp' ... 
+WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
+INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.72 seconds. CPU system time: 0.42 seconds. Elapsed time: 0.78 seconds; current allocated memory: 192.981 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_acc2t(float*, float*, float*)' (source/conv_acc2t.cpp:25:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_acc2t(float*, float*, float*)' (source/conv_acc2t.cpp:25:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_acc2t(float*, float*, float*)' (source/conv_acc2t.cpp:25:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 32 in loop 'INDATA_LOAD'(source/conv_acc2t.cpp:50:13) has been inferred on port 'In_ddr' (source/conv_acc2t.cpp:50:13)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 32 in loop 'WDATA_LOAD'(source/conv_acc2t.cpp:61:13) has been inferred on port 'W_ddr' (source/conv_acc2t.cpp:61:13)
+INFO: [HLS 214-115] Multiple burst writes of length 784 and bit width 32 in loop 'OUTDATA_WRITE'(source/conv_acc2t.cpp:106:9) has been inferred on port 'Out_ddr' (source/conv_acc2t.cpp:106:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.7 seconds. CPU system time: 0.3 seconds. Elapsed time: 5.09 seconds; current allocated memory: 195.144 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 195.145 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 196.789 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 195.871 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_2' (source/conv_acc2t.cpp:54) in function 'conv_acc2t' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_67_5' (source/conv_acc2t.cpp:67) in function 'conv_acc2t' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_110_7' (source/conv_acc2t.cpp:110) in function 'conv_acc2t' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Output_row' (source/conv_acc2t.cpp:76) in function 'conv_acc2t' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Output_column' (source/conv_acc2t.cpp:80) in function 'conv_acc2t' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Kernel_row' (source/conv_acc2t.cpp:83) in function 'conv_acc2t' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Kernel_column' (source/conv_acc2t.cpp:86) in function 'conv_acc2t' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Output_channel' (source/conv_acc2t.cpp:89) in function 'conv_acc2t' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Input_channel' (source/conv_acc2t.cpp:93) in function 'conv_acc2t' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'in' (source/conv_acc2t.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out' (source/conv_acc2t.cpp:35) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'w' (source/conv_acc2t.cpp:38) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'w' (source/conv_acc2t.cpp:38) in dimension 2 completely.
+INFO: [XFORM 203-102] Partitioning array 'in.4' (source/conv_acc2t.cpp:32) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'in.5' (source/conv_acc2t.cpp:32) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'in.6' (source/conv_acc2t.cpp:32) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'in.7' (source/conv_acc2t.cpp:32) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.0' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.1' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.2' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.3' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.4' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.5' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.6' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'out.7' (source/conv_acc2t.cpp:35) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7' (source/conv_acc2t.cpp:38) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.0.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.1.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.2.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.3.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.0.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.1.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.2.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.3.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.4.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.0.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.1.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.2.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.3.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.5.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.0.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.1.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.2.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.3.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.6.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.0.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.1.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.2.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.3.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.4.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.5.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.6.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.0' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.1' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.2' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.3' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.4' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.5' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.6' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.7' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.8' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.9' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.10' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.11' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.12' (source/conv_acc2t.cpp:38) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w.7.7.13' (source/conv_acc2t.cpp:38) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 41.18 seconds. CPU system time: 0.4 seconds. Elapsed time: 41.87 seconds; current allocated memory: 240.180 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_52_1' (source/conv_acc2t.cpp:52:43) in function 'conv_acc2t'.
+INFO: [XFORM 203-541] Flattening a loop nest 'INDATA_LOAD' (source/conv_acc2t.cpp:50:22) in function 'conv_acc2t'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_65_4' (source/conv_acc2t.cpp:65:47) in function 'conv_acc2t'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_63_3' (source/conv_acc2t.cpp:63:43) in function 'conv_acc2t'.
+INFO: [XFORM 203-541] Flattening a loop nest 'WDATA_LOAD' (source/conv_acc2t.cpp:61:22) in function 'conv_acc2t'.
+WARNING: [HLS 200-960] Cannot flatten loop 'INPUT_CHANNEL_TILING' (source/conv_acc2t.cpp:47:18) in function 'conv_acc2t' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_108_6' (source/conv_acc2t.cpp:108:40) in function 'conv_acc2t'.
+INFO: [XFORM 203-541] Flattening a loop nest 'OUTDATA_WRITE' (source/conv_acc2t.cpp:106:18) in function 'conv_acc2t'.
+WARNING: [HLS 200-960] Cannot flatten loop 'OUTPUT_CHANNEL_TILING' (source/conv_acc2t.cpp:43:14) in function 'conv_acc2t' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'out[0][0]' (source/conv_acc2t.cpp:96:52)
+INFO: [HLS 200-472] Inferring partial write operation for 'in[0]' (source/conv_acc2t.cpp:56:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'w[0][0]' (source/conv_acc2t.cpp:69:57)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.37 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.39 seconds; current allocated memory: 291.039 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_acc2t' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_acc2t' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_3'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_0'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_1'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_2'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_15'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_15'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_15'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_15'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_14'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_14'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_14'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_14'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_13'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_13'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_13'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_13'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_12'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_12'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_12'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_12'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_11'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_11'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_11'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_11'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_10'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_10'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_10'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_10'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_9'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_9'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_9'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_9'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_8'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_8'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_8'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_8'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_7'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_7'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_7'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_7'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_6'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_6'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_5_6'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_4_6'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_7_5'. Use bind_storage pragma to overwrite if needed.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'in_6_5'. Use bind_storage pragma to overwrite if needed.
