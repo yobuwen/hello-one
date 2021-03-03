@@ -158,14 +158,11 @@ extern "C" {
 
 
 
-__attribute__((sdx_kernel("conv_acc2t", 0))) void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr);
+void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr);
 # 2 "source/conv_acc2t.cpp" 2
 # 24 "source/conv_acc2t.cpp"
-__attribute__((sdx_kernel("conv_acc2t", 0))) void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr)
+void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr)
 {
-#pragma HLS TOP name=conv_acc2t
-# 25 "source/conv_acc2t.cpp"
-
 
 #pragma HLS INTERFACE m_axi depth=32 port=In_ddr
 #pragma HLS INTERFACE m_axi depth=32 port=W_ddr

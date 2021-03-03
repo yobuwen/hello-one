@@ -109,7 +109,7 @@ void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr)
             {
                 for (int L_cho = 0; L_cho < 4; L_cho++)
                 {
-                    *Out_ddr++ =in[L_cho][L_ro][L_co];
+                    *Out_ddr++ = out[L_cho][L_ro][L_co];
                 }  
             }
         }

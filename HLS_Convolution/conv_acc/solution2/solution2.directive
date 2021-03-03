@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="conv_acc2t" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="conv_acc2t"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv_acc2t" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="conv_acc2t"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

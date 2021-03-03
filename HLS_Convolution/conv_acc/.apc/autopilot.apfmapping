@@ -7,6 +7,8 @@
     <originFiles name="conv_acc1t.cpp" path="/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc1t.cpp"/>
     <originFiles name="conv_acc2t.cpp" path="/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc2t.cpp"/>
     <originFiles name="main.h" path="/home/yobuwen/hello-one/HLS_Convolution/source/main.h"/>
+    <originFiles name="conv_acc3t.cpp" path="/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc3t.cpp"/>
+    <originFiles name="conv_acc4t.cpp" path="/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc4t.cpp"/>
   </source>
   <testbench>
     <originFiles name="testbench.c" path="/home/yobuwen/hello-one/HLS_Convolution/testbench/testbench.c"/>

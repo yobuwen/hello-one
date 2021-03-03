@@ -161,8 +161,11 @@ extern "C" {
 void conv_acc2t(float *In_ddr, float * W_ddr, float *Out_ddr);
 # 2 "source/conv_acc1t.cpp" 2
 # 20 "source/conv_acc1t.cpp"
-void conv_acc1t()
+__attribute__((sdx_kernel("conv_acc1t", 0))) void conv_acc1t()
 {
+#pragma HLS TOP name=conv_acc1t
+# 21 "source/conv_acc1t.cpp"
+
  float in[4][16][16];
 #pragma HLS array_partition variable=in complete dim=1
 

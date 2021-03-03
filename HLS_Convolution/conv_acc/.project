@@ -42,6 +42,21 @@
 			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>solution2/constraints</name>
+			<type>2</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/.tcls</location>
+		</link>
+		<link>
+			<name>solution3/constraints</name>
+			<type>2</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution3/.tcls</location>
+		</link>
+		<link>
+			<name>solution4/constraints</name>
+			<type>2</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.tcls</location>
+		</link>
+		<link>
 			<name>source/conv_acc1t.cpp</name>
 			<type>1</type>
 			<location>/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc1t.cpp</location>
@@ -50,6 +65,16 @@
 			<name>source/conv_acc2t.cpp</name>
 			<type>1</type>
 			<location>/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc2t.cpp</location>
+		</link>
+		<link>
+			<name>source/conv_acc3t.cpp</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc3t.cpp</location>
+		</link>
+		<link>
+			<name>source/conv_acc4t.cpp</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/source/conv_acc4t.cpp</location>
 		</link>
 		<link>
 			<name>source/main.h</name>
@@ -75,6 +100,51 @@
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution1/script.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/solution2.directive</location>
+		</link>
+		<link>
+			<name>solution2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution2/script.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution3/solution3.directive</location>
+		</link>
+		<link>
+			<name>solution3/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution3/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution3/script.tcl</location>
+		</link>
+		<link>
+			<name>solution4/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/solution4.directive</location>
+		</link>
+		<link>
+			<name>solution4/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution4/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

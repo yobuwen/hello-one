@@ -2,26 +2,26 @@
       "name": "",
       "directive": [
         {
-          "functionName": "conv_acc2t",
+          "functionName": "conv_acc1t",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "conv_acc2t"
+                "value": "conv_acc1t"
               }]
           }
         },
         {
-          "functionName": "conv_acc2t",
+          "functionName": "conv_acc1t",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "conv_acc2t"
+                "value": "conv_acc1t"
               }]
           }
         }
