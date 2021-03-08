@@ -1,0 +1,262 @@
+
+
+================================================================
+== Vitis HLS Report for 'pe_array'
+================================================================
+* Date:           Mon Mar  8 16:16:32 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        systolic_array
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.676 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       11|       11|  0.110 us|  0.110 us|    6|    6|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------+-----------+---------+---------+-----------+-----------+-----+-----+---------+
+        |              |           |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |   Instance   |   Module  |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +--------------+-----------+---------+---------+-----------+-----------+-----+-----+---------+
+        |load_a13_U0   |load_a13   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |load_a14_U0   |load_a14   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |load_a15_U0   |load_a15   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE19_U0       |PE19       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE20_U0       |PE20       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE22_U0       |PE22       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE21_U0       |PE21       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE23_U0       |PE23       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE25_U0       |PE25       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE24_U0       |PE24       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE26_U0       |PE26       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |PE27_U0       |PE27       |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |load_b16_U0   |load_b16   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |load_b17_U0   |load_b17   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |load_b18_U0   |load_b18   |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_a28_U0  |drain_a28  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_b31_U0  |drain_b31  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_a29_U0  |drain_a29  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_b32_U0  |drain_b32  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_a30_U0  |drain_a30  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        |drain_b33_U0  |drain_b33  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        +--------------+-----------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      40|    -|
+|FIFO             |        -|     -|    2376|    1608|    -|
+|Instance         |        -|     -|     200|    2190|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      54|    -|
+|Register         |        -|     -|       6|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|    2582|    3892|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|       1|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------+-----------+---------+----+----+-----+-----+
+    |   Instance   |   Module  | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------+-----------+---------+----+----+-----+-----+
+    |PE19_U0       |PE19       |        0|   0|   9|  115|    0|
+    |PE20_U0       |PE20       |        0|   0|  10|  124|    0|
+    |PE21_U0       |PE21       |        0|   0|  10|  124|    0|
+    |PE22_U0       |PE22       |        0|   0|   9|  115|    0|
+    |PE23_U0       |PE23       |        0|   0|   9|  115|    0|
+    |PE24_U0       |PE24       |        0|   0|  10|  124|    0|
+    |PE25_U0       |PE25       |        0|   0|  10|  124|    0|
+    |PE26_U0       |PE26       |        0|   0|  10|  124|    0|
+    |PE27_U0       |PE27       |        0|   0|  10|  124|    0|
+    |drain_a28_U0  |drain_a28  |        0|   0|   9|   88|    0|
+    |drain_a29_U0  |drain_a29  |        0|   0|   9|   88|    0|
+    |drain_a30_U0  |drain_a30  |        0|   0|   9|   88|    0|
+    |drain_b31_U0  |drain_b31  |        0|   0|   9|   88|    0|
+    |drain_b32_U0  |drain_b32  |        0|   0|   9|   88|    0|
+    |drain_b33_U0  |drain_b33  |        0|   0|   9|   88|    0|
+    |load_a13_U0   |load_a13   |        0|   0|  10|   97|    0|
+    |load_a14_U0   |load_a14   |        0|   0|  10|   97|    0|
+    |load_a15_U0   |load_a15   |        0|   0|  10|   97|    0|
+    |load_b16_U0   |load_b16   |        0|   0|   9|   88|    0|
+    |load_b17_U0   |load_b17   |        0|   0|  10|   97|    0|
+    |load_b18_U0   |load_b18   |        0|   0|  10|   97|    0|
+    +--------------+-----------+---------+----+----+-----+-----+
+    |Total         |           |        0|   0| 200| 2190|    0|
+    +--------------+-----------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------+---------+----+----+-----+------+-----+---------+
+    |       Name      | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-----------------+---------+----+----+-----+------+-----+---------+
+    |A_inter_0_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_0_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_0_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_0_3_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_1_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_1_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_1_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_1_3_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_2_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_2_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_2_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |A_inter_2_3_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_0_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_0_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_0_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_1_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_1_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_1_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_2_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_2_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_2_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_3_0_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_3_1_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    |B_inter_3_2_V_U  |        0|  99|   0|    -|     2|   32|       64|
+    +-----------------+---------+----+----+-----+------+-----+---------+
+    |Total            |        0|2376|   0|    0|    48|  768|     1536|
+    +-----------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------+----------+----+---+----+------------+------------+
+    |         Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |PE21_U0_start_full_n          |       and|   0|  0|   2|           1|           1|
+    |PE24_U0_start_full_n          |       and|   0|  0|   2|           1|           1|
+    |PE25_U0_start_full_n          |       and|   0|  0|   2|           1|           1|
+    |PE27_U0_start_full_n          |       and|   0|  0|   2|           1|           1|
+    |ap_idle                       |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue              |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                  |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                 |       and|   0|  0|   2|           1|           1|
+    |load_a13_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |load_a14_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |load_a15_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |load_b16_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |load_b17_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |load_b18_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |ap_sync_load_a13_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_load_a14_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_load_a15_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_load_b16_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_load_b17_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_load_b18_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |Total                         |          |   0|  0|  40|          20|          20|
+    +------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_load_a13_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_load_a14_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_load_a15_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_load_b16_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_load_b17_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_load_b18_U0_ap_ready  |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  54|         12|    6|         12|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+---+----+-----+-----------+
+    |               Name               | FF| LUT| Bits| Const Bits|
+    +----------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_load_a13_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_load_a14_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_load_a15_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_load_b16_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_load_b17_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_load_b18_U0_ap_ready  |  1|   0|    1|          0|
+    +----------------------------------+---+----+-----+-----------+
+    |Total                             |  6|   0|    6|          0|
+    +----------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+--------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------+-----+-----+------------+--------------+--------------+
+|A_0_address0  |  out|    2|   ap_memory|           A_0|         array|
+|A_0_ce0       |  out|    1|   ap_memory|           A_0|         array|
+|A_0_d0        |  out|   32|   ap_memory|           A_0|         array|
+|A_0_q0        |   in|   32|   ap_memory|           A_0|         array|
+|A_0_we0       |  out|    1|   ap_memory|           A_0|         array|
+|A_0_address1  |  out|    2|   ap_memory|           A_0|         array|
+|A_0_ce1       |  out|    1|   ap_memory|           A_0|         array|
+|A_0_d1        |  out|   32|   ap_memory|           A_0|         array|
+|A_0_q1        |   in|   32|   ap_memory|           A_0|         array|
+|A_0_we1       |  out|    1|   ap_memory|           A_0|         array|
+|A_1_address0  |  out|    2|   ap_memory|           A_1|         array|
+|A_1_ce0       |  out|    1|   ap_memory|           A_1|         array|
+|A_1_d0        |  out|   32|   ap_memory|           A_1|         array|
+|A_1_q0        |   in|   32|   ap_memory|           A_1|         array|
+|A_1_we0       |  out|    1|   ap_memory|           A_1|         array|
+|A_1_address1  |  out|    2|   ap_memory|           A_1|         array|
+|A_1_ce1       |  out|    1|   ap_memory|           A_1|         array|
+|A_1_d1        |  out|   32|   ap_memory|           A_1|         array|
+|A_1_q1        |   in|   32|   ap_memory|           A_1|         array|
+|A_1_we1       |  out|    1|   ap_memory|           A_1|         array|
+|A_2_address0  |  out|    2|   ap_memory|           A_2|         array|
+|A_2_ce0       |  out|    1|   ap_memory|           A_2|         array|
+|A_2_d0        |  out|   32|   ap_memory|           A_2|         array|
+|A_2_q0        |   in|   32|   ap_memory|           A_2|         array|
+|A_2_we0       |  out|    1|   ap_memory|           A_2|         array|
+|A_2_address1  |  out|    2|   ap_memory|           A_2|         array|
+|A_2_ce1       |  out|    1|   ap_memory|           A_2|         array|
+|A_2_d1        |  out|   32|   ap_memory|           A_2|         array|
+|A_2_q1        |   in|   32|   ap_memory|           A_2|         array|
+|A_2_we1       |  out|    1|   ap_memory|           A_2|         array|
+|ap_clk        |   in|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|      pe_array|  return value|
+|ap_continue   |   in|    1|  ap_ctrl_hs|      pe_array|  return value|
++--------------+-----+-----+------------+--------------+--------------+
+

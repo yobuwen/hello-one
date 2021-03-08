@@ -5,21 +5,6 @@
                 <option name="name" value="conv_acc4t"/>
             </pragma>
         </directive>
-        <directive functionName="conv_acc4t" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_acc4t"/>
-            </pragma>
-        </directive>
-        <directive functionName="conv_acc4t" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_acc4t"/>
-            </pragma>
-        </directive>
-        <directive functionName="conv_acc4t" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_acc4t"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

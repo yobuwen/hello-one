@@ -1,0 +1,381 @@
+
+
+================================================================
+== Vitis HLS Report for 'systolic_array'
+================================================================
+* Date:           Mon Mar  8 16:16:29 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        systolic_array
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       41|       41|  0.410 us|  0.410 us|   42|   42|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_131_1  |        3|        3|         1|          1|          1|     3|       yes|
+        |- VITIS_LOOP_140_3  |        3|        3|         1|          1|          1|     3|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+  * Pipeline-1: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 2
+  Pipeline-0 : II = 1, D = 1, States = { 9 }
+  Pipeline-1 : II = 1, D = 1, States = { 18 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 9 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 18 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 26 [7/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 26 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 27 [6/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 27 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 28 [5/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 28 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 29 [4/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 29 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 30 [3/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 30 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 31 [2/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 31 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 32 [1/7] (7.30ns)   --->   "%a_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %a_ddr, i32 1"   --->   Operation 32 'readreq' 'a_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5"   --->   Operation 33 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a_ddr, void @empty_11, i32 0, i32 0, void @empty_1, i32 0, i32 32, void @empty_2, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a_ddr"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b_ddr, void @empty_11, i32 0, i32 0, void @empty_1, i32 0, i32 32, void @empty_10, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %b_ddr"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c_ddr, void @empty_11, i32 0, i32 0, void @empty_1, i32 0, i32 32, void @empty_12, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %c_ddr"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (7.30ns)   --->   "%a_ddr_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %a_ddr"   --->   Operation 40 'read' 'a_ddr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%empty = bitcast i32 %a_ddr_read"   --->   Operation 41 'bitcast' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.42ns)   --->   "%br_ln131 = br void" [source/systolic_array.cpp:131]   --->   Operation 42 'br' 'br_ln131' <Predicate = true> <Delay = 0.42>
+
+State 9 <SV = 8> <Delay = 1.12>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%ak = phi i2 %add_ln131, void %.split6, i2 0, void" [source/systolic_array.cpp:131]   --->   Operation 43 'phi' 'ak' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 44 [1/1] (0.54ns)   --->   "%add_ln131 = add i2 %ak, i2 1" [source/systolic_array.cpp:131]   --->   Operation 44 'add' 'add_ln131' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 45 [1/1] (0.44ns)   --->   "%icmp_ln131 = icmp_eq  i2 %ak, i2 3" [source/systolic_array.cpp:131]   --->   Operation 45 'icmp' 'icmp_ln131' <Predicate = true> <Delay = 0.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%empty_17 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 46 'speclooptripcount' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln131 = br i1 %icmp_ln131, void %.split6, void" [source/systolic_array.cpp:131]   --->   Operation 47 'br' 'br_ln131' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln131 = zext i2 %ak" [source/systolic_array.cpp:131]   --->   Operation 48 'zext' 'zext_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 49 [1/1] (0.00ns)   --->   "%specpipeline_ln131 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [source/systolic_array.cpp:131]   --->   Operation 49 'specpipeline' 'specpipeline_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%specloopname_ln131 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [source/systolic_array.cpp:131]   --->   Operation 50 'specloopname' 'specloopname_ln131' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 51 [1/1] (0.00ns)   --->   "%A_0_addr = getelementptr i32 %A_0, i64 0, i64 %zext_ln131" [source/systolic_array.cpp:136]   --->   Operation 51 'getelementptr' 'A_0_addr' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 52 [1/1] (0.67ns)   --->   "%store_ln136 = store i32 %empty, i2 %A_0_addr" [source/systolic_array.cpp:136]   --->   Operation 52 'store' 'store_ln136' <Predicate = (!icmp_ln131)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_9 : Operation 53 [1/1] (0.00ns)   --->   "%A_1_addr = getelementptr i32 %A_1, i64 0, i64 %zext_ln131" [source/systolic_array.cpp:136]   --->   Operation 53 'getelementptr' 'A_1_addr' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 54 [1/1] (0.67ns)   --->   "%store_ln136 = store i32 %empty, i2 %A_1_addr" [source/systolic_array.cpp:136]   --->   Operation 54 'store' 'store_ln136' <Predicate = (!icmp_ln131)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_9 : Operation 55 [1/1] (0.00ns)   --->   "%A_2_addr = getelementptr i32 %A_2, i64 0, i64 %zext_ln131" [source/systolic_array.cpp:136]   --->   Operation 55 'getelementptr' 'A_2_addr' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+ST_9 : Operation 56 [1/1] (0.67ns)   --->   "%store_ln136 = store i32 %empty, i2 %A_2_addr" [source/systolic_array.cpp:136]   --->   Operation 56 'store' 'store_ln136' <Predicate = (!icmp_ln131)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_9 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 57 'br' 'br_ln0' <Predicate = (!icmp_ln131)> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 58 [7/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 58 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.30>
+ST_11 : Operation 59 [6/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 59 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 60 [5/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 60 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 61 [4/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 61 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 7.30>
+ST_14 : Operation 62 [3/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 62 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.30>
+ST_15 : Operation 63 [2/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 63 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 64 [1/7] (7.30ns)   --->   "%b_ddr_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %b_ddr, i32 1"   --->   Operation 64 'readreq' 'b_ddr_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 65 [1/1] (7.30ns)   --->   "%b_ddr_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %b_ddr"   --->   Operation 65 'read' 'b_ddr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_17 : Operation 66 [1/1] (0.00ns)   --->   "%empty_18 = bitcast i32 %b_ddr_read"   --->   Operation 66 'bitcast' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 67 [1/1] (0.42ns)   --->   "%br_ln140 = br void" [source/systolic_array.cpp:140]   --->   Operation 67 'br' 'br_ln140' <Predicate = true> <Delay = 0.42>
+
+State 18 <SV = 17> <Delay = 1.12>
+ST_18 : Operation 68 [1/1] (0.00ns)   --->   "%bk = phi i2 %add_ln140, void %.split2, i2 0, void" [source/systolic_array.cpp:140]   --->   Operation 68 'phi' 'bk' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 69 [1/1] (0.54ns)   --->   "%add_ln140 = add i2 %bk, i2 1" [source/systolic_array.cpp:140]   --->   Operation 69 'add' 'add_ln140' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 70 [1/1] (0.44ns)   --->   "%icmp_ln140 = icmp_eq  i2 %bk, i2 3" [source/systolic_array.cpp:140]   --->   Operation 70 'icmp' 'icmp_ln140' <Predicate = true> <Delay = 0.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 71 [1/1] (0.00ns)   --->   "%empty_19 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 71 'speclooptripcount' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln140 = br i1 %icmp_ln140, void %.split2, void" [source/systolic_array.cpp:140]   --->   Operation 72 'br' 'br_ln140' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 73 [1/1] (0.00ns)   --->   "%zext_ln140 = zext i2 %bk" [source/systolic_array.cpp:140]   --->   Operation 73 'zext' 'zext_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 74 [1/1] (0.00ns)   --->   "%specpipeline_ln140 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [source/systolic_array.cpp:140]   --->   Operation 74 'specpipeline' 'specpipeline_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 75 [1/1] (0.00ns)   --->   "%specloopname_ln140 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [source/systolic_array.cpp:140]   --->   Operation 75 'specloopname' 'specloopname_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 76 [1/1] (0.00ns)   --->   "%A_0_addr_1 = getelementptr i32 %A_0, i64 0, i64 %zext_ln140" [source/systolic_array.cpp:145]   --->   Operation 76 'getelementptr' 'A_0_addr_1' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 77 [1/1] (0.67ns)   --->   "%store_ln145 = store i32 %empty_18, i2 %A_0_addr_1" [source/systolic_array.cpp:145]   --->   Operation 77 'store' 'store_ln145' <Predicate = (!icmp_ln140)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_18 : Operation 78 [1/1] (0.00ns)   --->   "%A_1_addr_1 = getelementptr i32 %A_1, i64 0, i64 %zext_ln140" [source/systolic_array.cpp:145]   --->   Operation 78 'getelementptr' 'A_1_addr_1' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 79 [1/1] (0.67ns)   --->   "%store_ln145 = store i32 %empty_18, i2 %A_1_addr_1" [source/systolic_array.cpp:145]   --->   Operation 79 'store' 'store_ln145' <Predicate = (!icmp_ln140)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_18 : Operation 80 [1/1] (0.00ns)   --->   "%A_2_addr_1 = getelementptr i32 %A_2, i64 0, i64 %zext_ln140" [source/systolic_array.cpp:145]   --->   Operation 80 'getelementptr' 'A_2_addr_1' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_18 : Operation 81 [1/1] (0.67ns)   --->   "%store_ln145 = store i32 %empty_18, i2 %A_2_addr_1" [source/systolic_array.cpp:145]   --->   Operation 81 'store' 'store_ln145' <Predicate = (!icmp_ln140)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3> <RAM>
+ST_18 : Operation 82 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 82 'br' 'br_ln0' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 83 [1/1] (7.30ns)   --->   "%c_ddr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i32P1A, i32 %c_ddr, i32 1" [source/systolic_array.cpp:156]   --->   Operation 83 'writereq' 'c_ddr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 7.30>
+ST_20 : Operation 84 [1/1] (7.30ns)   --->   "%write_ln156 = write void @_ssdm_op_Write.m_axi.i32P1A, i32 %c_ddr, i32 0, i4 15" [source/systolic_array.cpp:156]   --->   Operation 84 'write' 'write_ln156' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 20> <Delay = 7.30>
+ST_21 : Operation 85 [5/5] (7.30ns)   --->   "%c_ddr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %c_ddr" [source/systolic_array.cpp:156]   --->   Operation 85 'writeresp' 'c_ddr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 22 <SV = 21> <Delay = 7.30>
+ST_22 : Operation 86 [4/5] (7.30ns)   --->   "%c_ddr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %c_ddr" [source/systolic_array.cpp:156]   --->   Operation 86 'writeresp' 'c_ddr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 7.30>
+ST_23 : Operation 87 [3/5] (7.30ns)   --->   "%c_ddr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %c_ddr" [source/systolic_array.cpp:156]   --->   Operation 87 'writeresp' 'c_ddr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 23> <Delay = 7.30>
+ST_24 : Operation 88 [2/2] (0.00ns)   --->   "%call_ln149 = call void @pe_array, i32 %A_0, i32 %A_1, i32 %A_2" [source/systolic_array.cpp:149]   --->   Operation 88 'call' 'call_ln149' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 89 [2/5] (7.30ns)   --->   "%c_ddr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %c_ddr" [source/systolic_array.cpp:156]   --->   Operation 89 'writeresp' 'c_ddr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 24> <Delay = 7.30>
+ST_25 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln149 = call void @pe_array, i32 %A_0, i32 %A_1, i32 %A_2" [source/systolic_array.cpp:149]   --->   Operation 90 'call' 'call_ln149' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 91 [1/5] (7.30ns)   --->   "%c_ddr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i32P1A, i32 %c_ddr" [source/systolic_array.cpp:156]   --->   Operation 91 'writeresp' 'c_ddr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_25 : Operation 92 [1/1] (0.00ns)   --->   "%ret_ln160 = ret" [source/systolic_array.cpp:160]   --->   Operation 92 'ret' 'ret_ln160' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 3>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 4>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a_ddr' [15]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus read on port 'a_ddr' [16]  (7.3 ns)
+
+ <State 9>: 1.12ns
+The critical path consists of the following:
+	'phi' operation ('ak', source/systolic_array.cpp:131) with incoming values : ('add_ln131', source/systolic_array.cpp:131) [20]  (0 ns)
+	'getelementptr' operation ('A_0_addr', source/systolic_array.cpp:136) [29]  (0 ns)
+	'store' operation ('store_ln136', source/systolic_array.cpp:136) of variable 'empty' on array 'A_0' [30]  (0.677 ns)
+	blocking operation 0.446 ns on control path)
+
+ <State 10>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 11>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 12>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 13>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 14>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 15>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 16>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'b_ddr' [37]  (7.3 ns)
+
+ <State 17>: 7.3ns
+The critical path consists of the following:
+	bus read on port 'b_ddr' [38]  (7.3 ns)
+
+ <State 18>: 1.12ns
+The critical path consists of the following:
+	'phi' operation ('bk', source/systolic_array.cpp:140) with incoming values : ('add_ln140', source/systolic_array.cpp:140) [42]  (0 ns)
+	'getelementptr' operation ('A_0_addr_1', source/systolic_array.cpp:145) [51]  (0 ns)
+	'store' operation ('store_ln145', source/systolic_array.cpp:145) of variable 'empty_18' on array 'A_0' [52]  (0.677 ns)
+	blocking operation 0.446 ns on control path)
+
+ <State 19>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'c_ddr' (source/systolic_array.cpp:156) [60]  (7.3 ns)
+
+ <State 20>: 7.3ns
+The critical path consists of the following:
+	bus write on port 'c_ddr' (source/systolic_array.cpp:156) [61]  (7.3 ns)
+
+ <State 21>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c_ddr' (source/systolic_array.cpp:156) [62]  (7.3 ns)
+
+ <State 22>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c_ddr' (source/systolic_array.cpp:156) [62]  (7.3 ns)
+
+ <State 23>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c_ddr' (source/systolic_array.cpp:156) [62]  (7.3 ns)
+
+ <State 24>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c_ddr' (source/systolic_array.cpp:156) [62]  (7.3 ns)
+
+ <State 25>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c_ddr' (source/systolic_array.cpp:156) [62]  (7.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

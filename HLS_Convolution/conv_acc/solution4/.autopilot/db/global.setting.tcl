@@ -42,7 +42,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu7ev:-ffvc1156:-2-e
-set SourceFiles {sc {} c {../../source/conv_acc4t.cpp ../../source/conv_acc3t.cpp ../../source/conv_acc2t.cpp ../../source/conv_acc1t.cpp}}
+set SourceFiles {sc {} c {../../source/conv_acc1t.cpp ../../source/conv_acc2t.cpp ../../source/conv_acc3t.cpp ../../source/conv_acc4t.cpp}}
 set SourceFlags {sc {} c {{} {} {} {}}}
 set DirectiveFile /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/solution4.directive
 set TBFiles {verilog ../../testbench/testbench.c bc ../../testbench/testbench.c vhdl ../../testbench/testbench.c sc ../../testbench/testbench.c cas ../../testbench/testbench.c c {}}

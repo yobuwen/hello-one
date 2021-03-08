@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Messages>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.825 MB." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc4t.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.848 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc1t.cpp&apos; ..." resolution=""/>
 	<Message severity="WARNING" prefix="[HLS 207-989]" key="HLS 207-989" tag="" content="&apos;__MAIN_H__&apos; is used as a header guard here, followed by #define of a different macro: source/main.h:1:9" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 207-923]" key="HLS 207-923" tag="" content="&apos;__MAIN_H_&apos; is defined here; did you mean &apos;__MAIN_H__&apos;?: source/main.h:2:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-1017]" key="HLS 207-1017" tag="" content="unknown pragma ignored: source/conv_acc4t.cpp:104:9" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc3t.cpp&apos; ..." resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-989]" key="HLS 207-989" tag="" content="&apos;__MAIN_H__&apos; is used as a header guard here, followed by #define of a different macro: source/main.h:1:9" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 207-923]" key="HLS 207-923" tag="" content="&apos;__MAIN_H_&apos; is defined here; did you mean &apos;__MAIN_H__&apos;?: source/main.h:2:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9" resolution=""/>
-	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc2t.cpp&apos; ..." resolution=""/>
 	<Message severity="WARNING" prefix="[HLS 207-989]" key="HLS 207-989" tag="" content="&apos;__MAIN_H__&apos; is used as a header guard here, followed by #define of a different macro: source/main.h:1:9" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 207-923]" key="HLS 207-923" tag="" content="&apos;__MAIN_H_&apos; is defined here; did you mean &apos;__MAIN_H__&apos;?: source/main.h:2:9" resolution=""/>
@@ -23,10 +13,20 @@
 	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:28:9" resolution=""/>
 	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:29:9" resolution=""/>
 	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:29:9" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc1t.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc3t.cpp&apos; ..." resolution=""/>
 	<Message severity="WARNING" prefix="[HLS 207-989]" key="HLS 207-989" tag="" content="&apos;__MAIN_H__&apos; is used as a header guard here, followed by #define of a different macro: source/main.h:1:9" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 207-923]" key="HLS 207-923" tag="" content="&apos;__MAIN_H_&apos; is defined here; did you mean &apos;__MAIN_H__&apos;?: source/main.h:2:9" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 1.11 seconds. CPU system time: 0.71 seconds. Elapsed time: 1.63 seconds; current allocated memory: 193.473 MB." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;source/conv_acc4t.cpp&apos; ..." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-989]" key="HLS 207-989" tag="" content="&apos;__MAIN_H__&apos; is used as a header guard here, followed by #define of a different macro: source/main.h:1:9" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-923]" key="HLS 207-923" tag="" content="&apos;__MAIN_H_&apos; is defined here; did you mean &apos;__MAIN_H__&apos;?: source/main.h:2:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-1017]" key="HLS 207-1017" tag="" content="unknown pragma ignored: source/conv_acc4t.cpp:104:9" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 1.05 seconds. CPU system time: 0.65 seconds. Elapsed time: 1.54 seconds; current allocated memory: 193.499 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vivado&apos; flow target." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;load_in(float*, float (*) [16][16])&apos; into &apos;process(float*, float*, float (*) [16][16], float (*) [4][3][3], float (*) [14][14])&apos; (source/conv_acc4t.cpp:103:0)" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;load_w(float*, float (*) [4][3][3])&apos; into &apos;process(float*, float*, float (*) [16][16], float (*) [4][3][3], float (*) [14][14])&apos; (source/conv_acc4t.cpp:103:0)" resolution=""/>
@@ -39,12 +39,12 @@
 	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst reads of length 1024 and bit width 32 in loop &apos;INDATA_LOAD&apos;(source/conv_acc4t.cpp:24:5) has been inferred on port &apos;In_ddr&apos; (source/conv_acc4t.cpp:24:5)" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst reads of length 256 and bit width 32 in loop &apos;WDATA_LOAD&apos;(source/conv_acc4t.cpp:38:5) has been inferred on port &apos;W_ddr&apos; (source/conv_acc4t.cpp:38:5)" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst writes of length 784 and bit width 32 in loop &apos;OUTDATA_WRITE&apos;(source/conv_acc4t.cpp:55:5) has been inferred on port &apos;Out_ddr&apos; (source/conv_acc4t.cpp:55:5)" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 5.03 seconds. CPU system time: 0.45 seconds. Elapsed time: 5.72 seconds; current allocated memory: 195.739 MB." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.740 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 4.97 seconds. CPU system time: 0.41 seconds. Elapsed time: 5.42 seconds; current allocated memory: 195.765 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.766 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 197.164 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 197.189 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 196.424 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 196.450 MB." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;VITIS_LOOP_28_2&apos; (source/conv_acc4t.cpp:28) in function &apos;conv_acc4t&apos; automatically." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;VITIS_LOOP_44_3&apos; (source/conv_acc4t.cpp:44) in function &apos;conv_acc4t&apos; automatically." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;VITIS_LOOP_59_2&apos; (source/conv_acc4t.cpp:59) in function &apos;conv_acc4t&apos; automatically." resolution=""/>
@@ -90,7 +90,7 @@
 	<Message severity="WARNING" prefix="[ANALYSIS 214-31]" key="ANALYSIS_ARRAY_ACCESS_OUTBOUND_179" tag="" content="The program may have out of bound access of array variable &apos;w[3][2]&apos; in function &apos;conv_acc4t&apos; (source/conv_acc4t.cpp:46:21)." resolution=""/>
 	<Message severity="WARNING" prefix="[ANALYSIS 214-31]" key="ANALYSIS_ARRAY_ACCESS_OUTBOUND_179" tag="" content="The program may have out of bound access of array variable &apos;w[3][3]&apos; in function &apos;conv_acc4t&apos; (source/conv_acc4t.cpp:46:21)." resolution=""/>
 	<Message severity="WARNING" prefix="[ANALYSIS 214-31]" key="ANALYSIS_ARRAY_ACCESS_OUTBOUND_179" tag="" content="The program may have out of bound access of array variable &apos;w[3][3]&apos; in function &apos;conv_acc4t&apos; (source/conv_acc4t.cpp:46:21)." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Loop, function and other optimizations: CPU user time: 5.05 seconds. CPU system time: 0.04 seconds. Elapsed time: 5.21 seconds; current allocated memory: 221.291 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Loop, function and other optimizations: CPU user time: 5.27 seconds. CPU system time: 0.08 seconds. Elapsed time: 5.43 seconds; current allocated memory: 221.314 MB." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;VITIS_LOOP_26_1&apos; (source/conv_acc4t.cpp:26:35) in function &apos;conv_acc4t&apos;." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;INDATA_LOAD&apos; (source/conv_acc4t.cpp:24:14) in function &apos;conv_acc4t&apos;." resolution=""/>
 	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;VITIS_LOOP_42_2&apos; (source/conv_acc4t.cpp:42:39) in function &apos;conv_acc4t&apos;." resolution=""/>
@@ -101,7 +101,7 @@
 	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;out&apos; (source/conv_acc4t.cpp:89:44)" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;in.0&apos; (source/conv_acc4t.cpp:30:39)" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;w[0][0]&apos; (source/conv_acc4t.cpp:46:49)" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Architecture Synthesis: CPU user time: 1.22 seconds. CPU system time: 0 seconds. Elapsed time: 1.27 seconds; current allocated memory: 239.787 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Architecture Synthesis: CPU user time: 1.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.35 seconds; current allocated memory: 239.812 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;conv_acc4t&apos; ..." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
@@ -112,13 +112,13 @@
 	<Message severity="WARNING" prefix="[HLS 200-885]" key="HLS 200-885" tag="SCHEDULE,VITIS_KERNEL" content="Unable to schedule &apos;load&apos; operation (&apos;in_0_load_2&apos;, source/conv_acc4t.cpp:89) on array &apos;in_0&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;in_0&apos;." resolution="http://www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-885.html"/>
 	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = 1, Final II = 24, Depth = 159, loop &apos;Output_row&apos;" resolution=""/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 64.54 seconds. CPU system time: 0.09 seconds. Elapsed time: 64.64 seconds; current allocated memory: 266.548 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 67.92 seconds. CPU system time: 0.11 seconds. Elapsed time: 68.1 seconds; current allocated memory: 266.557 MB." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 23.65 seconds. CPU system time: 0.11 seconds. Elapsed time: 23.77 seconds; current allocated memory: 305.576 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 24.71 seconds. CPU system time: 0.08 seconds. Elapsed time: 24.8 seconds; current allocated memory: 305.645 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_acc4t&apos;" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
@@ -130,13 +130,13 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;OUTDATA_WRITE_VITIS_LOOP_57_1_VITIS_LOOP_59_2&apos;." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop &apos;OUTDATA_WRITE_VITIS_LOOP_57_1_VITIS_LOOP_59_2&apos;" resolution=""/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 18.73 seconds. CPU system time: 0.12 seconds. Elapsed time: 18.87 seconds; current allocated memory: 306.747 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 19.45 seconds. CPU system time: 0.14 seconds. Elapsed time: 19.63 seconds; current allocated memory: 306.757 MB." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0 seconds. Elapsed time: 0.76 seconds; current allocated memory: 307.832 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.77 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.79 seconds; current allocated memory: 307.856 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;convolution&apos;" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
@@ -144,7 +144,7 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;fadd_32ns_32ns_32_4_full_dsp_1&apos;: 84 instance(s)." resolution=""/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;fmul_32ns_32ns_32_3_max_dsp_1&apos;: 84 instance(s)." resolution=""/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;convolution&apos;." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 8.93 seconds. CPU system time: 0.04 seconds. Elapsed time: 8.99 seconds; current allocated memory: 332.468 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 9.71 seconds. CPU system time: 0.04 seconds. Elapsed time: 9.75 seconds; current allocated memory: 332.522 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_acc4t&apos;" resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
@@ -155,15 +155,15 @@
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;conv_acc4t&apos; to &apos;ap_ctrl_hs&apos;." resolution=""/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mux_42_32_1_1&apos;: 1 instance(s)." resolution=""/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_acc4t&apos;." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 30.29 seconds. CPU system time: 0.23 seconds. Elapsed time: 30.66 seconds; current allocated memory: 422.019 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 31.9 seconds. CPU system time: 0.28 seconds. Elapsed time: 32.27 seconds; current allocated memory: 422.045 MB." resolution=""/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;conv_acc4t_in_0_ram (RAM)&apos; using auto RAMs with power-on initialization." resolution=""/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;conv_acc4t_out_0_ram (RAM)&apos; using auto RAMs." resolution=""/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;conv_acc4t_w_0_0_ram (RAM)&apos; using auto RAMs." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Generating all RTL models: CPU user time: 10.22 seconds. CPU system time: 0.12 seconds. Elapsed time: 10.36 seconds; current allocated memory: 436.541 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Generating all RTL models: CPU user time: 10.87 seconds. CPU system time: 0.16 seconds. Elapsed time: 11.04 seconds; current allocated memory: 436.567 MB." resolution=""/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for conv_acc4t." resolution=""/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for conv_acc4t." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-1603]" key="HLS 200-1603" tag="VITIS_INTERFACE" content="Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,VITIS_KERNEL" content="**** Loop Constraint Status: All loop constraints were NOT satisfied." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,VITIS_KERNEL" content="**** Estimated Fmax: 136.96 MHz" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 169.94 seconds. CPU system time: 1.93 seconds. Elapsed time: 172.32 seconds; current allocated memory: 437.792 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 178.32 seconds. CPU system time: 1.98 seconds. Elapsed time: 180.55 seconds; current allocated memory: 437.908 MB." resolution=""/>
 </Messages>

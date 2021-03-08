@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1614698792234">
-  <ports id="1" name="In_ddr" type="PortType" coreId="4227858552" bitwidth="32" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1614766300523">
+  <ports id="1" name="In_ddr" type="PortType" coreId="994377328" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>readreq</dataOutputObjs>
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="W_ddr" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeFifo">
+  <ports id="2" name="W_ddr" type="PortType" coreId="17" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>readreq</dataOutputObjs>
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="Out_ddr" type="PortType" coreId="512" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+  <ports id="3" name="Out_ddr" type="PortType" coreId="100" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>writereq</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>writeresp</dataInputObjs>
@@ -589,7 +589,7 @@
       <dataInputObjs>In_ddr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3682004848" contextFuncName="load_in" opcode="br" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" opcode="br" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="22" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
       <controlInputObjs>block_48</controlInputObjs>
     </node_objs>
@@ -613,7 +613,7 @@
       <dataInputObjs>W_ddr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1970040691" contextFuncName="load_w" opcode="br" nodeLabel="16.0" m_display="0" m_delay="0.42" m_topoIndex="68" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1" contextFuncName="load_w" opcode="br" nodeLabel="16.0" m_display="0" m_delay="0.42" m_topoIndex="68" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
       <controlInputObjs>block_110</controlInputObjs>
     </node_objs>
@@ -630,7 +630,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_254</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="235" name="_ln107" lineNumber="107" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="grp_convolution_fu_764" coreId="0" contextFuncName="process" opcode="call" nodeLabel="20.0" nodeLatency="1" m_display="0" m_topoIndex="168" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="235" name="_ln107" lineNumber="107" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="grp_convolution_fu_764" coreId="961" contextFuncName="process" opcode="call" nodeLabel="20.0" nodeLatency="1" m_display="0" m_topoIndex="168" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="107" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="process"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -659,7 +659,7 @@
       <dataOutputObjs>Out_ddr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="237" name="br_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="49" contextFuncName="offload_out" opcode="br" nodeLabel="21.0" m_display="0" m_delay="0.42" m_topoIndex="170" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="237" name="br_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" opcode="br" nodeLabel="21.0" m_display="0" m_delay="0.42" m_topoIndex="170" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
       <controlInputObjs>block_254</controlInputObjs>
     </node_objs>
@@ -675,7 +675,7 @@
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="139" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="conv_acc4t"/>
       <dataOutputObjs>Out_ddr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="303" name="_ln139" lineNumber="139" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="7" contextFuncName="conv_acc4t" opcode="ret" nodeLabel="29.0" m_display="0" m_topoIndex="226" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="303" name="_ln139" lineNumber="139" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994669168" contextFuncName="conv_acc4t" opcode="ret" nodeLabel="29.0" m_display="0" m_topoIndex="226" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="139" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="conv_acc4t"/>
     </node_objs>
     <fileValidLineNumbers fileName="source/conv_acc4t.cpp">
@@ -690,7 +690,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_Z7load_inPfPA16_A16_f.exit.i</controlOutputObjs>
       <controlOutputObjs>.split20</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="indvar_flatten17" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" bitwidth="11" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="indvar_flatten17" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994493736" contextFuncName="load_in" bitwidth="11" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -699,7 +699,7 @@
         <controlInputObjs>.split164</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="L_ri" lineNumber="24" originalName="L_ri" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1869422696" contextFuncName="load_in" bitwidth="5" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="L_ri" lineNumber="24" originalName="L_ri" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1176513585" contextFuncName="load_in" bitwidth="5" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -708,7 +708,7 @@
         <controlInputObjs>.split164</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="indvar_flatten" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="22" contextFuncName="load_in" bitwidth="8" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="indvar_flatten" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1869817888" contextFuncName="load_in" bitwidth="8" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="26" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -717,7 +717,7 @@
         <controlInputObjs>.split164</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="L_ci" lineNumber="26" originalName="L_ci" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="273" contextFuncName="load_in" bitwidth="5" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="L_ci" lineNumber="26" originalName="L_ci" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1850286653" contextFuncName="load_in" bitwidth="5" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="26" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -725,7 +725,7 @@
         <controlInputObjs>.split164</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="L_chi_1" lineNumber="28" originalName="L_chi" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="540876873" contextFuncName="load_in" bitwidth="3" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="L_chi_1" lineNumber="28" originalName="L_chi" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="2483028088" contextFuncName="load_in" bitwidth="3" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="28" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -740,13 +740,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="icmp_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln24_fu_802_p2" opType="icmp" coreId="808738640" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.94" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="icmp_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln24_fu_802_p2" opType="icmp" coreId="0" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.94" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1279795773" contextFuncName="load_in" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1210203513" contextFuncName="load_in" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split20</controlInputObjs>
@@ -771,7 +771,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="icmp_ln26" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_814_p2" opType="icmp" coreId="0" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.84" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="icmp_ln26" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_814_p2" opType="icmp" coreId="1919251566" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.84" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="26" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -797,30 +797,30 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="trunc_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln30_fu_836_p1" coreId="23185" contextFuncName="load_in" bitwidth="4" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="trunc_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln30_fu_836_p1" coreId="1852401253" contextFuncName="load_in" bitwidth="4" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp_50_cast" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_50_cast_fu_910_p3" coreId="3683019785" contextFuncName="load_in" bitwidth="8" opcode="bitconcatenate" nodeLabel="8.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp_50_cast" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_50_cast_fu_910_p3" coreId="23185" contextFuncName="load_in" bitwidth="8" opcode="bitconcatenate" nodeLabel="8.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="26" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="xor_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln24_fu_840_p2" opType="xor" coreId="1634869349" contextFuncName="load_in" bitwidth="1" opcode="xor" nodeLabel="7.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="xor_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln24_fu_840_p2" opType="xor" coreId="0" contextFuncName="load_in" bitwidth="1" opcode="xor" nodeLabel="7.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln28" lineNumber="28" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln28_fu_846_p2" opType="icmp" coreId="1763731555" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.58" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln28" lineNumber="28" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln28_fu_846_p2" opType="icmp" coreId="0" contextFuncName="load_in" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.58" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="28" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="and_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln24_fu_852_p2" opType="and" coreId="7" contextFuncName="load_in" bitwidth="1" opcode="and" nodeLabel="7.0" m_display="0" m_delay="0.28" m_topoIndex="38" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="and_ln24" lineNumber="24" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln24_fu_852_p2" opType="and" coreId="994454248" contextFuncName="load_in" bitwidth="1" opcode="and" nodeLabel="7.0" m_display="0" m_delay="0.28" m_topoIndex="38" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="24" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
@@ -833,7 +833,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln26" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln26_fu_864_p2" opType="or" coreId="4227858552" contextFuncName="load_in" bitwidth="1" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln26" lineNumber="26" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln26_fu_864_p2" opType="or" coreId="994456640" contextFuncName="load_in" bitwidth="1" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="26" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -855,7 +855,7 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln30_fu_917_p1" coreId="3683030784" contextFuncName="load_in" bitwidth="8" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln30_fu_917_p1" coreId="0" contextFuncName="load_in" bitwidth="8" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -866,7 +866,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln30_1" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln30_1_fu_930_p1" coreId="1629897793" contextFuncName="load_in" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln30_1" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln30_1_fu_930_p1" coreId="994461136" contextFuncName="load_in" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -874,25 +874,25 @@
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="in_0_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="10881" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="in_0_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994464880" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="in_1_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="in_1_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="in_2_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="in_2_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994464448" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="in_3_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="4227858552" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="in_3_addr" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994466376" contextFuncName="load_in" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -903,7 +903,7 @@
         <dataInputObjs>In_ddr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="bitcast_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="bitcast_ln30_fu_926_p1" coreId="1986095136" contextFuncName="load_in" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="bitcast_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="bitcast_ln30_fu_926_p1" coreId="2483028088" contextFuncName="load_in" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -911,12 +911,12 @@
         <dataOutputObjs>store</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln30_1" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln30_1_fu_886_p1" coreId="4227858552" contextFuncName="load_in" bitwidth="2" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln30_1" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln30_1_fu_886_p1" coreId="994468504" contextFuncName="load_in" bitwidth="2" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>switch</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3649" contextFuncName="load_in" opcode="switch" nodeLabel="7.0" m_display="0" m_delay="0.72" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994468024" contextFuncName="load_in" opcode="switch" nodeLabel="7.0" m_display="0" m_delay="0.72" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <dataInputObjs>trunc</dataInputObjs>
         <controlInputObjs>branch3</controlInputObjs>
@@ -941,7 +941,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="4227858552" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994472152" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <controlInputObjs>.split164</controlInputObjs>
       </node_objs>
@@ -958,7 +958,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <controlInputObjs>.split164</controlInputObjs>
       </node_objs>
@@ -975,7 +975,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="4227858552" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <controlInputObjs>.split164</controlInputObjs>
       </node_objs>
@@ -992,7 +992,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683051128" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="br_ln30" lineNumber="30" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_in" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="30" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_in"/>
         <controlInputObjs>.split164</controlInputObjs>
       </node_objs>
@@ -1034,7 +1034,7 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln0" coreId="4227858552" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln0" coreId="0" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <controlInputObjs>block_48</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="source/conv_acc4t.cpp">
@@ -1051,7 +1051,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_Z7processPfS_PA16_A16_fPA4_A3_A3_fPA14_A14_f.exit</controlOutputObjs>
       <controlOutputObjs>.split14</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="indvar_flatten59" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="574449505" contextFuncName="load_w" bitwidth="9" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="indvar_flatten59" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1869833586" contextFuncName="load_w" bitwidth="9" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1060,7 +1060,7 @@
         <controlInputObjs>.split813</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="L_cho" lineNumber="38" originalName="L_cho" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="575620686" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="L_cho" lineNumber="38" originalName="L_cho" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1734439968" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1069,7 +1069,7 @@
         <controlInputObjs>.split813</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="indvar_flatten37" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1684370529" contextFuncName="load_w" bitwidth="8" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="indvar_flatten37" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1179535650" contextFuncName="load_w" bitwidth="8" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1078,7 +1078,7 @@
         <controlInputObjs>.split813</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="L_chi" lineNumber="40" originalName="L_chi" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1768189545" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="L_chi" lineNumber="40" originalName="L_chi" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1702125923" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -1087,7 +1087,7 @@
         <controlInputObjs>.split813</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="indvar_flatten25" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="757935405" contextFuncName="load_w" bitwidth="6" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="indvar_flatten25" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1684957506" contextFuncName="load_w" bitwidth="6" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="42" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1096,7 +1096,7 @@
         <controlInputObjs>.split813</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="L_kr" lineNumber="44" originalName="L_kr" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1145391171" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="L_kr" lineNumber="44" originalName="L_kr" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="757935405" contextFuncName="load_w" bitwidth="3" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="44" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -1111,13 +1111,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_943_p2" opType="icmp" coreId="1230384197" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.88" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_943_p2" opType="icmp" coreId="1869635878" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.88" m_topoIndex="76" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1830841697" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1230384197" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split14</controlInputObjs>
@@ -1143,7 +1143,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="icmp_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln40_fu_955_p2" opType="icmp" coreId="171847458" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.84" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="icmp_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln40_fu_955_p2" opType="icmp" coreId="1986360096" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.84" m_topoIndex="79" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
@@ -1172,12 +1172,12 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="trunc_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln38_fu_977_p1" coreId="1635013410" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="trunc_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln38_fu_977_p1" coreId="570451809" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>switch</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="trunc_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln46_fu_981_p1" coreId="1801676136" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="trunc_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln46_fu_981_p1" coreId="1635013410" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -1189,33 +1189,33 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="xor_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln38_fu_993_p2" opType="xor" coreId="1769239916" contextFuncName="load_w" bitwidth="1" opcode="xor" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="xor_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln38_fu_993_p2" opType="xor" coreId="1701016181" contextFuncName="load_w" bitwidth="1" opcode="xor" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="85" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="icmp_ln44" lineNumber="44" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln44_fu_999_p2" opType="icmp" coreId="7959657" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.58" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="icmp_ln44" lineNumber="44" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln44_fu_999_p2" opType="icmp" coreId="1713383278" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.58" m_topoIndex="86" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="44" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="and_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln38_fu_1005_p2" opType="and" coreId="1735289196" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="and_ln38" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln38_fu_1005_p2" opType="and" coreId="1330007625" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="icmp_ln42" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln42_fu_1011_p2" opType="icmp" coreId="840977746" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.78" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="icmp_ln42" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln42_fu_1011_p2" opType="icmp" coreId="1886351212" contextFuncName="load_w" bitwidth="1" opcode="icmp" nodeLabel="17.0" m_display="0" m_delay="0.78" m_topoIndex="88" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="42" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="and_ln38_1" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln38_1_fu_1017_p2" opType="and" coreId="811300647" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="and_ln38_1" lineNumber="38" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln38_1_fu_1017_p2" opType="and" coreId="808529203" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="89" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="38" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
@@ -1231,7 +1231,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="trunc_ln46_1" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln46_1_fu_1029_p1" coreId="1981839713" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="trunc_ln46_1" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln46_1_fu_1029_p1" coreId="1534535456" contextFuncName="load_w" bitwidth="2" opcode="trunc" nodeLabel="17.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -1246,19 +1246,19 @@
         <dataOutputObjs>switch</dataOutputObjs>
         <dataOutputObjs>switch</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="xor_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln40_fu_1041_p2" opType="xor" coreId="1936024419" contextFuncName="load_w" bitwidth="1" opcode="xor" nodeLabel="17.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="xor_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln40_fu_1041_p2" opType="xor" coreId="544825714" contextFuncName="load_w" bitwidth="1" opcode="xor" nodeLabel="17.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="or_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln40_fu_1047_p2" opType="or" coreId="1684960623" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="or_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln40_fu_1047_p2" opType="or" coreId="543584032" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="and_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln40_fu_1053_p2" opType="and" coreId="1718558836" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="and_ln40" lineNumber="40" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln40_fu_1053_p2" opType="and" coreId="1949590371" contextFuncName="load_w" bitwidth="1" opcode="and" nodeLabel="17.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="40" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>or</dataInputObjs>
@@ -1271,13 +1271,13 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="or_ln42" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_fu_1067_p2" opType="or" coreId="1701012321" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="or_ln42" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_fu_1067_p2" opType="or" coreId="1869182069" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="42" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>and</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="or_ln42_2" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_2_fu_1073_p2" opType="or" coreId="1497453138" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="98" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="or_ln42_2" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_2_fu_1073_p2" opType="or" coreId="1869182051" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_delay="0.28" m_topoIndex="98" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="42" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -1291,13 +1291,13 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="tmp_s" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_s_fu_1131_p3" coreId="1852793639" contextFuncName="load_w" bitwidth="5" opcode="bitconcatenate" nodeLabel="19.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="tmp_s" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_s_fu_1131_p3" coreId="1312906018" contextFuncName="load_w" bitwidth="5" opcode="bitconcatenate" nodeLabel="19.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="zext_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln46_fu_1138_p1" coreId="1885548148" contextFuncName="load_w" bitwidth="64" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="zext_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln46_fu_1138_p1" coreId="758329394" contextFuncName="load_w" bitwidth="64" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -1317,112 +1317,112 @@
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="w_0_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1869182069" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="w_0_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="543649385" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="w_0_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="788537856" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="w_0_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="774774899" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="w_0_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1701978146" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="w_0_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1868767232" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="w_0_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1953391986" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="w_0_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="909261151" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="w_1_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="2036689696" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="w_1_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1295780106" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="w_1_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1701998624" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="w_1_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1230397234" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="w_1_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="6375" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="w_1_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="7571" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="w_1_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="6631" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="w_1_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="w_2_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="6887" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="w_2_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="151" name="w_2_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683093488" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="129" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="151" name="w_2_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="129" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="w_2_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="7447" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="w_2_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="w_2_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3485746" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="w_2_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="11" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="w_3_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683094744" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="w_3_0_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="w_3_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683096905" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="w_3_1_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="892351021" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="w_3_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1881170208" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="w_3_2_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="543649385" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="157" name="w_3_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683100088" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="157" name="w_3_3_addr" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994540985" contextFuncName="load_w" bitwidth="4" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -1434,7 +1434,7 @@
         <dataInputObjs>W_ddr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="bitcast_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="bitcast_ln46_fu_1127_p1" coreId="3683101248" contextFuncName="load_w" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="bitcast_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="bitcast_ln46_fu_1127_p1" coreId="0" contextFuncName="load_w" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -1454,7 +1454,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="161" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683101608" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="161" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1179796820" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="100" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>trunc</dataInputObjs>
         <controlInputObjs>branch7</controlInputObjs>
@@ -1478,7 +1478,7 @@
       <controlOutputObjs>branch16</controlOutputObjs>
       <controlOutputObjs>branch17</controlOutputObjs>
       <controlOutputObjs>branch18</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="163" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="163" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="101" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>branch19</controlInputObjs>
@@ -1500,7 +1500,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="166" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="11" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="166" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch630</controlInputObjs>
       </node_objs>
@@ -1517,7 +1517,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch630</controlInputObjs>
       </node_objs>
@@ -1569,7 +1569,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split813</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994558960" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>.split813</controlInputObjs>
       </node_objs>
@@ -1584,7 +1584,7 @@
       <controlOutputObjs>branch12</controlOutputObjs>
       <controlOutputObjs>branch13</controlOutputObjs>
       <controlOutputObjs>branch14</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683116912" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="103" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>branch15</controlInputObjs>
@@ -1606,7 +1606,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="182" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="145" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="182" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994561744" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="145" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch524</controlInputObjs>
       </node_objs>
@@ -1623,7 +1623,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1634561908" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="22561" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch524</controlInputObjs>
       </node_objs>
@@ -1640,7 +1640,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683123344" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="149" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="149" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch524</controlInputObjs>
       </node_objs>
@@ -1657,7 +1657,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="191" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="191" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch524</controlInputObjs>
       </node_objs>
@@ -1675,7 +1675,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split813</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="193" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="193" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994570704" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>.split813</controlInputObjs>
       </node_objs>
@@ -1690,7 +1690,7 @@
       <controlOutputObjs>branch8</controlOutputObjs>
       <controlOutputObjs>branch9</controlOutputObjs>
       <controlOutputObjs>branch10</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="105" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>branch11</controlInputObjs>
@@ -1712,7 +1712,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="198" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683133496" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="153" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="198" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="153" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch418</controlInputObjs>
       </node_objs>
@@ -1729,7 +1729,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="201" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683136056" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="155" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="201" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="4" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="155" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch418</controlInputObjs>
       </node_objs>
@@ -1746,7 +1746,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="204" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683138640" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="157" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="204" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="49" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="157" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch418</controlInputObjs>
       </node_objs>
@@ -1763,7 +1763,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="132" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="159" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994582713" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="159" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch418</controlInputObjs>
       </node_objs>
@@ -1781,7 +1781,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split813</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="209" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="16908804" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="209" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994576160" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>.split813</controlInputObjs>
       </node_objs>
@@ -1796,7 +1796,7 @@
       <controlOutputObjs>branch20</controlOutputObjs>
       <controlOutputObjs>branch21</controlOutputObjs>
       <controlOutputObjs>branch22</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="211" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683144368" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="211" name="_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="switch" nodeLabel="17.0" m_display="0" m_delay="0.72" m_topoIndex="107" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>branch23</controlInputObjs>
@@ -1818,7 +1818,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="161" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="961" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="161" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch736</controlInputObjs>
       </node_objs>
@@ -1835,7 +1835,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="217" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="163" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="217" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994591040" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="163" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch736</controlInputObjs>
       </node_objs>
@@ -1852,7 +1852,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="220" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683151904" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="165" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="220" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994593440" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="165" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch736</controlInputObjs>
       </node_objs>
@@ -1869,7 +1869,7 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="223" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683154816" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="167" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="223" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994596016" contextFuncName="load_w" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="167" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>branch736</controlInputObjs>
       </node_objs>
@@ -1887,7 +1887,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split813</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="225" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="225" name="br_ln46" lineNumber="46" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="62" contextFuncName="load_w" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="46" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <controlInputObjs>.split813</controlInputObjs>
       </node_objs>
@@ -1923,7 +1923,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="229" name="or_ln42_1" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_1_fu_1099_p2" opType="or" coreId="17" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="6">
+      <node_objs xsi:type="cdfg:CdfgNode" id="229" name="or_ln42_1" lineNumber="42" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln42_1_fu_1099_p2" opType="or" coreId="49" contextFuncName="load_w" bitwidth="1" opcode="or" nodeLabel="17.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="6">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="42" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="load_w"/>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -1949,7 +1949,7 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="233" name="br_ln0" coreId="49" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="233" name="br_ln0" coreId="419" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
         <controlInputObjs>block_110</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="source/conv_acc4t.cpp">
@@ -1967,7 +1967,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_Z11offload_outPfPA14_A14_f.exit</controlOutputObjs>
       <controlOutputObjs>.split6</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="239" name="indvar_flatten101" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="124" contextFuncName="offload_out" bitwidth="10" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="171" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="239" name="indvar_flatten101" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="10" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="171" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1976,7 +1976,7 @@
         <controlInputObjs>.split6</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="240" name="L_ro" lineNumber="55" originalName="L_ro" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683169593" contextFuncName="offload_out" bitwidth="4" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="172" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="240" name="L_ro" lineNumber="55" originalName="L_ro" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="4" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="172" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
@@ -1987,7 +1987,7 @@
         <controlInputObjs>.split6</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="241" name="indvar_flatten71" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="494" contextFuncName="offload_out" bitwidth="7" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="173" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="241" name="indvar_flatten71" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="706" contextFuncName="offload_out" bitwidth="7" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="173" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="57" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -1996,7 +1996,7 @@
         <controlInputObjs>.split6</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="242" name="L_co" lineNumber="57" originalName="L_co" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683171328" contextFuncName="offload_out" bitwidth="4" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="174" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="242" name="L_co" lineNumber="57" originalName="L_co" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="561" contextFuncName="offload_out" bitwidth="4" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="174" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="57" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -2005,7 +2005,7 @@
         <controlInputObjs>.split6</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="243" name="L_cho_1" lineNumber="59" originalName="L_cho" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="3" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="175" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="243" name="L_cho_1" lineNumber="59" originalName="L_cho" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="1155" contextFuncName="offload_out" bitwidth="3" opcode="phi" nodeLabel="22.0" m_display="0" m_topoIndex="175" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="59" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2020,19 +2020,19 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="245" name="tmp_48" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_48_fu_1164_p3" coreId="132" contextFuncName="offload_out" bitwidth="8" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="177" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="245" name="tmp_48" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_48_fu_1164_p3" coreId="994616505" contextFuncName="offload_out" bitwidth="8" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="177" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="tmp_49" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_49_fu_1172_p3" coreId="3683176256" contextFuncName="offload_out" bitwidth="5" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="178" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="tmp_49" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_49_fu_1172_p3" coreId="994609152" contextFuncName="offload_out" bitwidth="5" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="178" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="247" name="zext_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_fu_1180_p1" coreId="28271" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="179" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="247" name="zext_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_fu_1180_p1" coreId="994620864" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="179" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -2043,7 +2043,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="249" name="zext_ln61_1" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_1_fu_1190_p1" coreId="1" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="181" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="249" name="zext_ln61_1" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_1_fu_1190_p1" coreId="994548672" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="181" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2054,13 +2054,13 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="252" name="icmp_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln55_fu_1200_p2" opType="icmp" coreId="4227858552" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.91" m_topoIndex="183" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="252" name="icmp_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln55_fu_1200_p2" opType="icmp" coreId="0" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.91" m_topoIndex="183" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="253" name="br_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683187264" contextFuncName="offload_out" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="184" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="253" name="br_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994620752" contextFuncName="offload_out" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="184" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split6</controlInputObjs>
@@ -2090,7 +2090,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="258" name="icmp_ln57" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln57_fu_1212_p2" opType="icmp" coreId="100" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.81" m_topoIndex="186" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="258" name="icmp_ln57" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln57_fu_1212_p2" opType="icmp" coreId="0" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.81" m_topoIndex="186" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="57" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -2121,7 +2121,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="262" name="zext_ln61_2" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_2_fu_1242_p1" coreId="692" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="190" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="262" name="zext_ln61_2" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_2_fu_1242_p1" coreId="994632904" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="190" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -2141,19 +2141,19 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="265" name="p_shl_cast" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="p_shl_cast_fu_1260_p3" coreId="132" contextFuncName="offload_out" bitwidth="8" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="193" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="265" name="p_shl_cast" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="p_shl_cast_fu_1260_p3" coreId="994635528" contextFuncName="offload_out" bitwidth="8" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="193" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="266" name="tmp_1" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_1_fu_1268_p3" coreId="3683194448" contextFuncName="offload_out" bitwidth="5" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="194" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="266" name="tmp_1" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="tmp_1_fu_1268_p3" coreId="0" contextFuncName="offload_out" bitwidth="5" opcode="bitconcatenate" nodeLabel="22.0" m_display="0" m_topoIndex="194" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="267" name="zext_ln61_3" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_3_fu_1276_p1" coreId="3683195552" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="195" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="267" name="zext_ln61_3" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_3_fu_1276_p1" coreId="415" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="195" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -2171,19 +2171,19 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="271" name="xor_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln55_fu_1294_p2" opType="xor" coreId="49" contextFuncName="offload_out" bitwidth="1" opcode="xor" nodeLabel="22.0" m_display="0" m_topoIndex="198" m_clusterGroupNumber="8">
+      <node_objs xsi:type="cdfg:CdfgNode" id="271" name="xor_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="xor_ln55_fu_1294_p2" opType="xor" coreId="7" contextFuncName="offload_out" bitwidth="1" opcode="xor" nodeLabel="22.0" m_display="0" m_topoIndex="198" m_clusterGroupNumber="8">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="272" name="icmp_ln59" lineNumber="59" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln59_fu_1300_p2" opType="icmp" coreId="0" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.58" m_topoIndex="199" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="272" name="icmp_ln59" lineNumber="59" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="icmp_ln59_fu_1300_p2" opType="icmp" coreId="994641104" contextFuncName="offload_out" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="0.58" m_topoIndex="199" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="59" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="273" name="and_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln55_fu_1306_p2" opType="and" coreId="0" contextFuncName="offload_out" bitwidth="1" opcode="and" nodeLabel="22.0" m_display="0" m_delay="0.28" m_topoIndex="200" m_clusterGroupNumber="8">
+      <node_objs xsi:type="cdfg:CdfgNode" id="273" name="and_ln55" lineNumber="55" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="and_ln55_fu_1306_p2" opType="and" coreId="994644457" contextFuncName="offload_out" bitwidth="1" opcode="and" nodeLabel="22.0" m_display="0" m_delay="0.28" m_topoIndex="200" m_clusterGroupNumber="8">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="55" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
@@ -2198,7 +2198,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="276" name="or_ln57" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln57_fu_1318_p2" opType="or" coreId="132" contextFuncName="offload_out" bitwidth="1" opcode="or" nodeLabel="22.0" m_display="0" m_topoIndex="202" m_clusterGroupNumber="9">
+      <node_objs xsi:type="cdfg:CdfgNode" id="276" name="or_ln57" lineNumber="57" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="or_ln57_fu_1318_p2" opType="or" coreId="0" contextFuncName="offload_out" bitwidth="1" opcode="or" nodeLabel="22.0" m_display="0" m_topoIndex="202" m_clusterGroupNumber="9">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="57" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -2212,7 +2212,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="278" name="zext_ln61_4" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_4_fu_1332_p1" coreId="132" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="204" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="278" name="zext_ln61_4" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_4_fu_1332_p1" coreId="0" contextFuncName="offload_out" bitwidth="8" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="204" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2230,7 +2230,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="281" name="zext_ln61_5" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_5_fu_1350_p1" coreId="3683207896" contextFuncName="offload_out" bitwidth="64" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="207" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="281" name="zext_ln61_5" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="zext_ln61_5_fu_1350_p1" coreId="4294967295" contextFuncName="offload_out" bitwidth="64" opcode="zext" nodeLabel="22.0" m_display="0" m_topoIndex="207" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -2238,7 +2238,7 @@
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="282" name="out_0_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="208" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="282" name="out_0_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="49" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="208" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2250,7 +2250,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>mux</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="284" name="out_1_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683213568" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="210" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="284" name="out_1_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="210" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2262,7 +2262,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>mux</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="286" name="out_2_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="3683213296" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="212" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="286" name="out_2_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="4294967294" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="212" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2274,7 +2274,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>mux</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="288" name="out_3_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="0" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="214" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="288" name="out_3_addr" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." coreId="994655865" contextFuncName="offload_out" bitwidth="8" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="214" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2293,12 +2293,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="293" name="trunc_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln61_fu_1366_p1" coreId="3" contextFuncName="offload_out" bitwidth="2" opcode="trunc" nodeLabel="22.0" m_display="0" m_topoIndex="217" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="293" name="trunc_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="trunc_ln61_fu_1366_p1" coreId="132" contextFuncName="offload_out" bitwidth="2" opcode="trunc" nodeLabel="22.0" m_display="0" m_topoIndex="217" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>mux</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="294" name="tmp" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U195" opType="mux" coreId="343" contextFuncName="offload_out" bitwidth="32" opcode="mux" nodeLabel="23.0" m_display="0" m_delay="0.52" m_topoIndex="221" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="294" name="tmp" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U195" opType="mux" coreId="994660441" contextFuncName="offload_out" bitwidth="32" opcode="mux" nodeLabel="23.0" m_display="0" m_delay="0.52" m_topoIndex="221" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
@@ -2307,7 +2307,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="295" name="bitcast_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="Out_ddr_WDATA" coreId="3683220384" contextFuncName="offload_out" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="222" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="295" name="bitcast_ln61" lineNumber="61" fileName="source/conv_acc4t.cpp" fileDirectory=".." rtlName="Out_ddr_WDATA" coreId="994661888" contextFuncName="offload_out" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="222" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="source/conv_acc4t.cpp" linenumber="61" fileDirectory="/home/yobuwen/hello-one/HLS_Convolution" functionName="offload_out"/>
         <dataInputObjs>mux</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
@@ -2337,7 +2337,7 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="300" name="br_ln0" coreId="0" opcode="br" nodeLabel="24.0" m_display="0" m_topoIndex="224" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="300" name="br_ln0" coreId="2483028088" opcode="br" nodeLabel="24.0" m_display="0" m_topoIndex="224" m_clusterGroupNumber="-1">
         <controlInputObjs>block_254</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="source/conv_acc4t.cpp">

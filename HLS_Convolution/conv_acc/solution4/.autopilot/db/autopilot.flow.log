@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4 opened at Tue Mar 02 23:23:40 CST 2021
+INFO-FLOW: Workspace /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4 opened at Wed Mar 03 18:08:41 CST 2021
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
@@ -19,8 +19,27 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.15 sec.
+Command     ap_source done; 0.14 sec.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
@@ -39,14 +58,14 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Command       ap_source done; 0.11 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.15 sec.
+Command     ap_source done; 0.16 sec.
 Execute     set_part xczu7ev-ffvc1156-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
 DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 2.04 sec.
+Command       ap_part_info done; 1.95 sec.
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 Execute       add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
 Execute         get_default_platform 
@@ -79,12 +98,12 @@ Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command         ap_source done; 0.12 sec.
-Command       add_library done; 0.21 sec.
+Command         ap_source done; 0.13 sec.
+Command       add_library done; 0.23 sec.
 INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 2.31 sec.
+Command     set_part done; 2.23 sec.
 Execute     ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
 Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
 Execute     config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
@@ -98,7 +117,7 @@ Execute     get_config_interface -m_axi_max_widen_bitwidth
 Execute     get_config_interface -default_interface 
 Execute     get_config_interface -m_axi_offset 
 Execute     get_config_rtl -register_reset_num 
-Command   open_solution done; 2.67 sec.
+Command   open_solution done; 2.72 sec.
 Execute   set_part xczu7ev-ffvc1156-2-e 
 INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
@@ -136,16 +155,17 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.13 sec.
+Command       ap_source done; 0.12 sec.
 Command     add_library done; 0.19 sec.
 Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
 Command   set_part done; 0.26 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-Execute     ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute   source ./conv_acc/solution4/directives.tcl 
+Execute     set_directive_top -name conv_acc4t conv_acc4t 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_acc4t conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 Execute     get_config_compile -effort 
@@ -158,87 +178,45 @@ Execute     get_config_compile -skip_syncheck
 Execute     get_config_compile -skip_transform 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.825 MB.
-INFO: [HLS 200-10] Analyzing design file 'source/conv_acc4t.cpp' ... 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.848 MB.
+INFO: [HLS 200-10] Analyzing design file 'source/conv_acc1t.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
-INFO-FLOW: Handling source/conv_acc4t.cpp as C++
+INFO-FLOW: Handling source/conv_acc1t.cpp as C++
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc4t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.err.log 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc1t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.err.log 
 WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
 INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
 INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
 Execute       set_directive_top conv_acc4t -name=conv_acc4t 
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
-Execute       list_core -type functional_unit 
-Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Running: clang-tidy CDT preprocess 39
-Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
-INFO-FLOW: Calling xilinx-label-all-loops ... 
-Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.err.log 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
-Command       clang_tidy done; 0.12 sec.
-Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.err.log 
-Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
-INFO-FLOW: compiling source code to llvm bc
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.err.log 
-WARNING: [HLS 207-1017] unknown pragma ignored: source/conv_acc4t.cpp:104:9
-INFO: [HLS 200-10] Analyzing design file 'source/conv_acc3t.cpp' ... 
-INFO-FLOW: Compiling one TU...
-Execute       get_config_compile -pragma_strict_mode 
-INFO-FLOW: Handling source/conv_acc3t.cpp as C++
-Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
-INFO-FLOW: Running: GCC PP 39
-INFO-FLOW: Source preprocessing
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc3t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.err.log 
-WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
-INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
-INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
-Execute       set_directive_top conv_acc4t -name=conv_acc4t 
-INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
-INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
-INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
-INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
-INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 Execute       list_core -type functional_unit 
-Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
-Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
-Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.err.log 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.err.log 
 Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.err.log 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.err.log 
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 INFO-FLOW: compiling source code to llvm bc
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.err.log 
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9
-WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.err.log 
 INFO: [HLS 200-10] Analyzing design file 'source/conv_acc2t.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -272,6 +250,8 @@ INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc2t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc2t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc2t.pp.0.cpp.err.log 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc2t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc2t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc2t.pp.0.cpp.err.log 
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
@@ -283,14 +263,14 @@ WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used i
 WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:28:9
 WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:29:9
 WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc2t.cpp:29:9
-INFO: [HLS 200-10] Analyzing design file 'source/conv_acc1t.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'source/conv_acc3t.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
-INFO-FLOW: Handling source/conv_acc1t.cpp as C++
+INFO-FLOW: Handling source/conv_acc3t.cpp as C++
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc1t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.cpp.err.log 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc3t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.cpp.err.log 
 WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
 INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
 INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
@@ -308,27 +288,78 @@ INFO-FLOW: Setting directive 'TOP' name=conv_acc4t
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
 Execute       list_core -type functional_unit 
-Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
-Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
-Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp std=gnu++14 -target fpga  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc1t.pp.0.cpp.err.log 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc3t.pp.0.cpp.err.log 
 Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc1t.pp.0.cpp.err.log 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc3t.pp.0.cpp.err.log 
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
 INFO-FLOW: compiling source code to llvm bc
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc1t.pp.0.cpp.err.log 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.11 seconds. CPU system time: 0.71 seconds. Elapsed time: 1.63 seconds; current allocated memory: 193.473 MB.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc3t.pp.0.cpp.err.log 
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:149:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:150:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: source/conv_acc3t.cpp:151:9
+INFO: [HLS 200-10] Analyzing design file 'source/conv_acc4t.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling source/conv_acc4t.cpp as C++
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang source/conv_acc4t.cpp -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.cpp.err.log 
+WARNING: [HLS 207-989] '__MAIN_H__' is used as a header guard here, followed by #define of a different macro: source/main.h:1:9
+INFO: [HLS 207-923] '__MAIN_H_' is defined here; did you mean '__MAIN_H__'?: source/main.h:2:9
+INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
+Execute       set_directive_top conv_acc4t -name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang-tidy.conv_acc4t.pp.0.cpp.err.log 
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/xilinx-dataflow-lawyer.conv_acc4t.pp.0.cpp.err.log 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.conv_acc4t.pp.0.cpp.err.log 
+WARNING: [HLS 207-1017] unknown pragma ignored: source/conv_acc4t.cpp:104:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.05 seconds. CPU system time: 0.65 seconds. Elapsed time: 1.54 seconds; current allocated memory: 193.499 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
-Execute       run_link_or_opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc -args  "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.g.bc"  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.g.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+Execute       run_link_or_opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc -args  "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.g.bc" "/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc1t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc2t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc3t.g.bc /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.g.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
 INFO-FLOW: 
 Execute       run_link_or_opt -opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.1.lower.bc -args /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.1.lower.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
@@ -336,14 +367,14 @@ INFO-FLOW:
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.2.m1.bc -args /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.2.m1.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
-Command         ap_eval done; 3.73 sec.
+Command         ap_eval done; 3.5 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 3.73 sec.
+Command       run_link_or_opt done; 3.5 sec.
 Execute       run_link_or_opt -opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.3.fpc.bc -args /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_acc4t -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_acc4t -reflow-float-conversion -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.3.fpc.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
-Command         ap_eval done; 1.26 sec.
+Command         ap_eval done; 1.23 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.26 sec.
+Command       run_link_or_opt done; 1.23 sec.
 Execute       run_link_or_opt -out /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.4.m2.bc -args /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.4.m2.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
 INFO-FLOW: 
@@ -388,7 +419,7 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv_acc4t -mllvm -hls-db-dir -mllvm /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.ld.5.gdce.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.lto.bc > /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/clang.a.g.ld.0.bc.err.log 
-Command       ap_eval done; 0.15 sec.
+Command       ap_eval done; 0.12 sec.
 INFO: [HLS 214-178] Inlining function 'load_in(float*, float (*) [16][16])' into 'process(float*, float*, float (*) [16][16], float (*) [4][3][3], float (*) [14][14])' (source/conv_acc4t.cpp:103:0)
 INFO: [HLS 214-178] Inlining function 'load_w(float*, float (*) [4][3][3])' into 'process(float*, float*, float (*) [16][16], float (*) [4][3][3], float (*) [14][14])' (source/conv_acc4t.cpp:103:0)
 INFO: [HLS 214-178] Inlining function 'process(float*, float*, float (*) [16][16], float (*) [4][3][3], float (*) [14][14])' into 'conv_acc4t(float*, float*, float*)' (source/conv_acc4t.cpp:111:0)
@@ -401,21 +432,20 @@ INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 32 in loop
 INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 32 in loop 'WDATA_LOAD'(source/conv_acc4t.cpp:38:5) has been inferred on port 'W_ddr' (source/conv_acc4t.cpp:38:5)
 INFO: [HLS 214-115] Multiple burst writes of length 784 and bit width 32 in loop 'OUTDATA_WRITE'(source/conv_acc4t.cpp:55:5) has been inferred on port 'Out_ddr' (source/conv_acc4t.cpp:55:5)
 INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.03 seconds. CPU system time: 0.45 seconds. Elapsed time: 5.72 seconds; current allocated memory: 195.739 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.740 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.97 seconds. CPU system time: 0.41 seconds. Elapsed time: 5.42 seconds; current allocated memory: 195.765 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.766 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv_acc4t -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.0.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 197.164 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 197.189 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.1.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.11 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.2.prechk.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 196.424 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 196.450 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.g.1.bc to /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -465,11 +495,11 @@ WARNING: [ANALYSIS 214-31] The program may have out of bound access of array var
 WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'w[3][2]' in function 'conv_acc4t' (source/conv_acc4t.cpp:46:21).
 WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'w[3][3]' in function 'conv_acc4t' (source/conv_acc4t.cpp:46:21).
 WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'w[3][3]' in function 'conv_acc4t' (source/conv_acc4t.cpp:46:21).
-Command         transform done; 4.93 sec.
+Command         transform done; 5.13 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.o.1.tmp.bc -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform done; 0.28 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5.05 seconds. CPU system time: 0.04 seconds. Elapsed time: 5.21 seconds; current allocated memory: 221.291 MB.
+Command         transform done; 0.29 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5.27 seconds. CPU system time: 0.08 seconds. Elapsed time: 5.43 seconds; current allocated memory: 221.314 MB.
 Execute         get_config_compile -enable_loop_extract 
 Execute         get_config_compile -disable_auto_rewind 
 Execute         get_config_compile -enable_auto_rewind 
@@ -485,11 +515,11 @@ INFO: [XFORM 203-541] Flattening a loop nest 'OUTDATA_WRITE' (source/conv_acc4t.
 INFO: [HLS 200-472] Inferring partial write operation for 'out' (source/conv_acc4t.cpp:89:44)
 INFO: [HLS 200-472] Inferring partial write operation for 'in.0' (source/conv_acc4t.cpp:30:39)
 INFO: [HLS 200-472] Inferring partial write operation for 'w[0][0]' (source/conv_acc4t.cpp:46:49)
-Command         transform done; 1.26 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.22 seconds. CPU system time: 0 seconds. Elapsed time: 1.27 seconds; current allocated memory: 239.787 MB.
+Command         transform done; 1.35 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.35 seconds; current allocated memory: 239.812 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 6.7 sec.
-Command     elaborate done; 14.06 sec.
+Command       opt_and_import_c done; 6.97 sec.
+Command     elaborate done; 13.93 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -526,14 +556,14 @@ INFO: [SCHED 204-61] Pipelining loop 'Output_row'.
 WARNING: [HLS 200-885] Unable to schedule 'load' operation ('in_0_load_2', source/conv_acc4t.cpp:89) on array 'in_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'in_0'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 24, Depth = 159, loop 'Output_row'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 64.54 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 64.54 seconds. CPU system time: 0.09 seconds. Elapsed time: 64.64 seconds; current allocated memory: 266.548 MB.
+Command       schedule done; 67.98 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 67.92 seconds. CPU system time: 0.11 seconds. Elapsed time: 68.1 seconds; current allocated memory: 266.557 MB.
 Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 17.86 sec.
+Command       syn_report done; 18.5 sec.
 Execute       db_write -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.sched.adb -f 
-Command       db_write done; 0.31 sec.
+Command       db_write done; 0.33 sec.
 INFO-FLOW: Finish scheduling convolution.
 Execute       set_default_model convolution 
 Execute       bind -model convolution 
@@ -542,14 +572,14 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 5.6 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 23.65 seconds. CPU system time: 0.11 seconds. Elapsed time: 23.77 seconds; current allocated memory: 305.576 MB.
+Command       bind done; 5.97 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 24.71 seconds. CPU system time: 0.08 seconds. Elapsed time: 24.8 seconds; current allocated memory: 305.645 MB.
 Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 18.18 sec.
+Command       syn_report done; 18.9 sec.
 Execute       db_write -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.bind.adb -f 
-Command       db_write done; 0.42 sec.
+Command       db_write done; 0.45 sec.
 INFO-FLOW: Finish binding convolution.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_acc4t' 
@@ -565,7 +595,7 @@ INFO: [SCHED 204-61] Pipelining loop 'OUTDATA_WRITE_VITIS_LOOP_57_1_VITIS_LOOP_5
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'OUTDATA_WRITE_VITIS_LOOP_57_1_VITIS_LOOP_59_2'
 INFO: [SCHED 204-11] Finished scheduling.
 Command       schedule done; 0.27 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 18.73 seconds. CPU system time: 0.12 seconds. Elapsed time: 18.87 seconds; current allocated memory: 306.747 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 19.45 seconds. CPU system time: 0.14 seconds. Elapsed time: 19.63 seconds; current allocated memory: 306.757 MB.
 Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -579,12 +609,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.57 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0 seconds. Elapsed time: 0.76 seconds; current allocated memory: 307.832 MB.
+Command       bind done; 0.6 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.77 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.79 seconds; current allocated memory: 307.856 MB.
 Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 1.55 sec.
+Command       syn_report done; 1.64 sec.
 Execute       db_write -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.bind.adb -f 
 INFO-FLOW: Finish binding conv_acc4t.
 Execute       get_model_list conv_acc4t -filter all-wo-channel 
@@ -604,27 +634,27 @@ INFO: [RTGEN 206-104] Estimated max fanout for 'convolution' is 12032 from HDL e
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 84 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 84 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution'.
-Command       create_rtl_model done; 7.41 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8.93 seconds. CPU system time: 0.04 seconds. Elapsed time: 8.99 seconds; current allocated memory: 332.468 MB.
+Command       create_rtl_model done; 8.08 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 9.71 seconds. CPU system time: 0.04 seconds. Elapsed time: 9.75 seconds; current allocated memory: 332.522 MB.
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
 Execute       gen_rtl convolution -style xilinx -f -lang vhdl -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/vhdl/conv_acc4t_convolution 
 Command       gen_rtl done; 0.11 sec.
 Execute       gen_rtl convolution -style xilinx -f -lang vlog -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/verilog/conv_acc4t_convolution 
-Command       gen_rtl done; 0.22 sec.
+Command       gen_rtl done; 0.23 sec.
 Execute       syn_report -csynth -model convolution -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/report/convolution_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 4.24 sec.
+Command       syn_report done; 4.45 sec.
 Execute       syn_report -rtlxml -model convolution -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/report/convolution_csynth.xml 
 Execute         get_solution -flow_target
 Execute           get_solution -flow_target 
-Command       syn_report done; 2.08 sec.
+Command       syn_report done; 2.24 sec.
 Execute       syn_report -verbosereport -model convolution -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 19.93 sec.
+Command       syn_report done; 21.12 sec.
 Execute       db_write -model convolution -f -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution.adb 
-Command       db_write done; 2.56 sec.
+Command       db_write done; 2.66 sec.
 Execute       gen_tb_info convolution -p /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/convolution 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_acc4t' 
@@ -640,30 +670,31 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'conv_acc4t/Out_ddr' to 'm_
 INFO: [RTGEN 206-500] Setting interface mode on function 'conv_acc4t' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_acc4t'.
-Command       create_rtl_model done; 0.22 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 30.29 seconds. CPU system time: 0.23 seconds. Elapsed time: 30.66 seconds; current allocated memory: 422.019 MB.
+Command       create_rtl_model done; 0.23 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 31.9 seconds. CPU system time: 0.28 seconds. Elapsed time: 32.27 seconds; current allocated memory: 422.045 MB.
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv_acc4t -istop -style xilinx -f -lang vhdl -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/vhdl/conv_acc4t 
-Command       gen_rtl done; 0.22 sec.
+Command       gen_rtl done; 0.23 sec.
 Execute       gen_rtl conv_acc4t -istop -style xilinx -f -lang vlog -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/verilog/conv_acc4t 
 Command       gen_rtl done; 0.11 sec.
 Execute       syn_report -csynth -model conv_acc4t -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/report/conv_acc4t_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.13 sec.
+Command       syn_report done; 0.12 sec.
 Execute       syn_report -rtlxml -model conv_acc4t -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/report/conv_acc4t_csynth.xml 
 Execute         get_solution -flow_target
 Execute           get_solution -flow_target 
+Command       syn_report done; 0.11 sec.
 Execute       syn_report -verbosereport -model conv_acc4t -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 1.67 sec.
+Command       syn_report done; 1.71 sec.
 Execute       db_write -model conv_acc4t -f -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.adb 
-Command       db_write done; 0.13 sec.
+Command       db_write done; 0.14 sec.
 Execute       gen_tb_info conv_acc4t -p /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t 
 Execute       export_constraint_db -f -tool general -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.constraint.tcl 
 Execute       syn_report -designview -model conv_acc4t -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.design.xml 
-Command       syn_report done; 4.45 sec.
+Command       syn_report done; 4.61 sec.
 Execute       syn_report -csynthDesign -model conv_acc4t -o /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/syn/report/csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -753,7 +784,7 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.12 sec.
+Command       ap_source done; 0.14 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -780,7 +811,7 @@ Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
-Command       ap_source done; 0.11 sec.
+Command       ap_source done; 0.13 sec.
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.compgen.tcl 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
@@ -799,7 +830,7 @@ Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
-Command       ap_source done; 0.33 sec.
+Command       ap_source done; 0.41 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4
 Execute       get_solution -flow_target 
 Execute       get_config_export -xo 
@@ -825,7 +856,7 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.12 sec.
+Command       ap_source done; 0.13 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -854,6 +885,7 @@ Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.11 sec.
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
@@ -873,7 +905,7 @@ Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
-Command       ap_source done; 0.18 sec.
+Command       ap_source done; 0.25 sec.
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
 Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
@@ -922,7 +954,7 @@ Execute       get_config_debug -directory
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/impl/misc/conv_acc4t_ap_fadd_2_full_dsp_32_ip.tcl 
 Execute       source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/impl/misc/conv_acc4t_ap_fmul_1_max_dsp_32_ip.tcl 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 10.22 seconds. CPU system time: 0.12 seconds. Elapsed time: 10.36 seconds; current allocated memory: 436.541 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 10.87 seconds. CPU system time: 0.16 seconds. Elapsed time: 11.04 seconds; current allocated memory: 436.567 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for conv_acc4t.
 INFO: [VLOG 209-307] Generating Verilog RTL for conv_acc4t.
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.design.xml
@@ -933,9 +965,248 @@ INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
 Execute       syn_report -model conv_acc4t -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 136.96 MHz
-Command     autosyn done; 158.25 sec.
-Command   csynth_design done; 172.32 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 169.94 seconds. CPU system time: 1.93 seconds. Elapsed time: 172.32 seconds; current allocated memory: 437.792 MB.
-Command ap_source done; 175.28 sec.
+Command     autosyn done; 166.61 sec.
+Command   csynth_design done; 180.55 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 178.32 seconds. CPU system time: 1.98 seconds. Elapsed time: 180.55 seconds; current allocated memory: 437.908 MB.
+Command ap_source done; 183.55 sec.
 Execute cleanup_all 
-Command cleanup_all done; 0.14 sec.
+Command cleanup_all done; 0.17 sec.
+INFO-FLOW: Workspace /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4 opened at Wed Mar 03 18:12:02 CST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.23 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_library_info -library zynquplus_medium 
+Execute         config_library_info -family zynquplus 
+Execute         config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.14 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.2 sec.
+Command       add_library done; 0.42 sec.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.76 sec.
+Execute     ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 3.11 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_library_info -library zynquplus_medium 
+Execute       config_library_info -family zynquplus 
+Execute       config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+Command     add_library done; 0.32 sec.
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.44 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   source ./conv_acc/solution4/directives.tcl 
+Execute     set_directive_top -name conv_acc4t conv_acc4t 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_acc4t conv_acc4t 
+INFO-FLOW: Setting directive 'TOP' name=conv_acc4t 
+Execute   cosim_design 
+INFO: [HLS 200-1510] Running: cosim_design 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: /home/yobuwen/hello-one/HLS_Convolution/testbench/testbench.c /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/testbench.c_pre.c
+Execute     clang_tidy xilinx-tb-process /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/testbench.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/testbench.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: /home/yobuwen/hello-one/HLS_Convolution/source/conv_acc1t.cpp /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc1t.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc1t.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc1t.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: /home/yobuwen/hello-one/HLS_Convolution/source/conv_acc2t.cpp /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc2t.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc2t.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc2t.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: /home/yobuwen/hello-one/HLS_Convolution/source/conv_acc3t.cpp /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc3t.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc3t.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc3t.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: /home/yobuwen/hello-one/HLS_Convolution/source/conv_acc4t.cpp /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc4t.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc4t.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc4t.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/.autopilot/db/conv_acc4t.tbgen.tcl 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+ERROR: [COSIM 212-329] Aborting co-simulation: C simulation failed, no 'main' function.
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+Command   cosim_design done; error code: 2; 10.09 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 6.5 seconds. CPU system time: 0.98 seconds. Elapsed time: 10.09 seconds; current allocated memory: 195.764 MB.
+Command ap_source done; error code: 1; 13.67 sec.
+Execute cleanup_all 

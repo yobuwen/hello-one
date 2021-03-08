@@ -61,6 +61,7 @@
       "set_directive_top conv_acc4t -name conv_acc4t",
       "set_directive_top conv_acc4t -name conv_acc4t",
       "set_directive_top conv_acc4t -name conv_acc4t",
+      "set_directive_top conv_acc4t -name conv_acc4t",
       "set_directive_top conv_acc4t -name conv_acc4t"
     ],
     "ProfileOption": "0",
@@ -90,10 +91,10 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/source\/conv_acc4t.cpp",
-      "..\/..\/source\/conv_acc3t.cpp",
+      "..\/..\/source\/conv_acc1t.cpp",
       "..\/..\/source\/conv_acc2t.cpp",
-      "..\/..\/source\/conv_acc1t.cpp"
+      "..\/..\/source\/conv_acc3t.cpp",
+      "..\/..\/source\/conv_acc4t.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/conv_acc4t_convolution.vhd",
@@ -1175,7 +1176,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-03-02 23:26:35 CST",
+    "Time": "2021-03-03 18:11:44 CST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

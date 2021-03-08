@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="systolic_array.cpp" path="/home/yobuwen/hello-one/SYSTOLIC_ARRAY/source/systolic_array.cpp"/>
+    <originFiles name="systolic_array.h" path="/home/yobuwen/hello-one/SYSTOLIC_ARRAY/source/systolic_array.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

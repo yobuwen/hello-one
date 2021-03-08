@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="systolic_array.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_systolic_array_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array//AESL_inst_systolic_array_activity">
+         <obj_property name="label">AESL_inst_systolic_array_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_systolic_array_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_systolic_array_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array//AESL_inst_systolic_array_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array//AESL_inst_systolic_array_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array//AESL_inst_systolic_array_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/grp_pe_array_fu_208_activity">
+            <obj_property name="label">grp_pe_array_fu_208_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_pe_array_fu_208_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pe_array_fu_208_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/grp_pe_array_fu_208_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/grp_pe_array_fu_208_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/grp_pe_array_fu_208_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/load_a13_U0_activity">
+               <obj_property name="label">load_a13_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_a13_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_a13_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/load_a13_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/load_a13_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/load_a13_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/load_a14_U0_activity">
+               <obj_property name="label">load_a14_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_a14_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_a14_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/load_a14_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/load_a14_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/load_a14_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/load_a15_U0_activity">
+               <obj_property name="label">load_a15_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_a15_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_a15_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/load_a15_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/load_a15_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/load_a15_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/load_b16_U0_activity">
+               <obj_property name="label">load_b16_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_b16_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_b16_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/load_b16_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/load_b16_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/load_b16_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/load_b17_U0_activity">
+               <obj_property name="label">load_b17_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_b17_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_b17_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/load_b17_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/load_b17_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/load_b17_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/load_b18_U0_activity">
+               <obj_property name="label">load_b18_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load_b18_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load_b18_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/load_b18_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/load_b18_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/load_b18_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/PE19_U0_activity">
+               <obj_property name="label">PE19_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE19_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE19_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/PE19_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/PE19_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/PE19_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/PE20_U0_activity">
+               <obj_property name="label">PE20_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE20_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE20_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/PE20_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/PE20_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/PE20_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/PE21_U0_activity">
+               <obj_property name="label">PE21_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE21_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE21_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/PE21_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/PE21_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/PE21_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/PE22_U0_activity">
+               <obj_property name="label">PE22_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE22_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE22_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/PE22_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/PE22_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/PE22_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/PE23_U0_activity">
+               <obj_property name="label">PE23_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE23_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE23_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/PE23_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/PE23_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/PE23_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/PE24_U0_activity">
+               <obj_property name="label">PE24_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE24_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE24_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/PE24_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/PE24_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/PE24_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/PE25_U0_activity">
+               <obj_property name="label">PE25_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE25_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE25_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/PE25_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/PE25_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/PE25_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/PE26_U0_activity">
+               <obj_property name="label">PE26_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE26_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE26_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/PE26_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/PE26_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/PE26_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/PE27_U0_activity">
+               <obj_property name="label">PE27_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">PE27_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">PE27_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/PE27_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/PE27_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/PE27_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/drain_a28_U0_activity">
+               <obj_property name="label">drain_a28_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_a28_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_a28_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/drain_a28_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/drain_a28_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/drain_a28_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/drain_a29_U0_activity">
+               <obj_property name="label">drain_a29_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_a29_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_a29_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/drain_a29_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/drain_a29_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/drain_a29_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/drain_a30_U0_activity">
+               <obj_property name="label">drain_a30_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_a30_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_a30_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/drain_a30_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/drain_a30_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/drain_a30_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/drain_b31_U0_activity">
+               <obj_property name="label">drain_b31_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_b31_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_b31_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/drain_b31_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/drain_b31_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/drain_b31_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/drain_b32_U0_activity">
+               <obj_property name="label">drain_b32_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_b32_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_b32_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/drain_b32_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/drain_b32_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/drain_b32_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/drain_b33_U0_activity">
+               <obj_property name="label">drain_b33_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">drain_b33_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">drain_b33_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/drain_b33_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/drain_b33_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/drain_b33_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array//AESL_inst_systolic_array_activity">
+      <obj_property name="ElementShortName">AESL_inst_systolic_array_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_systolic_array_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_systolic_array_group">
+      <obj_property name="label">AESL_inst_systolic_array</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/grp_pe_array_fu_208_activity">
+         <obj_property name="ElementShortName">grp_pe_array_fu_208_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pe_array_fu_208_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_systolic_array_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_pe_array_fu_208_group">
+         <obj_property name="label">grp_pe_array_fu_208</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/load_a13_U0_activity">
+            <obj_property name="ElementShortName">load_a13_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_a13_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/load_a14_U0_activity">
+            <obj_property name="ElementShortName">load_a14_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_a14_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/load_a15_U0_activity">
+            <obj_property name="ElementShortName">load_a15_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_a15_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/load_b16_U0_activity">
+            <obj_property name="ElementShortName">load_b16_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_b16_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/load_b17_U0_activity">
+            <obj_property name="ElementShortName">load_b17_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_b17_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/load_b18_U0_activity">
+            <obj_property name="ElementShortName">load_b18_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_b18_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/PE19_U0_activity">
+            <obj_property name="ElementShortName">PE19_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE19_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/PE20_U0_activity">
+            <obj_property name="ElementShortName">PE20_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE20_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/PE21_U0_activity">
+            <obj_property name="ElementShortName">PE21_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE21_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/PE22_U0_activity">
+            <obj_property name="ElementShortName">PE22_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE22_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/PE23_U0_activity">
+            <obj_property name="ElementShortName">PE23_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE23_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/PE24_U0_activity">
+            <obj_property name="ElementShortName">PE24_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE24_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/PE25_U0_activity">
+            <obj_property name="ElementShortName">PE25_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE25_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/PE26_U0_activity">
+            <obj_property name="ElementShortName">PE26_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE26_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/PE27_U0_activity">
+            <obj_property name="ElementShortName">PE27_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">PE27_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/drain_a28_U0_activity">
+            <obj_property name="ElementShortName">drain_a28_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_a28_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/drain_a29_U0_activity">
+            <obj_property name="ElementShortName">drain_a29_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_a29_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/drain_a30_U0_activity">
+            <obj_property name="ElementShortName">drain_a30_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_a30_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/drain_b31_U0_activity">
+            <obj_property name="ElementShortName">drain_b31_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_b31_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/drain_b32_U0_activity">
+            <obj_property name="ElementShortName">drain_b32_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_b32_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/drain_b33_U0_activity">
+            <obj_property name="ElementShortName">drain_b33_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">drain_b33_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_pe_array_fu_208_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_a13_U0_group">
+            <obj_property name="label">load_a13_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_a13_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_0_group">
+                  <obj_property name="label">A_0(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_0_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_0_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_0_ce0">
+                     <obj_property name="ElementShortName">A_0_ce0</obj_property>
+                     <obj_property name="ObjectShortName">A_0_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a13_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a13_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt_group">
+                  <obj_property name="label">A_nxt(A_inter_0_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_nxt_blk_n">
+                     <obj_property name="ElementShortName">A_nxt_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_nxt_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_nxt_full_n">
+                     <obj_property name="ElementShortName">A_nxt_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a13_U0/A_nxt_write">
+                     <obj_property name="ElementShortName">A_nxt_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_a14_U0_group">
+            <obj_property name="label">load_a14_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_a14_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_1_group">
+                  <obj_property name="label">A_1(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_1_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_1_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_1_ce0">
+                     <obj_property name="ElementShortName">A_1_ce0</obj_property>
+                     <obj_property name="ObjectShortName">A_1_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a14_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a14_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt14_group">
+                  <obj_property name="label">A_nxt14(A_inter_1_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_nxt14_blk_n">
+                     <obj_property name="ElementShortName">A_nxt14_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt14_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_nxt14_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_nxt14_full_n">
+                     <obj_property name="ElementShortName">A_nxt14_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt14_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a14_U0/A_nxt14_write">
+                     <obj_property name="ElementShortName">A_nxt14_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt14_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_a15_U0_group">
+            <obj_property name="label">load_a15_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_a15_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_2_group">
+                  <obj_property name="label">A_2(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_2_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_2_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_2_ce0">
+                     <obj_property name="ElementShortName">A_2_ce0</obj_property>
+                     <obj_property name="ObjectShortName">A_2_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a15_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_a15_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt28_group">
+                  <obj_property name="label">A_nxt28(A_inter_2_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_nxt28_blk_n">
+                     <obj_property name="ElementShortName">A_nxt28_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt28_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_nxt28_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_nxt28_full_n">
+                     <obj_property name="ElementShortName">A_nxt28_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt28_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_a15_U0/A_nxt28_write">
+                     <obj_property name="ElementShortName">A_nxt28_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt28_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_b16_U0_group">
+            <obj_property name="label">load_b16_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_b16_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b16_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b16_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_nxt_group">
+                  <obj_property name="label">B_nxt(B_inter_0_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/B_nxt_blk_n">
+                     <obj_property name="ElementShortName">B_nxt_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/B_nxt_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/B_nxt_full_n">
+                     <obj_property name="ElementShortName">B_nxt_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b16_U0/B_nxt_write">
+                     <obj_property name="ElementShortName">B_nxt_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_b17_U0_group">
+            <obj_property name="label">load_b17_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_b17_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b17_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b17_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_nxt1_group">
+                  <obj_property name="label">B_nxt1(B_inter_0_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/B_nxt1_blk_n">
+                     <obj_property name="ElementShortName">B_nxt1_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/B_nxt1_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/B_nxt1_full_n">
+                     <obj_property name="ElementShortName">B_nxt1_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b17_U0/B_nxt1_write">
+                     <obj_property name="ElementShortName">B_nxt1_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_b18_U0_group">
+            <obj_property name="label">load_b18_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load_b18_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b18_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load_b18_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_nxt2_group">
+                  <obj_property name="label">B_nxt2(B_inter_0_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/B_nxt2_blk_n">
+                     <obj_property name="ElementShortName">B_nxt2_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt2_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/B_nxt2_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/B_nxt2_full_n">
+                     <obj_property name="ElementShortName">B_nxt2_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt2_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/load_b18_U0/B_nxt2_write">
+                     <obj_property name="ElementShortName">B_nxt2_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt2_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE19_U0_group">
+            <obj_property name="label">PE19_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE19_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre_group">
+                  <obj_property name="label">A_pre(A_inter_0_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_pre_blk_n">
+                     <obj_property name="ElementShortName">A_pre_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_pre_dout">
+                     <obj_property name="ElementShortName">A_pre_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_pre_empty_n">
+                     <obj_property name="ElementShortName">A_pre_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_pre_read">
+                     <obj_property name="ElementShortName">A_pre_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre_group">
+                  <obj_property name="label">B_pre(B_inter_0_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_pre_blk_n">
+                     <obj_property name="ElementShortName">B_pre_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_pre_dout">
+                     <obj_property name="ElementShortName">B_pre_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_pre_empty_n">
+                     <obj_property name="ElementShortName">B_pre_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_pre_read">
+                     <obj_property name="ElementShortName">B_pre_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE19_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE19_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt20_group">
+                  <obj_property name="label">A_nxt20(A_inter_0_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_nxt20_blk_n">
+                     <obj_property name="ElementShortName">A_nxt20_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt20_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_nxt20_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_nxt20_full_n">
+                     <obj_property name="ElementShortName">A_nxt20_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt20_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/A_nxt20_write">
+                     <obj_property name="ElementShortName">A_nxt20_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt20_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt8_group">
+                  <obj_property name="label">B_nxt8(B_inter_1_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_nxt8_blk_n">
+                     <obj_property name="ElementShortName">B_nxt8_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt8_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_nxt8_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_nxt8_full_n">
+                     <obj_property name="ElementShortName">B_nxt8_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt8_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE19_U0/B_nxt8_write">
+                     <obj_property name="ElementShortName">B_nxt8_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt8_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE20_U0_group">
+            <obj_property name="label">PE20_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE20_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre1_group">
+                  <obj_property name="label">A_pre1(A_inter_0_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_pre1_blk_n">
+                     <obj_property name="ElementShortName">A_pre1_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre1_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_pre1_dout">
+                     <obj_property name="ElementShortName">A_pre1_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre1_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_pre1_empty_n">
+                     <obj_property name="ElementShortName">A_pre1_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre1_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_pre1_read">
+                     <obj_property name="ElementShortName">A_pre1_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre1_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre12_group">
+                  <obj_property name="label">B_pre12(B_inter_0_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_pre12_blk_n">
+                     <obj_property name="ElementShortName">B_pre12_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre12_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_pre12_dout">
+                     <obj_property name="ElementShortName">B_pre12_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre12_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_pre12_empty_n">
+                     <obj_property name="ElementShortName">B_pre12_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre12_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_pre12_read">
+                     <obj_property name="ElementShortName">B_pre12_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre12_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE20_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE20_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt21_group">
+                  <obj_property name="label">A_nxt21(A_inter_0_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_nxt21_blk_n">
+                     <obj_property name="ElementShortName">A_nxt21_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt21_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_nxt21_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_nxt21_full_n">
+                     <obj_property name="ElementShortName">A_nxt21_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt21_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/A_nxt21_write">
+                     <obj_property name="ElementShortName">A_nxt21_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt21_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt831_group">
+                  <obj_property name="label">B_nxt831(B_inter_1_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_nxt831_blk_n">
+                     <obj_property name="ElementShortName">B_nxt831_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt831_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_nxt831_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_nxt831_full_n">
+                     <obj_property name="ElementShortName">B_nxt831_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt831_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE20_U0/B_nxt831_write">
+                     <obj_property name="ElementShortName">B_nxt831_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt831_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE21_U0_group">
+            <obj_property name="label">PE21_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE21_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre2_group">
+                  <obj_property name="label">A_pre2(A_inter_0_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_pre2_blk_n">
+                     <obj_property name="ElementShortName">A_pre2_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre2_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_pre2_dout">
+                     <obj_property name="ElementShortName">A_pre2_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre2_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_pre2_empty_n">
+                     <obj_property name="ElementShortName">A_pre2_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre2_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_pre2_read">
+                     <obj_property name="ElementShortName">A_pre2_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre2_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre13_group">
+                  <obj_property name="label">B_pre13(B_inter_0_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_pre13_blk_n">
+                     <obj_property name="ElementShortName">B_pre13_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre13_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_pre13_dout">
+                     <obj_property name="ElementShortName">B_pre13_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre13_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_pre13_empty_n">
+                     <obj_property name="ElementShortName">B_pre13_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre13_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_pre13_read">
+                     <obj_property name="ElementShortName">B_pre13_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre13_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE21_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE21_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt22_group">
+                  <obj_property name="label">A_nxt22(A_inter_0_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_nxt22_blk_n">
+                     <obj_property name="ElementShortName">A_nxt22_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt22_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_nxt22_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_nxt22_full_n">
+                     <obj_property name="ElementShortName">A_nxt22_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt22_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/A_nxt22_write">
+                     <obj_property name="ElementShortName">A_nxt22_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt22_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt832_group">
+                  <obj_property name="label">B_nxt832(B_inter_1_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_nxt832_blk_n">
+                     <obj_property name="ElementShortName">B_nxt832_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt832_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_nxt832_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_nxt832_full_n">
+                     <obj_property name="ElementShortName">B_nxt832_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt832_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE21_U0/B_nxt832_write">
+                     <obj_property name="ElementShortName">B_nxt832_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt832_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE22_U0_group">
+            <obj_property name="label">PE22_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE22_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre14_group">
+                  <obj_property name="label">A_pre14(A_inter_1_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_pre14_blk_n">
+                     <obj_property name="ElementShortName">A_pre14_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre14_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_pre14_dout">
+                     <obj_property name="ElementShortName">A_pre14_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre14_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_pre14_empty_n">
+                     <obj_property name="ElementShortName">A_pre14_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre14_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_pre14_read">
+                     <obj_property name="ElementShortName">A_pre14_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre14_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre3_group">
+                  <obj_property name="label">B_pre3(B_inter_1_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_pre3_blk_n">
+                     <obj_property name="ElementShortName">B_pre3_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre3_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_pre3_dout">
+                     <obj_property name="ElementShortName">B_pre3_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre3_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_pre3_empty_n">
+                     <obj_property name="ElementShortName">B_pre3_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre3_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_pre3_read">
+                     <obj_property name="ElementShortName">B_pre3_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre3_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE22_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE22_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt623_group">
+                  <obj_property name="label">A_nxt623(A_inter_1_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_nxt623_blk_n">
+                     <obj_property name="ElementShortName">A_nxt623_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt623_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_nxt623_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_nxt623_full_n">
+                     <obj_property name="ElementShortName">A_nxt623_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt623_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/A_nxt623_write">
+                     <obj_property name="ElementShortName">A_nxt623_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt623_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt9_group">
+                  <obj_property name="label">B_nxt9(B_inter_2_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_nxt9_blk_n">
+                     <obj_property name="ElementShortName">B_nxt9_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt9_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_nxt9_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_nxt9_full_n">
+                     <obj_property name="ElementShortName">B_nxt9_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt9_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE22_U0/B_nxt9_write">
+                     <obj_property name="ElementShortName">B_nxt9_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt9_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE23_U0_group">
+            <obj_property name="label">PE23_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE23_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre15_group">
+                  <obj_property name="label">A_pre15(A_inter_1_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_pre15_blk_n">
+                     <obj_property name="ElementShortName">A_pre15_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre15_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_pre15_dout">
+                     <obj_property name="ElementShortName">A_pre15_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre15_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_pre15_empty_n">
+                     <obj_property name="ElementShortName">A_pre15_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre15_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_pre15_read">
+                     <obj_property name="ElementShortName">A_pre15_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre15_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre314_group">
+                  <obj_property name="label">B_pre314(B_inter_1_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_pre314_blk_n">
+                     <obj_property name="ElementShortName">B_pre314_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre314_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_pre314_dout">
+                     <obj_property name="ElementShortName">B_pre314_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre314_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_pre314_empty_n">
+                     <obj_property name="ElementShortName">B_pre314_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre314_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_pre314_read">
+                     <obj_property name="ElementShortName">B_pre314_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre314_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE23_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE23_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt624_group">
+                  <obj_property name="label">A_nxt624(A_inter_1_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_nxt624_blk_n">
+                     <obj_property name="ElementShortName">A_nxt624_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt624_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_nxt624_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_nxt624_full_n">
+                     <obj_property name="ElementShortName">A_nxt624_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt624_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/A_nxt624_write">
+                     <obj_property name="ElementShortName">A_nxt624_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt624_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt933_group">
+                  <obj_property name="label">B_nxt933(B_inter_2_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_nxt933_blk_n">
+                     <obj_property name="ElementShortName">B_nxt933_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt933_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_nxt933_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_nxt933_full_n">
+                     <obj_property name="ElementShortName">B_nxt933_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt933_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE23_U0/B_nxt933_write">
+                     <obj_property name="ElementShortName">B_nxt933_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt933_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE24_U0_group">
+            <obj_property name="label">PE24_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE24_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre16_group">
+                  <obj_property name="label">A_pre16(A_inter_1_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_pre16_blk_n">
+                     <obj_property name="ElementShortName">A_pre16_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre16_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_pre16_dout">
+                     <obj_property name="ElementShortName">A_pre16_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre16_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_pre16_empty_n">
+                     <obj_property name="ElementShortName">A_pre16_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre16_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_pre16_read">
+                     <obj_property name="ElementShortName">A_pre16_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre16_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre315_group">
+                  <obj_property name="label">B_pre315(B_inter_1_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_pre315_blk_n">
+                     <obj_property name="ElementShortName">B_pre315_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre315_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_pre315_dout">
+                     <obj_property name="ElementShortName">B_pre315_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre315_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_pre315_empty_n">
+                     <obj_property name="ElementShortName">B_pre315_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre315_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_pre315_read">
+                     <obj_property name="ElementShortName">B_pre315_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre315_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE24_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE24_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt625_group">
+                  <obj_property name="label">A_nxt625(A_inter_1_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_nxt625_blk_n">
+                     <obj_property name="ElementShortName">A_nxt625_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt625_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_nxt625_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_nxt625_full_n">
+                     <obj_property name="ElementShortName">A_nxt625_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt625_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/A_nxt625_write">
+                     <obj_property name="ElementShortName">A_nxt625_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt625_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt934_group">
+                  <obj_property name="label">B_nxt934(B_inter_2_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_nxt934_blk_n">
+                     <obj_property name="ElementShortName">B_nxt934_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt934_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_nxt934_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_nxt934_full_n">
+                     <obj_property name="ElementShortName">B_nxt934_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt934_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE24_U0/B_nxt934_write">
+                     <obj_property name="ElementShortName">B_nxt934_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt934_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE25_U0_group">
+            <obj_property name="label">PE25_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE25_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre28_group">
+                  <obj_property name="label">A_pre28(A_inter_2_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_pre28_blk_n">
+                     <obj_property name="ElementShortName">A_pre28_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre28_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_pre28_dout">
+                     <obj_property name="ElementShortName">A_pre28_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre28_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_pre28_empty_n">
+                     <obj_property name="ElementShortName">A_pre28_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre28_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_pre28_read">
+                     <obj_property name="ElementShortName">A_pre28_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre28_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre4_group">
+                  <obj_property name="label">B_pre4(B_inter_2_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_pre4_blk_n">
+                     <obj_property name="ElementShortName">B_pre4_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre4_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_pre4_dout">
+                     <obj_property name="ElementShortName">B_pre4_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre4_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_pre4_empty_n">
+                     <obj_property name="ElementShortName">B_pre4_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre4_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_pre4_read">
+                     <obj_property name="ElementShortName">B_pre4_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre4_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE25_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE25_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt726_group">
+                  <obj_property name="label">A_nxt726(A_inter_2_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_nxt726_blk_n">
+                     <obj_property name="ElementShortName">A_nxt726_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt726_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_nxt726_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_nxt726_full_n">
+                     <obj_property name="ElementShortName">A_nxt726_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt726_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/A_nxt726_write">
+                     <obj_property name="ElementShortName">A_nxt726_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt726_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt10_group">
+                  <obj_property name="label">B_nxt10(B_inter_3_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_nxt10_blk_n">
+                     <obj_property name="ElementShortName">B_nxt10_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt10_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_nxt10_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_nxt10_full_n">
+                     <obj_property name="ElementShortName">B_nxt10_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt10_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE25_U0/B_nxt10_write">
+                     <obj_property name="ElementShortName">B_nxt10_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt10_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE26_U0_group">
+            <obj_property name="label">PE26_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE26_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre29_group">
+                  <obj_property name="label">A_pre29(A_inter_2_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_pre29_blk_n">
+                     <obj_property name="ElementShortName">A_pre29_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre29_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_pre29_dout">
+                     <obj_property name="ElementShortName">A_pre29_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre29_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_pre29_empty_n">
+                     <obj_property name="ElementShortName">A_pre29_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre29_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_pre29_read">
+                     <obj_property name="ElementShortName">A_pre29_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre29_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre416_group">
+                  <obj_property name="label">B_pre416(B_inter_2_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_pre416_blk_n">
+                     <obj_property name="ElementShortName">B_pre416_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre416_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_pre416_dout">
+                     <obj_property name="ElementShortName">B_pre416_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre416_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_pre416_empty_n">
+                     <obj_property name="ElementShortName">B_pre416_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre416_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_pre416_read">
+                     <obj_property name="ElementShortName">B_pre416_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre416_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE26_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE26_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt727_group">
+                  <obj_property name="label">A_nxt727(A_inter_2_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_nxt727_blk_n">
+                     <obj_property name="ElementShortName">A_nxt727_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt727_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_nxt727_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_nxt727_full_n">
+                     <obj_property name="ElementShortName">A_nxt727_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt727_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/A_nxt727_write">
+                     <obj_property name="ElementShortName">A_nxt727_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt727_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt1035_group">
+                  <obj_property name="label">B_nxt1035(B_inter_3_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_nxt1035_blk_n">
+                     <obj_property name="ElementShortName">B_nxt1035_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1035_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_nxt1035_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_nxt1035_full_n">
+                     <obj_property name="ElementShortName">B_nxt1035_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1035_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE26_U0/B_nxt1035_write">
+                     <obj_property name="ElementShortName">B_nxt1035_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1035_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="PE27_U0_group">
+            <obj_property name="label">PE27_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="PE27_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre210_group">
+                  <obj_property name="label">A_pre210(A_inter_2_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_pre210_blk_n">
+                     <obj_property name="ElementShortName">A_pre210_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre210_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_pre210_dout">
+                     <obj_property name="ElementShortName">A_pre210_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre210_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_pre210_empty_n">
+                     <obj_property name="ElementShortName">A_pre210_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre210_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_pre210_read">
+                     <obj_property name="ElementShortName">A_pre210_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre210_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_pre417_group">
+                  <obj_property name="label">B_pre417(B_inter_2_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_pre417_blk_n">
+                     <obj_property name="ElementShortName">B_pre417_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre417_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_pre417_dout">
+                     <obj_property name="ElementShortName">B_pre417_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre417_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_pre417_empty_n">
+                     <obj_property name="ElementShortName">B_pre417_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre417_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_pre417_read">
+                     <obj_property name="ElementShortName">B_pre417_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre417_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE27_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="PE27_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_nxt728_group">
+                  <obj_property name="label">A_nxt728(A_inter_2_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_nxt728_blk_n">
+                     <obj_property name="ElementShortName">A_nxt728_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt728_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_nxt728_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_nxt728_full_n">
+                     <obj_property name="ElementShortName">A_nxt728_full_n</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt728_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/A_nxt728_write">
+                     <obj_property name="ElementShortName">A_nxt728_write</obj_property>
+                     <obj_property name="ObjectShortName">A_nxt728_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="B_nxt1036_group">
+                  <obj_property name="label">B_nxt1036(B_inter_3_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_nxt1036_blk_n">
+                     <obj_property name="ElementShortName">B_nxt1036_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1036_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_nxt1036_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_nxt1036_full_n">
+                     <obj_property name="ElementShortName">B_nxt1036_full_n</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1036_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/PE27_U0/B_nxt1036_write">
+                     <obj_property name="ElementShortName">B_nxt1036_write</obj_property>
+                     <obj_property name="ObjectShortName">B_nxt1036_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_a28_U0_group">
+            <obj_property name="label">drain_a28_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_a28_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre_V3_group">
+                  <obj_property name="label">A_pre_V3(A_inter_0_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/A_pre_V3_blk_n">
+                     <obj_property name="ElementShortName">A_pre_V3_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V3_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/A_pre_V3_dout">
+                     <obj_property name="ElementShortName">A_pre_V3_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V3_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/A_pre_V3_empty_n">
+                     <obj_property name="ElementShortName">A_pre_V3_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V3_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/A_pre_V3_read">
+                     <obj_property name="ElementShortName">A_pre_V3_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V3_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a28_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a28_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a28_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_a29_U0_group">
+            <obj_property name="label">drain_a29_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_a29_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre_V17_group">
+                  <obj_property name="label">A_pre_V17(A_inter_1_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/A_pre_V17_blk_n">
+                     <obj_property name="ElementShortName">A_pre_V17_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V17_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/A_pre_V17_dout">
+                     <obj_property name="ElementShortName">A_pre_V17_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V17_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/A_pre_V17_empty_n">
+                     <obj_property name="ElementShortName">A_pre_V17_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V17_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/A_pre_V17_read">
+                     <obj_property name="ElementShortName">A_pre_V17_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V17_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a29_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a29_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a29_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_a30_U0_group">
+            <obj_property name="label">drain_a30_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_a30_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="A_pre_V211_group">
+                  <obj_property name="label">A_pre_V211(A_inter_2_3_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/A_pre_V211_blk_n">
+                     <obj_property name="ElementShortName">A_pre_V211_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V211_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/A_pre_V211_dout">
+                     <obj_property name="ElementShortName">A_pre_V211_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V211_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/A_pre_V211_empty_n">
+                     <obj_property name="ElementShortName">A_pre_V211_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V211_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/A_pre_V211_read">
+                     <obj_property name="ElementShortName">A_pre_V211_read</obj_property>
+                     <obj_property name="ObjectShortName">A_pre_V211_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a30_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_a30_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_a30_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_b31_U0_group">
+            <obj_property name="label">drain_b31_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_b31_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_pre_V3_group">
+                  <obj_property name="label">B_pre_V3(B_inter_3_0_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/B_pre_V3_blk_n">
+                     <obj_property name="ElementShortName">B_pre_V3_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V3_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/B_pre_V3_dout">
+                     <obj_property name="ElementShortName">B_pre_V3_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V3_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/B_pre_V3_empty_n">
+                     <obj_property name="ElementShortName">B_pre_V3_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V3_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/B_pre_V3_read">
+                     <obj_property name="ElementShortName">B_pre_V3_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V3_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b31_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b31_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b31_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_b32_U0_group">
+            <obj_property name="label">drain_b32_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_b32_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_pre_V39_group">
+                  <obj_property name="label">B_pre_V39(B_inter_3_1_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/B_pre_V39_blk_n">
+                     <obj_property name="ElementShortName">B_pre_V39_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V39_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/B_pre_V39_dout">
+                     <obj_property name="ElementShortName">B_pre_V39_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V39_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/B_pre_V39_empty_n">
+                     <obj_property name="ElementShortName">B_pre_V39_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V39_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/B_pre_V39_read">
+                     <obj_property name="ElementShortName">B_pre_V39_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V39_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b32_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b32_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b32_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="drain_b33_U0_group">
+            <obj_property name="label">drain_b33_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="drain_b33_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="B_pre_V310_group">
+                  <obj_property name="label">B_pre_V310(B_inter_3_2_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/B_pre_V310_blk_n">
+                     <obj_property name="ElementShortName">B_pre_V310_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V310_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/B_pre_V310_dout">
+                     <obj_property name="ElementShortName">B_pre_V310_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V310_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/B_pre_V310_empty_n">
+                     <obj_property name="ElementShortName">B_pre_V310_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V310_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/B_pre_V310_read">
+                     <obj_property name="ElementShortName">B_pre_V310_read</obj_property>
+                     <obj_property name="ObjectShortName">B_pre_V310_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b33_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_systolic_array_top/AESL_inst_systolic_array/grp_pe_array_fu_208/drain_b33_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="drain_b33_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

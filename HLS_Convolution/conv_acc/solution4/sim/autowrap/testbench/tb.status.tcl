@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/yobuwen/hello-one/HLS_Convolution/conv_acc/solution4/./sim/autowrap/testbench/conv_acc4t.cpp_pre.cpp.tb.cpp

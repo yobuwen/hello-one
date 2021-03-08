@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution'" level="0">
-<item name = "Date">Tue Mar  2 23:25:26 2021
+<item name = "Date">Wed Mar  3 18:10:30 2021
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">conv_acc</item>

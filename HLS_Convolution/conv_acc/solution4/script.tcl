@@ -5,12 +5,12 @@
 ############################################################
 open_project conv_acc
 set_top conv_acc4t
-add_files source/conv_acc1t.cpp
-add_files source/conv_acc2t.cpp
-add_files source/conv_acc3t.cpp
-add_files source/conv_acc4t.cpp
 add_files source/main.h
-add_files -tb testbench/testbench.c
+add_files source/conv_acc4t.cpp
+add_files source/conv_acc3t.cpp
+add_files source/conv_acc2t.cpp
+add_files source/conv_acc1t.cpp
+add_files -tb testbench/testbench.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution4" -flow_target vivado
 set_part {xczu7ev-ffvc1156-2-e}
 create_clock -period 10 -name default

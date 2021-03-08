@@ -1,0 +1,19 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling conv_acc1t.cpp_pre.cpp.tb.cpp
+   Compiling conv_acc3t.cpp_pre.cpp.tb.cpp
+   Compiling conv_acc2t.cpp_pre.cpp.tb.cpp
+   Compiling apatb_conv_acc4t.cpp
+   Compiling conv_acc4t.cpp_pre.cpp.tb.cpp
+   Compiling testbench.c_pre.c.tb.c
+   Compiling apatb_conv_acc4t_ir.ll
+   Generating cosim.tv.exe
+Makefile.rules:392: recipe for target 'cosim.tv.exe' failed
+ERROR: [COSIM-329] Aborting co-simulation: C simulation failed, no 'main' function.
+ERROR: [COSIM-317] C++ compile error.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***
