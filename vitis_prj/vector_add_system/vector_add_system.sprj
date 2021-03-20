@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:systemproject="http://www.xilinx.com/systemproject" name="vector_add_system" platform="/home/yobuwen/hello-one/vitis_prj/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:board:design_1:0.0(custom)" sysConfig="design_1_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Emulation-SW" id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.1612072310">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="vector_add" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Debug"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.2072811003">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="vector_add" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Debug"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.422118894">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw">
+      <applications name="vector_add" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Debug"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

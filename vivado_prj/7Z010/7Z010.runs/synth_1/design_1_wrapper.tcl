@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -79,15 +80,34 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.cache/wt [current_project]
 set_property parent.project_path /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths /home/yobuwen/hello-one/vector_add/solution1/impl/ip [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_1/constraints/vector_add_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

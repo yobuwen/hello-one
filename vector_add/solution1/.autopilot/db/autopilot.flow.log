@@ -1,0 +1,1038 @@
+INFO-FLOW: Workspace /home/yobuwen/hello-one/vector_add/solution1 opened at Mon Mar 08 19:44:12 CST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     set_part xc7z010clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z010clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.12 sec.
+Execute       ap_part_info -name xc7z010clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z010-clg400-1 
+Execute         ap_part_info -name xc7z010-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z010:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.16 sec.
+Command       add_library done; 0.27 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z010-clg400-1'
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.44 sec.
+Execute     ap_part_info -data single -name xc7z010clg400-1 
+Execute     ap_part_info -name xc7z010clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.74 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z010clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z010clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z010:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z010-clg400-1 
+Execute       ap_part_info -name xc7z010-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z010:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     add_library done; 0.17 sec.
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.22 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.499 MB.
+INFO: [HLS 200-10] Analyzing design file 'vector_add/vector_add.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling vector_add/vector_add.cpp as C++
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang vector_add/vector_add.cpp -foptimization-record-file=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.cpp.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute       set_directive_top vector_add -name=vector_add 
+INFO-FLOW: Setting directive 'TOP' name=vector_add 
+INFO-FLOW: Setting directive 'TOP' name=vector_add 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=vector_add 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/.systemc_flag -fix-errors /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/all.directive.json -fix-errors /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang-tidy.vector_add.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang-tidy.vector_add.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang-tidy.vector_add.pp.0.cpp.err.log 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/xilinx-dataflow-lawyer.vector_add.pp.0.cpp.diag.yml /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/xilinx-dataflow-lawyer.vector_add.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/xilinx-dataflow-lawyer.vector_add.pp.0.cpp.err.log 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.pp.0.cpp.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.vector_add.pp.0.cpp.err.log 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.37 seconds. CPU system time: 0.25 seconds. Elapsed time: 0.43 seconds; current allocated memory: 192.550 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.g.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.0.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 3.45 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 3.45 sec.
+Execute       run_link_or_opt -opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=vector_add -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=vector_add -reflow-float-conversion -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.16 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.17 sec.
+Execute       run_link_or_opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=vector_add 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=vector_add -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=vector_add -mllvm -hls-db-dir -mllvm /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.lto.bc > /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'vector_add(int*, int*, int*)' (vector_add/vector_add.cpp:2:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'vector_add(int*, int*, int*)' (vector_add/vector_add.cpp:2:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'vector_add(int*, int*, int*)' (vector_add/vector_add.cpp:2:0)
+INFO: [HLS 214-115] Multiple burst reads of length 3 and bit width 32 in loop 'VITIS_LOOP_10_1'(vector_add/vector_add.cpp:10:22) has been inferred on port 'a' (vector_add/vector_add.cpp:10:22)
+INFO: [HLS 214-115] Multiple burst reads of length 3 and bit width 32 in loop 'VITIS_LOOP_10_1'(vector_add/vector_add.cpp:10:22) has been inferred on port 'b' (vector_add/vector_add.cpp:10:22)
+INFO: [HLS 214-115] Multiple burst writes of length 3 and bit width 32 in loop 'VITIS_LOOP_21_3'(vector_add/vector_add.cpp:21:22) has been inferred on port 'c' (vector_add/vector_add.cpp:21:22)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.74 seconds. CPU system time: 0.37 seconds. Elapsed time: 5.14 seconds; current allocated memory: 194.495 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 194.496 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top vector_add -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.0.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 195.651 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.1.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 194.881 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.g.1.bc to /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.1.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_10_1' (vector_add/vector_add.cpp:10) in function 'vector_add' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_16_2' (vector_add/vector_add.cpp:16) in function 'vector_add' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_21_3' (vector_add/vector_add.cpp:21) in function 'vector_add' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'tmp_a' (vector_add/vector_add.cpp:8) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'tmp_b' (vector_add/vector_add.cpp:8) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'tmp_c' (vector_add/vector_add.cpp:8) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'tmp_a' (vector_add/vector_add.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp_b' (vector_add/vector_add.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp_c' (vector_add/vector_add.cpp:8) in dimension 1 completely.
+Command         transform done; 0.11 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 215.364 MB.
+Execute         get_config_compile -enable_loop_extract 
+Execute         get_config_compile -disable_auto_rewind 
+Execute         get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.2.bc -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 207.855 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.31 sec.
+Command     elaborate done; 5.88 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'vector_add' ...
+Execute       ap_set_top_model vector_add 
+Execute       get_model_list vector_add -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model vector_add 
+Execute       get_model_list vector_add -filter all-wo-channel 
+INFO-FLOW: Model list for configure: vector_add
+INFO-FLOW: Configuring Module : vector_add ...
+Execute       set_default_model vector_add 
+Execute       apply_spec_resource_limit vector_add 
+INFO-FLOW: Model list for preprocess: vector_add
+INFO-FLOW: Preprocessing Module: vector_add ...
+Execute       set_default_model vector_add 
+Execute       cdfg_preprocess -model vector_add 
+Execute       rtl_gen_preprocess vector_add 
+INFO-FLOW: Model list for synthesis: vector_add
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vector_add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model vector_add 
+Execute       schedule -model vector_add 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_16_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_21_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_21_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 208.265 MB.
+Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.sched.adb -f 
+INFO-FLOW: Finish scheduling vector_add.
+Execute       set_default_model vector_add 
+Execute       bind -model vector_add 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 208.749 MB.
+Execute       syn_report -verbosereport -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.bind.adb -f 
+INFO-FLOW: Finish binding vector_add.
+Execute       get_model_list vector_add -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess vector_add 
+INFO-FLOW: Model list for RTL generation: vector_add
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vector_add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model vector_add -top_prefix  -sub_prefix vector_add_ -mg_file /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vector_add/a' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vector_add/b' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vector_add/c' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'vector_add' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mux_32_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vector_add'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 210.296 MB.
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute       gen_rtl vector_add -istop -style xilinx -f -lang vhdl -o /home/yobuwen/hello-one/vector_add/solution1/syn/vhdl/vector_add 
+Execute       gen_rtl vector_add -istop -style xilinx -f -lang vlog -o /home/yobuwen/hello-one/vector_add/solution1/syn/verilog/vector_add 
+Execute       syn_report -csynth -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/syn/report/vector_add_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/syn/report/vector_add_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model vector_add -f -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.adb 
+Execute       gen_tb_info vector_add -p /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add 
+Execute       export_constraint_db -f -tool general -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute       syn_report -designview -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.design.xml 
+Execute       syn_report -csynthDesign -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model vector_add -o /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks vector_add 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain vector_add 
+INFO-FLOW: Model list for RTL component generation: vector_add
+INFO-FLOW: Handling components in module [vector_add] ... 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+INFO-FLOW: Found component vector_add_mux_32_32_1_1.
+INFO-FLOW: Append model vector_add_mux_32_32_1_1
+INFO-FLOW: Found component vector_add_control_s_axi.
+INFO-FLOW: Append model vector_add_control_s_axi
+INFO-FLOW: Found component vector_add_a_m_axi.
+INFO-FLOW: Append model vector_add_a_m_axi
+INFO-FLOW: Found component vector_add_b_m_axi.
+INFO-FLOW: Append model vector_add_b_m_axi
+INFO-FLOW: Found component vector_add_c_m_axi.
+INFO-FLOW: Append model vector_add_c_m_axi
+INFO-FLOW: Append model vector_add
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: vector_add_mux_32_32_1_1 vector_add_control_s_axi vector_add_a_m_axi vector_add_b_m_axi vector_add_c_m_axi vector_add
+INFO-FLOW: To file: write model vector_add_mux_32_32_1_1
+INFO-FLOW: To file: write model vector_add_control_s_axi
+INFO-FLOW: To file: write model vector_add_a_m_axi
+INFO-FLOW: To file: write model vector_add_b_m_axi
+INFO-FLOW: To file: write model vector_add_c_m_axi
+INFO-FLOW: To file: write model vector_add
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): vector_add
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/yobuwen/hello-one/vector_add/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         source ./control.slave.tcl 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Command       ap_source done; 0.24 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/yobuwen/hello-one/vector_add/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=vector_add xml_exists=0
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Command       ap_source done; 0.16 sec.
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=6 #gSsdmPorts=0
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute       sc_get_clocks vector_add 
+Execute       source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.11 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.17 seconds; current allocated memory: 220.738 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for vector_add.
+INFO: [VLOG 209-307] Generating Verilog RTL for vector_add.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
+INFO: [HLS 200-1603] Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute       syn_report -model vector_add -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 2.76 sec.
+Command   csynth_design done; 8.65 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8.05 seconds. CPU system time: 0.72 seconds. Elapsed time: 8.65 seconds; current allocated memory: 221.665 MB.
+Command ap_source done; 11.62 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/yobuwen/hello-one/vector_add/solution1 opened at Mon Mar 08 19:46:37 CST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     set_part xc7z010clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z010clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.15 sec.
+Execute       ap_part_info -name xc7z010clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z010:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z010-clg400-1 
+Execute         ap_part_info -name xc7z010-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z010-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z010:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.12 sec.
+Command       add_library done; 0.25 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z010-clg400-1'
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.47 sec.
+Execute     ap_part_info -data single -name xc7z010clg400-1 
+Execute     ap_part_info -name xc7z010clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute     ap_part_info -name xc7z010clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.8 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z010clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z010clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z010:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z010-clg400-1 
+Execute       ap_part_info -name xc7z010-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 4400} {LUT 17600} {FF 35200} {DSP 80} {BRAM 120} {URAM 0} 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z010:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     add_library done; 0.22 sec.
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.32 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   export_design -rtl verilog -format ip_catalog -vendor yobuwen -display_name vector_add 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -vendor yobuwen -display_name vector_add 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -output 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -display_name=vector_add -format=ip_catalog -rtl=verilog -vendor=yobuwen 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -vendor yobuwen -display_name vector_add
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): vector_add
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl verilog
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.17 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=vector_add xml_exists=1
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to vector_add
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Command     ap_source done; 0.24 sec.
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.tcl 
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to vector_add
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=0 #modelList=6 #gSsdmPorts=0
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute     sc_get_clocks vector_add 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/yobuwen/hello-one/vector_add/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/yobuwen/hello-one/vector_add/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/driver
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.compgen.dataonly.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=vector_add
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=vector_add
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.rtl_wrap.cfg.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.constraint.tcl 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/vector_add.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/yobuwen/hello-one/vector_add/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.14 sec.
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/yobuwen/hello-one/vector_add/solution1/impl/ip/pack.sh
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s vector_add/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file vector_add/solution1/impl/export.zip
+Command   export_design done; 25.04 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 21.43 seconds. CPU system time: 1.99 seconds. Elapsed time: 25.04 seconds; current allocated memory: 204.498 MB.
+Command ap_source done; 28.17 sec.
+Execute cleanup_all 

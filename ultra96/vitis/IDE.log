@@ -1,0 +1,1626 @@
+13:35:30 INFO  : Launching XSCT server: xsct -n  -interactive /home/yobuwen/hello-one/ultra96/vitis/temp_xsdb_launch_script.tcl
+13:35:30 INFO  : Registering command handlers for Vitis TCF services
+13:35:33 INFO  : Platform repository initialization has completed.
+13:35:34 INFO  : XSCT server has started successfully.
+13:35:34 INFO  : Successfully done setting XSCT server connection channel  
+13:35:34 INFO  : plnx-install-location is set to ''
+13:35:34 INFO  : Successfully done query RDI_DATADIR 
+13:35:34 INFO  : Successfully done setting workspace for the tool. 
+13:36:29 INFO  : Result from executing command 'getProjects': ultra96
+13:36:29 INFO  : Result from executing command 'getPlatforms': 
+13:37:18 INFO  : Result from executing command 'getProjects': ultra96
+13:37:18 INFO  : Result from executing command 'getPlatforms': ultra96|/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/ultra96.xpfm
+13:39:29 INFO  : No changes in MSS file content so sources will not be generated.
+13:43:52 ERROR : Unexpected exception occurred while writing platform project 'ultra96' log.
+13:44:51 INFO  : Result from executing command 'getProjects': ultra96
+13:44:51 INFO  : Result from executing command 'getPlatforms': 
+13:46:20 INFO  : Result from executing command 'getProjects': ultra96
+13:46:20 INFO  : Result from executing command 'getPlatforms': ultra96|/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/ultra96.xpfm
+13:47:47 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+13:48:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:48:06 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+13:48:06 INFO  : 'jtag frequency' command is executed.
+13:48:06 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+13:48:06 INFO  : Context for 'APU' is selected.
+13:48:07 INFO  : System reset is completed.
+13:48:10 INFO  : 'after 3000' command is executed.
+13:48:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+13:48:14 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+13:48:14 INFO  : Context for 'APU' is selected.
+13:48:15 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa'.
+13:48:15 INFO  : 'configparams force-mem-access 1' command is executed.
+13:48:15 INFO  : Context for 'APU' is selected.
+13:48:15 INFO  : Boot mode is read from the target.
+13:48:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:48:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:48:19 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:48:19 INFO  : 'set bp_48_19_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+13:48:20 INFO  : 'con -block -timeout 60' command is executed.
+13:48:21 INFO  : 'bpremove $bp_48_19_fsbl_bp' command is executed.
+13:48:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:48:21 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:48:22 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:48:22 INFO  : 'configparams force-mem-access 0' command is executed.
+13:48:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf
+set bp_48_19_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_48_19_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:48:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:48:23 INFO  : 'con' command is executed.
+13:48:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+13:48:23 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+14:16:52 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+14:18:50 INFO  : Generated template bif file for app_system
+14:30:21 INFO  : Disconnected from the channel tcfchan#4.
+14:30:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:21 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:30:21 INFO  : 'jtag frequency' command is executed.
+14:30:21 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+14:30:22 INFO  : Context for 'APU' is selected.
+14:30:23 INFO  : System reset is completed.
+14:30:26 INFO  : 'after 3000' command is executed.
+14:30:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+14:30:30 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+14:30:30 INFO  : Context for 'APU' is selected.
+14:30:30 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa'.
+14:30:30 INFO  : 'configparams force-mem-access 1' command is executed.
+14:30:30 INFO  : Context for 'APU' is selected.
+14:30:30 INFO  : Boot mode is read from the target.
+14:30:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:30:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:30:34 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:30:34 INFO  : 'set bp_30_34_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+14:30:34 INFO  : 'con -block -timeout 60' command is executed.
+14:30:34 INFO  : 'bpremove $bp_30_34_fsbl_bp' command is executed.
+14:30:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:30:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:30:36 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:30:36 INFO  : 'configparams force-mem-access 0' command is executed.
+14:30:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf
+set bp_30_34_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_30_34_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:30:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:30:36 INFO  : 'con' command is executed.
+14:30:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+14:30:36 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+14:31:21 INFO  : Disconnected from the channel tcfchan#6.
+14:46:36 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+14:47:57 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+14:49:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:43 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:49:43 INFO  : 'jtag frequency' command is executed.
+14:49:43 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+14:49:43 INFO  : Context for 'APU' is selected.
+14:49:44 INFO  : System reset is completed.
+14:49:47 INFO  : 'after 3000' command is executed.
+14:49:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+14:49:51 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+14:49:51 INFO  : Context for 'APU' is selected.
+14:49:51 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa'.
+14:49:51 INFO  : 'configparams force-mem-access 1' command is executed.
+14:49:51 INFO  : Context for 'APU' is selected.
+14:49:51 INFO  : Boot mode is read from the target.
+14:49:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:49:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:49:55 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:49:55 INFO  : 'set bp_49_55_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+14:49:56 INFO  : 'con -block -timeout 60' command is executed.
+14:49:56 INFO  : 'bpremove $bp_49_55_fsbl_bp' command is executed.
+14:49:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:49:56 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:49:58 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:49:58 INFO  : 'configparams force-mem-access 0' command is executed.
+14:49:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf
+set bp_49_55_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_49_55_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:58 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:49:58 INFO  : 'con' command is executed.
+14:49:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+14:49:58 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+15:03:38 INFO  : No changes in MSS file content so sources will not be generated.
+15:07:15 INFO  : No changes in MSS file content so sources will not be generated.
+15:07:37 INFO  : No changes in MSS file content so sources will not be generated.
+15:22:21 INFO  : Hardware specification for platform project 'ultra96' is updated.
+15:23:56 INFO  : No changes in MSS file content so sources will not be generated.
+15:25:07 INFO  : Result from executing command 'getProjects': ultra96
+15:25:07 INFO  : Result from executing command 'getPlatforms': ultra96|/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/ultra96.xpfm
+15:27:09 INFO  : Disconnected from the channel tcfchan#9.
+15:28:01 ERROR : Error occurred while generating bsp sources for the domain 'zynqmp_fsbl'.
+15:31:14 INFO  : Hardware specification for platform project 'ultra96' is updated.
+15:33:29 INFO  : Launching XSCT server: xsct -n  -interactive /home/yobuwen/hello-one/ultra96/vitis/temp_xsdb_launch_script.tcl
+15:33:33 INFO  : XSCT server has started successfully.
+15:33:33 INFO  : plnx-install-location is set to ''
+15:33:33 INFO  : Successfully done setting XSCT server connection channel  
+15:33:33 INFO  : Successfully done setting workspace for the tool. 
+15:33:33 INFO  : Successfully done query RDI_DATADIR 
+15:33:34 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+15:33:34 INFO  : Platform repository initialization has completed.
+15:33:34 INFO  : Registering command handlers for Vitis TCF services
+15:36:34 ERROR : Error encountered while updating custom repository paths
+Reason: No Platforms Found.
+
+
+15:38:10 ERROR : Error encountered while updating custom repository paths
+Reason: No Platforms Found.
+
+
+15:39:08 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+15:39:08 ERROR : Failed to get platform details for the project 'app'. Cannot sync application flags.
+15:42:08 INFO  : Result from executing command 'getProjects': ultra96_hw
+15:42:08 INFO  : Result from executing command 'getPlatforms': 
+15:42:22 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+15:42:22 ERROR : Failed to get platform details for the project 'app'. Cannot sync application flags.
+15:42:51 INFO  : Result from executing command 'getProjects': ultra96_hw
+15:42:51 INFO  : Result from executing command 'getPlatforms': ultra96_hw|/home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/ultra96_hw.xpfm
+15:45:46 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+15:45:46 ERROR : Failed to get platform details for the project 'app'. Cannot sync application flags.
+15:46:44 ERROR : The platform '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/ultra96.xpfm' used by the system project 'app_system' is not valid.
+15:47:10 ERROR : The platform '/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/ultra96.xpfm' used by the system project 'app_system' is not valid.
+15:50:38 INFO  : Checking for BSP changes to sync application flags for project 'app_system'...
+15:50:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:57 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+15:50:57 INFO  : 'jtag frequency' command is executed.
+15:50:57 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:50:57 INFO  : Context for 'APU' is selected.
+15:50:58 INFO  : System reset is completed.
+15:51:01 INFO  : 'after 3000' command is executed.
+15:51:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+15:51:05 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit"
+15:51:05 INFO  : Context for 'APU' is selected.
+15:51:06 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/hw/design_1_wrapper.xsa'.
+15:51:06 INFO  : 'configparams force-mem-access 1' command is executed.
+15:51:06 INFO  : Context for 'APU' is selected.
+15:51:06 INFO  : Boot mode is read from the target.
+15:51:09 INFO  : Boot mode of the target is set to jtag.
+15:51:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:51:10 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:51:13 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/sw/ultra96_hw/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:51:13 INFO  : 'set bp_51_13_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:52:14 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+15:52:14 INFO  : 'bpremove $bp_51_13_fsbl_bp' command is executed.
+15:52:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/sw/ultra96_hw/boot/fsbl.elf
+set bp_51_13_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_51_13_fsbl_bp
+----------------End of Script----------------
+
+15:52:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:20 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+15:52:20 INFO  : 'jtag frequency' command is executed.
+15:52:20 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:52:20 INFO  : Context for 'APU' is selected.
+15:52:21 INFO  : System reset is completed.
+15:52:25 INFO  : 'after 3000' command is executed.
+15:52:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+15:52:29 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit"
+15:52:29 INFO  : Context for 'APU' is selected.
+15:52:29 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/hw/design_1_wrapper.xsa'.
+15:52:29 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:29 INFO  : Context for 'APU' is selected.
+15:52:29 INFO  : Boot mode is read from the target.
+15:52:42 INFO  : Boot mode of the target is set to jtag.
+15:52:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:52:42 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:52:46 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/sw/ultra96_hw/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:52:46 INFO  : 'set bp_52_46_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:53:47 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+15:53:47 INFO  : 'bpremove $bp_52_46_fsbl_bp' command is executed.
+15:54:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/sw/ultra96_hw/boot/fsbl.elf
+set bp_52_46_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_52_46_fsbl_bp
+----------------End of Script----------------
+
+15:54:19 ERROR : Unexpected exception occurred while writing platform project 'ultra96_hw' log.
+15:55:25 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:55:25 INFO  : Result from executing command 'getPlatforms': 
+15:55:25 ERROR : Unexpected exception occurred while writing platform project 'ultra96_hw' log.
+15:55:25 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:55:34 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:57:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:57:49 ERROR : Can't run initialization as FSBL file is not found in the platform. Please make sure that FSBL is generated in the platform.
+15:58:31 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:58:31 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:58:34 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+15:59:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:21 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+15:59:21 INFO  : 'jtag frequency' command is executed.
+15:59:21 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:59:21 INFO  : Context for 'APU' is selected.
+15:59:23 INFO  : System reset is completed.
+15:59:26 INFO  : 'after 3000' command is executed.
+15:59:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+15:59:30 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+15:59:30 INFO  : Context for 'APU' is selected.
+15:59:30 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:59:30 INFO  : 'configparams force-mem-access 1' command is executed.
+15:59:30 INFO  : Context for 'APU' is selected.
+15:59:30 INFO  : Boot mode is read from the target.
+15:59:35 INFO  : Boot mode of the target is set to jtag.
+15:59:35 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:59:35 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:59:39 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:59:39 INFO  : 'set bp_59_39_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+16:00:40 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+16:00:40 INFO  : 'bpremove $bp_59_39_fsbl_bp' command is executed.
+16:01:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_59_39_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_59_39_fsbl_bp
+----------------End of Script----------------
+
+16:01:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:01:05 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+16:01:05 INFO  : 'jtag frequency' command is executed.
+16:01:05 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+16:01:05 INFO  : Context for 'APU' is selected.
+16:01:06 INFO  : System reset is completed.
+16:01:09 INFO  : 'after 3000' command is executed.
+16:01:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+16:01:13 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+16:01:14 INFO  : Context for 'APU' is selected.
+16:01:14 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:01:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:01:14 INFO  : Context for 'APU' is selected.
+16:01:14 INFO  : Boot mode is read from the target.
+16:01:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:01:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:01:17 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:01:17 INFO  : 'set bp_1_17_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+16:01:19 INFO  : 'con -block -timeout 60' command is executed.
+16:01:19 INFO  : 'bpremove $bp_1_17_fsbl_bp' command is executed.
+16:01:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:01:19 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:01:21 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:01:21 INFO  : 'configparams force-mem-access 0' command is executed.
+16:01:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_1_17_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_1_17_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:01:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:01:21 INFO  : 'con' command is executed.
+16:01:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+16:01:21 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+16:02:39 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+16:02:57 INFO  : Result from executing command 'getProjects': design_1_wrapper
+16:02:57 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+16:03:00 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+16:03:35 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:03:35 INFO  : Disconnected from the channel tcfchan#6.
+16:03:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:36 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+16:03:36 INFO  : 'jtag frequency' command is executed.
+16:03:36 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+16:03:36 INFO  : Context for 'APU' is selected.
+16:03:37 INFO  : System reset is completed.
+16:03:40 INFO  : 'after 3000' command is executed.
+16:03:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+16:03:44 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+16:03:44 INFO  : Context for 'APU' is selected.
+16:03:45 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:03:45 INFO  : 'configparams force-mem-access 1' command is executed.
+16:03:45 INFO  : Context for 'APU' is selected.
+16:03:45 INFO  : Boot mode is read from the target.
+16:03:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:03:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:03:49 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:03:49 INFO  : 'set bp_3_49_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+16:03:49 INFO  : 'con -block -timeout 60' command is executed.
+16:03:49 INFO  : 'bpremove $bp_3_49_fsbl_bp' command is executed.
+16:03:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:03:49 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:03:51 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:03:51 INFO  : 'configparams force-mem-access 0' command is executed.
+16:03:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_3_49_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_3_49_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:03:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:03:51 INFO  : 'con' command is executed.
+16:03:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+16:03:51 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+16:19:06 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+16:34:30 INFO  : Disconnected from the channel tcfchan#11.
+16:34:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:30 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+16:34:30 INFO  : 'jtag frequency' command is executed.
+16:34:30 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+16:34:30 INFO  : Context for 'APU' is selected.
+16:34:32 INFO  : System reset is completed.
+16:34:35 INFO  : 'after 3000' command is executed.
+16:34:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+16:34:39 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit"
+16:34:39 INFO  : Context for 'APU' is selected.
+16:34:39 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:34:39 INFO  : 'configparams force-mem-access 1' command is executed.
+16:34:39 INFO  : Context for 'APU' is selected.
+16:34:39 INFO  : Boot mode is read from the target.
+16:34:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:34:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:34:42 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:34:43 INFO  : 'set bp_34_42_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+16:34:44 INFO  : 'con -block -timeout 60' command is executed.
+16:34:44 INFO  : 'bpremove $bp_34_42_fsbl_bp' command is executed.
+16:34:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:34:44 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:34:46 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:34:46 INFO  : 'configparams force-mem-access 0' command is executed.
+16:34:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_34_42_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_34_42_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:34:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:34:46 INFO  : 'con' command is executed.
+16:34:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+16:34:46 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+16:35:27 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+16:36:20 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+17:25:56 INFO  : Result from executing command 'getProjects': design_1_wrapper
+17:25:56 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+17:25:59 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+17:26:07 INFO  : The hardware specfication used by project 'app' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:26:07 INFO  : The file '/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+17:26:07 INFO  : The updated bitstream files are copied from platform to folder '/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream' in project 'app'.
+17:26:07 INFO  : The file '/home/yobuwen/hello-one/ultra96/vitis/app/_ide/psinit/psu_init.tcl' stored in project is removed.
+17:26:08 INFO  : The updated ps init files are copied from platform to folder '/home/yobuwen/hello-one/ultra96/vitis/app/_ide/psinit' in project 'app'.
+17:29:54 INFO  : No changes in MSS file content so sources will not be generated.
+19:19:19 INFO  : Example project xgpiops_intr_example_1 has been created successfully.
+19:19:21 INFO  : Example project xgpiops_polled_example_1 has been created successfully.
+19:33:43 INFO  : Disconnected from the channel tcfchan#12.
+19:33:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:33:44 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:33:44 INFO  : 'jtag frequency' command is executed.
+19:33:44 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:33:44 INFO  : Context for 'APU' is selected.
+19:33:45 INFO  : System reset is completed.
+19:33:49 INFO  : 'after 3000' command is executed.
+19:33:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:33:53 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:33:53 INFO  : Context for 'APU' is selected.
+19:33:53 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:33:53 INFO  : 'configparams force-mem-access 1' command is executed.
+19:33:53 INFO  : Context for 'APU' is selected.
+19:33:53 INFO  : Boot mode is read from the target.
+19:33:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:33:53 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:33:57 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:33:57 INFO  : 'set bp_33_57_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:33:58 INFO  : 'con -block -timeout 60' command is executed.
+19:33:59 INFO  : 'bpremove $bp_33_57_fsbl_bp' command is executed.
+19:33:59 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:33:59 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:34:00 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:34:00 INFO  : 'configparams force-mem-access 0' command is executed.
+19:34:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_33_57_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_33_57_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:34:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:00 INFO  : 'con' command is executed.
+19:34:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:34:00 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:34:37 INFO  : Disconnected from the channel tcfchan#15.
+19:34:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:38 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:34:38 INFO  : 'jtag frequency' command is executed.
+19:34:38 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:34:38 INFO  : Context for 'APU' is selected.
+19:34:39 INFO  : System reset is completed.
+19:34:42 INFO  : 'after 3000' command is executed.
+19:34:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:34:46 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:34:46 INFO  : Context for 'APU' is selected.
+19:34:46 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:34:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:34:46 INFO  : Context for 'APU' is selected.
+19:34:46 INFO  : Boot mode is read from the target.
+19:34:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:46 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:34:50 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:34:50 INFO  : 'set bp_34_50_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:34:50 INFO  : 'con -block -timeout 60' command is executed.
+19:34:50 INFO  : 'bpremove $bp_34_50_fsbl_bp' command is executed.
+19:34:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:34:52 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:34:52 INFO  : 'configparams force-mem-access 0' command is executed.
+19:34:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_34_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_34_50_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:34:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:52 INFO  : 'con' command is executed.
+19:34:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:34:52 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:39:09 INFO  : Result from executing command 'getProjects': design_1_wrapper
+19:39:09 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+19:39:12 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:40:41 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:42:06 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:42:52 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:02 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:12 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:13 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:13 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:14 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:15 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:15 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:16 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:16 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:17 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:18 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:18 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:19 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:20 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:20 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:21 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:22 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:22 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:23 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:24 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:24 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:25 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:26 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:26 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:27 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:28 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:28 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:29 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:30 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:30 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:31 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:31 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:32 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:33 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:33 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:34 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:35 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:35 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:36 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:37 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:37 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:38 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:39 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:39 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:40 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:41 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:41 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:42 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:43 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:43 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:44 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:45 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:43:57 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:44:11 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+19:44:11 INFO  : Disconnected from the channel tcfchan#16.
+19:44:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:44:12 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:44:12 INFO  : 'jtag frequency' command is executed.
+19:44:12 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:44:12 INFO  : Context for 'APU' is selected.
+19:44:14 INFO  : System reset is completed.
+19:44:17 INFO  : 'after 3000' command is executed.
+19:44:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:44:21 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:44:21 INFO  : Context for 'APU' is selected.
+19:44:21 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:44:21 INFO  : 'configparams force-mem-access 1' command is executed.
+19:44:21 INFO  : Context for 'APU' is selected.
+19:44:21 INFO  : Boot mode is read from the target.
+19:44:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:44:22 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:44:25 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:44:25 INFO  : 'set bp_44_25_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:44:25 INFO  : 'con -block -timeout 60' command is executed.
+19:44:26 INFO  : 'bpremove $bp_44_25_fsbl_bp' command is executed.
+19:44:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:44:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:44:28 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:44:28 INFO  : 'configparams force-mem-access 0' command is executed.
+19:44:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_44_25_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_44_25_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:44:28 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:44:28 INFO  : 'con' command is executed.
+19:44:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:44:28 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:45:06 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:45:14 INFO  : Disconnected from the channel tcfchan#20.
+19:45:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:45:14 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:45:14 INFO  : 'jtag frequency' command is executed.
+19:45:14 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:45:14 INFO  : Context for 'APU' is selected.
+19:45:15 INFO  : System reset is completed.
+19:45:18 INFO  : 'after 3000' command is executed.
+19:45:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:45:22 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:45:22 INFO  : Context for 'APU' is selected.
+19:45:22 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:45:22 INFO  : 'configparams force-mem-access 1' command is executed.
+19:45:22 INFO  : Context for 'APU' is selected.
+19:45:22 INFO  : Boot mode is read from the target.
+19:45:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:45:22 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:45:26 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:45:26 INFO  : 'set bp_45_26_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:45:27 INFO  : 'con -block -timeout 60' command is executed.
+19:45:27 INFO  : 'bpremove $bp_45_26_fsbl_bp' command is executed.
+19:45:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:45:27 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:45:29 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:45:29 INFO  : 'configparams force-mem-access 0' command is executed.
+19:45:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_45_26_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_45_26_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:45:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:45:29 INFO  : 'con' command is executed.
+19:45:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:45:29 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:46:01 INFO  : Disconnected from the channel tcfchan#21.
+19:46:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:02 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:46:02 INFO  : 'jtag frequency' command is executed.
+19:46:02 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:46:02 INFO  : Context for 'APU' is selected.
+19:46:03 INFO  : System reset is completed.
+19:46:06 INFO  : 'after 3000' command is executed.
+19:46:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:46:10 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:46:10 INFO  : Context for 'APU' is selected.
+19:46:10 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:46:10 INFO  : 'configparams force-mem-access 1' command is executed.
+19:46:10 INFO  : Context for 'APU' is selected.
+19:46:10 INFO  : Boot mode is read from the target.
+19:46:10 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:46:10 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:46:14 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:46:14 INFO  : 'set bp_46_14_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:46:14 INFO  : 'con -block -timeout 60' command is executed.
+19:46:14 INFO  : 'bpremove $bp_46_14_fsbl_bp' command is executed.
+19:46:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:46:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:46:16 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:46:16 INFO  : 'configparams force-mem-access 0' command is executed.
+19:46:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_46_14_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_46_14_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:46:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:46:16 INFO  : 'con' command is executed.
+19:46:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:46:16 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:47:03 INFO  : Disconnected from the channel tcfchan#22.
+19:47:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:47:04 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:47:04 INFO  : 'jtag frequency' command is executed.
+19:47:04 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:47:04 INFO  : Context for 'APU' is selected.
+19:47:05 INFO  : System reset is completed.
+19:47:08 INFO  : 'after 3000' command is executed.
+19:47:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:47:12 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+19:47:12 INFO  : Context for 'APU' is selected.
+19:47:12 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:47:12 INFO  : 'configparams force-mem-access 1' command is executed.
+19:47:12 INFO  : Context for 'APU' is selected.
+19:47:12 INFO  : Boot mode is read from the target.
+19:47:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:47:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:47:16 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:47:16 INFO  : 'set bp_47_16_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:47:16 INFO  : 'con -block -timeout 60' command is executed.
+19:47:16 INFO  : 'bpremove $bp_47_16_fsbl_bp' command is executed.
+19:47:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:47:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:47:18 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:47:18 INFO  : 'configparams force-mem-access 0' command is executed.
+19:47:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_47_16_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_47_16_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:47:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:47:18 INFO  : 'con' command is executed.
+19:47:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:47:18 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+19:48:51 INFO  : Disconnected from the channel tcfchan#23.
+19:49:41 INFO  : Example project xgpiops_polled_example_1 has been created successfully.
+19:52:01 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+19:52:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:52:41 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:52:41 INFO  : 'jtag frequency' command is executed.
+19:52:41 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:52:41 INFO  : Context for 'APU' is selected.
+19:52:42 INFO  : System reset is completed.
+19:52:45 INFO  : 'after 3000' command is executed.
+19:52:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:52:49 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+19:52:49 INFO  : Context for 'APU' is selected.
+19:52:49 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:52:49 INFO  : 'configparams force-mem-access 1' command is executed.
+19:52:49 INFO  : Context for 'APU' is selected.
+19:52:49 INFO  : Boot mode is read from the target.
+19:52:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:52:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:52:53 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:52:53 INFO  : 'set bp_52_53_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:52:53 INFO  : 'con -block -timeout 60' command is executed.
+19:52:54 INFO  : 'bpremove $bp_52_53_fsbl_bp' command is executed.
+19:52:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:52:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:52:56 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:52:56 INFO  : 'configparams force-mem-access 0' command is executed.
+19:52:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_52_53_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_52_53_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:52:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:52:56 INFO  : 'con' command is executed.
+19:52:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:52:56 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+19:55:31 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+19:55:37 INFO  : Disconnected from the channel tcfchan#25.
+19:55:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:55:38 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:55:38 INFO  : 'jtag frequency' command is executed.
+19:55:38 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:55:38 INFO  : Context for 'APU' is selected.
+19:55:39 INFO  : System reset is completed.
+19:55:42 INFO  : 'after 3000' command is executed.
+19:55:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:55:46 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+19:55:46 INFO  : Context for 'APU' is selected.
+19:55:46 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:55:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:55:46 INFO  : Context for 'APU' is selected.
+19:55:46 INFO  : Boot mode is read from the target.
+19:55:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:55:46 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:55:49 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:55:49 INFO  : 'set bp_55_49_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:55:51 INFO  : 'con -block -timeout 60' command is executed.
+19:55:51 INFO  : 'bpremove $bp_55_49_fsbl_bp' command is executed.
+19:55:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:55:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:55:53 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:55:53 INFO  : 'configparams force-mem-access 0' command is executed.
+19:55:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_55_49_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_55_49_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:55:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:55:53 INFO  : 'con' command is executed.
+19:55:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:55:53 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+19:56:50 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+19:57:01 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+19:57:24 INFO  : Disconnected from the channel tcfchan#26.
+19:57:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:57:24 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:57:24 INFO  : 'jtag frequency' command is executed.
+19:57:24 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:57:24 INFO  : Context for 'APU' is selected.
+19:57:25 INFO  : System reset is completed.
+19:57:28 INFO  : 'after 3000' command is executed.
+19:57:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:57:32 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+19:57:32 INFO  : Context for 'APU' is selected.
+19:57:32 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:57:32 INFO  : 'configparams force-mem-access 1' command is executed.
+19:57:32 INFO  : Context for 'APU' is selected.
+19:57:32 INFO  : Boot mode is read from the target.
+19:57:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:57:32 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:57:36 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:57:36 INFO  : 'set bp_57_36_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:57:37 INFO  : 'con -block -timeout 60' command is executed.
+19:57:37 INFO  : 'bpremove $bp_57_36_fsbl_bp' command is executed.
+19:57:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:57:38 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:57:40 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:57:40 INFO  : 'configparams force-mem-access 0' command is executed.
+19:57:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_57_36_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_57_36_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:57:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:57:40 INFO  : 'con' command is executed.
+19:57:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:57:40 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+19:58:20 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+19:58:38 INFO  : Disconnected from the channel tcfchan#29.
+19:58:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:58:38 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+19:58:38 INFO  : 'jtag frequency' command is executed.
+19:58:38 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:58:38 INFO  : Context for 'APU' is selected.
+19:58:39 INFO  : System reset is completed.
+19:58:42 INFO  : 'after 3000' command is executed.
+19:58:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+19:58:46 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+19:58:46 INFO  : Context for 'APU' is selected.
+19:58:46 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+19:58:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:58:46 INFO  : Context for 'APU' is selected.
+19:58:46 INFO  : Boot mode is read from the target.
+19:58:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:58:46 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:58:50 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:58:50 INFO  : 'set bp_58_50_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:58:51 INFO  : 'con -block -timeout 60' command is executed.
+19:58:51 INFO  : 'bpremove $bp_58_50_fsbl_bp' command is executed.
+19:58:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:58:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:58:53 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:58:53 INFO  : 'configparams force-mem-access 0' command is executed.
+19:58:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_58_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_58_50_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:58:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:58:53 INFO  : 'con' command is executed.
+19:58:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:58:53 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+20:00:41 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:00:52 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+20:02:20 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:02:30 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+20:03:58 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+20:04:13 INFO  : Disconnected from the channel tcfchan#31.
+20:04:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:04:14 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:04:14 INFO  : 'jtag frequency' command is executed.
+20:04:14 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:04:14 INFO  : Context for 'APU' is selected.
+20:04:15 INFO  : System reset is completed.
+20:04:18 INFO  : 'after 3000' command is executed.
+20:04:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:04:22 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+20:04:22 INFO  : Context for 'APU' is selected.
+20:04:22 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:04:22 INFO  : 'configparams force-mem-access 1' command is executed.
+20:04:22 INFO  : Context for 'APU' is selected.
+20:04:22 INFO  : Boot mode is read from the target.
+20:04:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:04:23 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:04:26 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:04:26 INFO  : 'set bp_4_26_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:04:26 INFO  : 'con -block -timeout 60' command is executed.
+20:04:27 INFO  : 'bpremove $bp_4_26_fsbl_bp' command is executed.
+20:04:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:04:27 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:04:29 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:04:29 INFO  : 'configparams force-mem-access 0' command is executed.
+20:04:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_4_26_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_4_26_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:04:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:04:29 INFO  : 'con' command is executed.
+20:04:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:04:29 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+20:04:58 INFO  : Checking for BSP changes to sync application flags for project 'xgpiops_polled_example_1'...
+20:05:54 INFO  : Disconnected from the channel tcfchan#37.
+20:05:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:05:55 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:05:55 INFO  : 'jtag frequency' command is executed.
+20:05:55 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:05:55 INFO  : Context for 'APU' is selected.
+20:05:56 INFO  : System reset is completed.
+20:05:59 INFO  : 'after 3000' command is executed.
+20:05:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:06:03 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit"
+20:06:03 INFO  : Context for 'APU' is selected.
+20:06:03 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:06:03 INFO  : 'configparams force-mem-access 1' command is executed.
+20:06:03 INFO  : Context for 'APU' is selected.
+20:06:03 INFO  : Boot mode is read from the target.
+20:06:03 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:06:03 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:06:07 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:06:07 INFO  : 'set bp_6_7_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:06:08 INFO  : 'con -block -timeout 60' command is executed.
+20:06:08 INFO  : 'bpremove $bp_6_7_fsbl_bp' command is executed.
+20:06:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:06:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:06:10 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:06:10 INFO  : 'configparams force-mem-access 0' command is executed.
+20:06:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_6_7_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_6_7_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:06:10 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:06:10 INFO  : 'con' command is executed.
+20:06:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:06:10 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/_ide/scripts/systemdebugger_xgpiops_polled_example_1_system_standalone.tcl'
+20:11:13 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:12:53 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:13:35 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:13:45 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:14:16 INFO  : Disconnected from the channel tcfchan#39.
+20:14:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:18 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:14:18 INFO  : 'jtag frequency' command is executed.
+20:14:18 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:14:18 INFO  : Context for 'APU' is selected.
+20:14:19 INFO  : System reset is completed.
+20:14:22 INFO  : 'after 3000' command is executed.
+20:14:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:14:26 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+20:14:26 INFO  : Context for 'APU' is selected.
+20:14:26 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:14:26 INFO  : 'configparams force-mem-access 1' command is executed.
+20:14:26 INFO  : Context for 'APU' is selected.
+20:14:26 INFO  : Boot mode is read from the target.
+20:14:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:14:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:14:30 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:14:30 INFO  : 'set bp_14_30_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:14:30 INFO  : 'con -block -timeout 60' command is executed.
+20:14:30 INFO  : 'bpremove $bp_14_30_fsbl_bp' command is executed.
+20:14:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:14:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:14:33 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:14:33 INFO  : 'configparams force-mem-access 0' command is executed.
+20:14:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_14_30_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_14_30_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:14:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:14:33 INFO  : 'con' command is executed.
+20:14:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:14:33 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+20:21:34 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:21:53 INFO  : Disconnected from the channel tcfchan#43.
+20:21:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:21:54 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:21:54 INFO  : 'jtag frequency' command is executed.
+20:21:54 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:21:54 INFO  : Context for 'APU' is selected.
+20:21:55 INFO  : System reset is completed.
+20:21:58 INFO  : 'after 3000' command is executed.
+20:21:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:22:02 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+20:22:02 INFO  : Context for 'APU' is selected.
+20:22:02 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:22:02 INFO  : 'configparams force-mem-access 1' command is executed.
+20:22:02 INFO  : Context for 'APU' is selected.
+20:22:02 INFO  : Boot mode is read from the target.
+20:22:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:22:02 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:22:06 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:22:06 INFO  : 'set bp_22_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:22:06 INFO  : 'con -block -timeout 60' command is executed.
+20:22:07 INFO  : 'bpremove $bp_22_6_fsbl_bp' command is executed.
+20:22:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:22:07 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:22:09 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:22:09 INFO  : 'configparams force-mem-access 0' command is executed.
+20:22:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_22_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_22_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:22:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:22:09 INFO  : 'con' command is executed.
+20:22:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:22:09 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+20:23:21 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:23:39 INFO  : Disconnected from the channel tcfchan#45.
+20:23:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:40 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:23:40 INFO  : 'jtag frequency' command is executed.
+20:23:40 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:23:40 INFO  : Context for 'APU' is selected.
+20:23:41 INFO  : System reset is completed.
+20:23:44 INFO  : 'after 3000' command is executed.
+20:23:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:23:48 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+20:23:48 INFO  : Context for 'APU' is selected.
+20:23:48 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:23:48 INFO  : 'configparams force-mem-access 1' command is executed.
+20:23:48 INFO  : Context for 'APU' is selected.
+20:23:49 INFO  : Boot mode is read from the target.
+20:23:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:23:49 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:23:52 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:23:52 INFO  : 'set bp_23_52_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:23:53 INFO  : 'con -block -timeout 60' command is executed.
+20:23:54 INFO  : 'bpremove $bp_23_52_fsbl_bp' command is executed.
+20:23:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:23:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:23:56 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:23:56 INFO  : 'configparams force-mem-access 0' command is executed.
+20:23:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_23_52_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_23_52_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:23:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:23:56 INFO  : 'con' command is executed.
+20:23:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:23:56 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'
+20:24:52 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:26:09 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+20:26:27 INFO  : Disconnected from the channel tcfchan#47.
+20:26:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:26:27 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+20:26:27 INFO  : 'jtag frequency' command is executed.
+20:26:27 INFO  : Sourcing of '/tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:26:27 INFO  : Context for 'APU' is selected.
+20:26:28 INFO  : System reset is completed.
+20:26:31 INFO  : 'after 3000' command is executed.
+20:26:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+20:26:35 INFO  : Device configured successfully with "/home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit"
+20:26:35 INFO  : Context for 'APU' is selected.
+20:26:35 INFO  : Hardware design and registers information is loaded from '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa'.
+20:26:35 INFO  : 'configparams force-mem-access 1' command is executed.
+20:26:35 INFO  : Context for 'APU' is selected.
+20:26:35 INFO  : Boot mode is read from the target.
+20:26:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:36 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:26:39 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:26:39 INFO  : 'set bp_26_39_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:26:40 INFO  : 'con -block -timeout 60' command is executed.
+20:26:41 INFO  : 'bpremove $bp_26_39_fsbl_bp' command is executed.
+20:26:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:41 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:26:43 INFO  : The application '/home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:26:43 INFO  : 'configparams force-mem-access 0' command is executed.
+20:26:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+set bp_26_39_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_26_39_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:26:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:43 INFO  : 'con' command is executed.
+20:26:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:26:43 INFO  : Launch script is exported to file '/home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/scripts/systemdebugger_app_system_standalone.tcl'

@@ -1,0 +1,27 @@
+Nothing to build in platform 'design_1_wrapper'
+
+20:26:09 **** Incremental Build of configuration Debug for project app ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49680	   4144	  20828	  74652	  1239c	app.elf
+Finished building: app.elf.size
+ 
+20:26:11 **** Incremental Build of configuration Debug for project app_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_psu_cortexa53_0 -bifpath /home/yobuwen/hello-one/ultra96/vitis/app_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif /home/yobuwen/hello-one/ultra96/vitis/app_system/Debug/system.bif --bitstream /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit --elf /home/yobuwen/hello-one/ultra96/vitis/app/Debug/app.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/yobuwen/hello-one/ultra96/vitis/app/_ide/bitstream/design_2_wrapper.bit
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/yobuwen/hello-one/ultra96/vitis/app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

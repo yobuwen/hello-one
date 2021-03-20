@@ -1,0 +1,367 @@
+
+
+================================================================
+== Vitis HLS Report for 'vector_add'
+================================================================
+* Date:           Mon Mar  8 19:44:21 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        vector_add
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       25|       25|  0.250 us|  0.250 us|   26|   26|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_10_1  |        3|        3|         2|          1|          1|     3|       yes|
+        |- VITIS_LOOP_16_2  |        3|        3|         1|          1|          1|     3|       yes|
+        |- VITIS_LOOP_21_3  |        3|        3|         2|          1|          1|     3|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-1: initiation interval (II) = 1, depth = 1
+  * Pipeline-2: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 3
+  Pipeline-0 : II = 1, D = 2, States = { 8 9 }
+  Pipeline-1 : II = 1, D = 1, States = { 11 }
+  Pipeline-2 : II = 1, D = 2, States = { 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 10 9 
+9 --> 8 
+10 --> 11 
+11 --> 12 11 
+12 --> 13 
+13 --> 15 14 
+14 --> 13 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_a_2 = alloca i32 1"   --->   Operation 20 'alloca' 'tmp_a_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_a_2_1 = alloca i32 1"   --->   Operation 21 'alloca' 'tmp_a_2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_a_2_2 = alloca i32 1"   --->   Operation 22 'alloca' 'tmp_a_2_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_b_2 = alloca i32 1"   --->   Operation 23 'alloca' 'tmp_b_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_b_2_1 = alloca i32 1"   --->   Operation 24 'alloca' 'tmp_b_2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_b_2_2 = alloca i32 1"   --->   Operation 25 'alloca' 'tmp_b_2_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [7/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 26 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_1 : Operation 27 [7/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 27 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 28 [6/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 28 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 29 [6/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 29 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 30 [5/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 30 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 31 [5/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 31 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 32 [4/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 32 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 33 [4/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 33 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 34 [3/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 34 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 35 [3/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 35 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 36 [2/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 36 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 37 [2/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 37 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5"   --->   Operation 38 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_9, i32 0, i32 0, void @empty, i32 0, i32 50, void @empty_0, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty_9, i32 0, i32 0, void @empty, i32 0, i32 50, void @empty_10, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %b"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c, void @empty_9, i32 0, i32 0, void @empty, i32 0, i32 50, void @empty_2, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %c"   --->   Operation 44 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty_4, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 46 [1/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %a, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 46 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 47 [1/7] (7.30ns)   --->   "%empty_14 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %b, i32 3" [vector_add/vector_add.cpp:10]   --->   Operation 47 'readreq' 'empty_14' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 48 [1/1] (1.58ns)   --->   "%br_ln10 = br void" [vector_add/vector_add.cpp:10]   --->   Operation 48 'br' 'br_ln10' <Predicate = true> <Delay = 1.58>
+
+State 8 <SV = 7> <Delay = 1.56>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%i = phi i2 0, void, i2 %add_ln10, void %.split6615" [vector_add/vector_add.cpp:12]   --->   Operation 49 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (1.56ns)   --->   "%add_ln10 = add i2 %i, i2 1" [vector_add/vector_add.cpp:10]   --->   Operation 50 'add' 'add_ln10' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 51 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.95ns)   --->   "%icmp_ln10 = icmp_eq  i2 %i, i2 3" [vector_add/vector_add.cpp:10]   --->   Operation 52 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%empty_15 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 53 'speclooptripcount' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln10 = br i1 %icmp_ln10, void %.split6, void %.preheader.preheader" [vector_add/vector_add.cpp:10]   --->   Operation 54 'br' 'br_ln10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (1.13ns)   --->   "%switch_ln12 = switch i2 %i, void %branch2, i2 0, void %.split6..split6615_crit_edge, i2 1, void %branch1" [vector_add/vector_add.cpp:12]   --->   Operation 55 'switch' 'switch_ln12' <Predicate = (!icmp_ln10)> <Delay = 1.13>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 56 'br' 'br_ln0' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 57 [1/1] (0.00ns)   --->   "%specloopname_ln10 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [vector_add/vector_add.cpp:10]   --->   Operation 57 'specloopname' 'specloopname_ln10' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 58 [1/1] (7.30ns)   --->   "%tmp_a_0 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %a" [vector_add/vector_add.cpp:12]   --->   Operation 58 'read' 'tmp_a_0' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 59 [1/1] (7.30ns)   --->   "%tmp_b_0 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %b" [vector_add/vector_add.cpp:13]   --->   Operation 59 'read' 'tmp_b_0' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 60 [1/1] (0.00ns)   --->   "%store_ln13 = store i32 %tmp_b_0, i32 %tmp_b_2_1" [vector_add/vector_add.cpp:13]   --->   Operation 60 'store' 'store_ln13' <Predicate = (i == 1)> <Delay = 0.00>
+ST_9 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln12 = store i32 %tmp_a_0, i32 %tmp_a_2_1" [vector_add/vector_add.cpp:12]   --->   Operation 61 'store' 'store_ln12' <Predicate = (i == 1)> <Delay = 0.00>
+ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.split6615"   --->   Operation 62 'br' 'br_ln0' <Predicate = (i == 1)> <Delay = 0.00>
+ST_9 : Operation 63 [1/1] (0.00ns)   --->   "%store_ln12 = store i32 %tmp_b_0, i32 %tmp_b_2" [vector_add/vector_add.cpp:12]   --->   Operation 63 'store' 'store_ln12' <Predicate = (i == 0)> <Delay = 0.00>
+ST_9 : Operation 64 [1/1] (0.00ns)   --->   "%store_ln12 = store i32 %tmp_a_0, i32 %tmp_a_2" [vector_add/vector_add.cpp:12]   --->   Operation 64 'store' 'store_ln12' <Predicate = (i == 0)> <Delay = 0.00>
+ST_9 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln12 = br void %.split6615" [vector_add/vector_add.cpp:12]   --->   Operation 65 'br' 'br_ln12' <Predicate = (i == 0)> <Delay = 0.00>
+ST_9 : Operation 66 [1/1] (0.00ns)   --->   "%store_ln13 = store i32 %tmp_b_0, i32 %tmp_b_2_2" [vector_add/vector_add.cpp:13]   --->   Operation 66 'store' 'store_ln13' <Predicate = (i != 0 & i != 1)> <Delay = 0.00>
+ST_9 : Operation 67 [1/1] (0.00ns)   --->   "%store_ln12 = store i32 %tmp_a_0, i32 %tmp_a_2_2" [vector_add/vector_add.cpp:12]   --->   Operation 67 'store' 'store_ln12' <Predicate = (i != 0 & i != 1)> <Delay = 0.00>
+ST_9 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.split6615"   --->   Operation 68 'br' 'br_ln0' <Predicate = (i != 0 & i != 1)> <Delay = 0.00>
+
+State 10 <SV = 8> <Delay = 1.58>
+ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_c_2 = alloca i32 1"   --->   Operation 69 'alloca' 'tmp_c_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_c_2_1 = alloca i32 1"   --->   Operation 70 'alloca' 'tmp_c_2_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_c_2_2 = alloca i32 1"   --->   Operation 71 'alloca' 'tmp_c_2_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 72 [1/1] (1.58ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 72 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+
+State 11 <SV = 9> <Delay = 4.25>
+ST_11 : Operation 73 [1/1] (0.00ns)   --->   "%i_1 = phi i2 %add_ln16, void %.split423, i2 0, void %.preheader.preheader" [vector_add/vector_add.cpp:18]   --->   Operation 73 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 74 [1/1] (1.56ns)   --->   "%add_ln16 = add i2 %i_1, i2 1" [vector_add/vector_add.cpp:16]   --->   Operation 74 'add' 'add_ln16' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 75 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 75 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 76 [1/1] (0.95ns)   --->   "%icmp_ln16 = icmp_eq  i2 %i_1, i2 3" [vector_add/vector_add.cpp:16]   --->   Operation 76 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%empty_16 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 77 'speclooptripcount' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %.split4, void" [vector_add/vector_add.cpp:16]   --->   Operation 78 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_a_2_load = load i32 %tmp_a_2" [vector_add/vector_add.cpp:18]   --->   Operation 79 'load' 'tmp_a_2_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "%tmp_a_2_1_load = load i32 %tmp_a_2_1" [vector_add/vector_add.cpp:18]   --->   Operation 80 'load' 'tmp_a_2_1_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_a_2_2_load = load i32 %tmp_a_2_2" [vector_add/vector_add.cpp:18]   --->   Operation 81 'load' 'tmp_a_2_2_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_b_2_load = load i32 %tmp_b_2" [vector_add/vector_add.cpp:18]   --->   Operation 82 'load' 'tmp_b_2_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_b_2_1_load = load i32 %tmp_b_2_1" [vector_add/vector_add.cpp:18]   --->   Operation 83 'load' 'tmp_b_2_1_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_b_2_2_load = load i32 %tmp_b_2_2" [vector_add/vector_add.cpp:18]   --->   Operation 84 'load' 'tmp_b_2_2_load' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 85 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [vector_add/vector_add.cpp:16]   --->   Operation 85 'specloopname' 'specloopname_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_11 : Operation 86 [1/1] (1.70ns)   --->   "%tmp = mux i32 @_ssdm_op_Mux.ap_auto.3i32.i2, i32 %tmp_a_2_load, i32 %tmp_a_2_1_load, i32 %tmp_a_2_2_load, i2 %i_1" [vector_add/vector_add.cpp:18]   --->   Operation 86 'mux' 'tmp' <Predicate = (!icmp_ln16)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 87 [1/1] (1.70ns)   --->   "%tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.3i32.i2, i32 %tmp_b_2_load, i32 %tmp_b_2_1_load, i32 %tmp_b_2_2_load, i2 %i_1" [vector_add/vector_add.cpp:18]   --->   Operation 87 'mux' 'tmp_1' <Predicate = (!icmp_ln16)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 88 [1/1] (2.55ns)   --->   "%tmp_c_0 = add i32 %tmp_1, i32 %tmp" [vector_add/vector_add.cpp:18]   --->   Operation 88 'add' 'tmp_c_0' <Predicate = (!icmp_ln16)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 89 [1/1] (1.13ns)   --->   "%switch_ln18 = switch i2 %i_1, void %branch8, i2 0, void %.split4..split423_crit_edge, i2 1, void %branch7" [vector_add/vector_add.cpp:18]   --->   Operation 89 'switch' 'switch_ln18' <Predicate = (!icmp_ln16)> <Delay = 1.13>
+ST_11 : Operation 90 [1/1] (0.00ns)   --->   "%store_ln18 = store i32 %tmp_c_0, i32 %tmp_c_2_1" [vector_add/vector_add.cpp:18]   --->   Operation 90 'store' 'store_ln18' <Predicate = (!icmp_ln16 & i_1 == 1)> <Delay = 0.00>
+ST_11 : Operation 91 [1/1] (0.00ns)   --->   "%br_ln18 = br void %.split423" [vector_add/vector_add.cpp:18]   --->   Operation 91 'br' 'br_ln18' <Predicate = (!icmp_ln16 & i_1 == 1)> <Delay = 0.00>
+ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%store_ln18 = store i32 %tmp_c_0, i32 %tmp_c_2" [vector_add/vector_add.cpp:18]   --->   Operation 92 'store' 'store_ln18' <Predicate = (!icmp_ln16 & i_1 == 0)> <Delay = 0.00>
+ST_11 : Operation 93 [1/1] (0.00ns)   --->   "%br_ln18 = br void %.split423" [vector_add/vector_add.cpp:18]   --->   Operation 93 'br' 'br_ln18' <Predicate = (!icmp_ln16 & i_1 == 0)> <Delay = 0.00>
+ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%store_ln18 = store i32 %tmp_c_0, i32 %tmp_c_2_2" [vector_add/vector_add.cpp:18]   --->   Operation 94 'store' 'store_ln18' <Predicate = (!icmp_ln16 & i_1 != 0 & i_1 != 1)> <Delay = 0.00>
+ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%br_ln18 = br void %.split423" [vector_add/vector_add.cpp:18]   --->   Operation 95 'br' 'br_ln18' <Predicate = (!icmp_ln16 & i_1 != 0 & i_1 != 1)> <Delay = 0.00>
+ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 96 'br' 'br_ln0' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+
+State 12 <SV = 10> <Delay = 7.30>
+ST_12 : Operation 97 [1/1] (7.30ns)   --->   "%empty_17 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %c, i32 3" [vector_add/vector_add.cpp:21]   --->   Operation 97 'writereq' 'empty_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 98 [1/1] (1.58ns)   --->   "%br_ln21 = br void" [vector_add/vector_add.cpp:21]   --->   Operation 98 'br' 'br_ln21' <Predicate = true> <Delay = 1.58>
+
+State 13 <SV = 11> <Delay = 1.70>
+ST_13 : Operation 99 [1/1] (0.00ns)   --->   "%i_2 = phi i2 %add_ln21, void %.split, i2 0, void" [vector_add/vector_add.cpp:23]   --->   Operation 99 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 100 [1/1] (1.56ns)   --->   "%add_ln21 = add i2 %i_2, i2 1" [vector_add/vector_add.cpp:21]   --->   Operation 100 'add' 'add_ln21' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 101 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 101 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 102 [1/1] (0.95ns)   --->   "%icmp_ln21 = icmp_eq  i2 %i_2, i2 3" [vector_add/vector_add.cpp:21]   --->   Operation 102 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 103 [1/1] (0.00ns)   --->   "%empty_18 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 103 'speclooptripcount' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void %.split, void" [vector_add/vector_add.cpp:21]   --->   Operation 104 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_c_2_load = load i32 %tmp_c_2" [vector_add/vector_add.cpp:23]   --->   Operation 105 'load' 'tmp_c_2_load' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_13 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_c_2_1_load = load i32 %tmp_c_2_1" [vector_add/vector_add.cpp:23]   --->   Operation 106 'load' 'tmp_c_2_1_load' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_13 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_c_2_2_load = load i32 %tmp_c_2_2" [vector_add/vector_add.cpp:23]   --->   Operation 107 'load' 'tmp_c_2_2_load' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_13 : Operation 108 [1/1] (1.70ns)   --->   "%tmp_2 = mux i32 @_ssdm_op_Mux.ap_auto.3i32.i2, i32 %tmp_c_2_load, i32 %tmp_c_2_1_load, i32 %tmp_c_2_2_load, i2 %i_2" [vector_add/vector_add.cpp:23]   --->   Operation 108 'mux' 'tmp_2' <Predicate = (!icmp_ln21)> <Delay = 1.70> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.70> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 12> <Delay = 7.30>
+ST_14 : Operation 109 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [vector_add/vector_add.cpp:21]   --->   Operation 109 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_14 : Operation 110 [1/1] (7.30ns)   --->   "%write_ln23 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %c, i32 %tmp_2, i4 15" [vector_add/vector_add.cpp:23]   --->   Operation 110 'write' 'write_ln23' <Predicate = (!icmp_ln21)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_14 : Operation 111 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 111 'br' 'br_ln0' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+
+State 15 <SV = 12> <Delay = 7.30>
+ST_15 : Operation 112 [5/5] (7.30ns)   --->   "%empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %c" [vector_add/vector_add.cpp:25]   --->   Operation 112 'writeresp' 'empty_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 13> <Delay = 7.30>
+ST_16 : Operation 113 [4/5] (7.30ns)   --->   "%empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %c" [vector_add/vector_add.cpp:25]   --->   Operation 113 'writeresp' 'empty_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 14> <Delay = 7.30>
+ST_17 : Operation 114 [3/5] (7.30ns)   --->   "%empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %c" [vector_add/vector_add.cpp:25]   --->   Operation 114 'writeresp' 'empty_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 15> <Delay = 7.30>
+ST_18 : Operation 115 [2/5] (7.30ns)   --->   "%empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %c" [vector_add/vector_add.cpp:25]   --->   Operation 115 'writeresp' 'empty_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 16> <Delay = 7.30>
+ST_19 : Operation 116 [1/5] (7.30ns)   --->   "%empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %c" [vector_add/vector_add.cpp:25]   --->   Operation 116 'writeresp' 'empty_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 117 [1/1] (0.00ns)   --->   "%ret_ln25 = ret" [vector_add/vector_add.cpp:25]   --->   Operation 117 'ret' 'ret_ln25' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 3>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 4>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'a' (vector_add/vector_add.cpp:10) [18]  (7.3 ns)
+
+ <State 8>: 1.56ns
+The critical path consists of the following:
+	'phi' operation ('i', vector_add/vector_add.cpp:12) with incoming values : ('add_ln10', vector_add/vector_add.cpp:10) [22]  (0 ns)
+	'add' operation ('add_ln10', vector_add/vector_add.cpp:10) [23]  (1.56 ns)
+
+ <State 9>: 7.3ns
+The critical path consists of the following:
+	bus read on port 'b' (vector_add/vector_add.cpp:13) [31]  (7.3 ns)
+	'store' operation ('store_ln13', vector_add/vector_add.cpp:13) of variable 'tmp_b[0]', vector_add/vector_add.cpp:13 on local variable 'tmp_b[2]' [34]  (0 ns)
+
+ <State 10>: 1.59ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i', vector_add/vector_add.cpp:18) with incoming values : ('add_ln16', vector_add/vector_add.cpp:16) [53]  (1.59 ns)
+
+ <State 11>: 4.26ns
+The critical path consists of the following:
+	'phi' operation ('i', vector_add/vector_add.cpp:18) with incoming values : ('add_ln16', vector_add/vector_add.cpp:16) [53]  (0 ns)
+	'mux' operation ('tmp', vector_add/vector_add.cpp:18) [67]  (1.71 ns)
+	'add' operation ('tmp_c[0]', vector_add/vector_add.cpp:18) [69]  (2.55 ns)
+	'store' operation ('store_ln18', vector_add/vector_add.cpp:18) of variable 'tmp_c[0]', vector_add/vector_add.cpp:18 on local variable 'tmp_c[2]' [72]  (0 ns)
+
+ <State 12>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'c' (vector_add/vector_add.cpp:21) [83]  (7.3 ns)
+
+ <State 13>: 1.71ns
+The critical path consists of the following:
+	'phi' operation ('i', vector_add/vector_add.cpp:23) with incoming values : ('add_ln21', vector_add/vector_add.cpp:21) [86]  (0 ns)
+	'mux' operation ('tmp_2', vector_add/vector_add.cpp:23) [97]  (1.71 ns)
+
+ <State 14>: 7.3ns
+The critical path consists of the following:
+	bus write on port 'c' (vector_add/vector_add.cpp:23) [98]  (7.3 ns)
+
+ <State 15>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c' (vector_add/vector_add.cpp:25) [101]  (7.3 ns)
+
+ <State 16>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c' (vector_add/vector_add.cpp:25) [101]  (7.3 ns)
+
+ <State 17>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c' (vector_add/vector_add.cpp:25) [101]  (7.3 ns)
+
+ <State 18>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c' (vector_add/vector_add.cpp:25) [101]  (7.3 ns)
+
+ <State 19>: 7.3ns
+The critical path consists of the following:
+	bus response on port 'c' (vector_add/vector_add.cpp:25) [101]  (7.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

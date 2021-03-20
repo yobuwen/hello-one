@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="app_system-imgFile" value=""/>
+	<item key="app_system-offSet" value=""/>
+	<item key="app_system-initFile" value="/home/yobuwen/hello-one/ultra96/vitis/ultra96/export/ultra96/sw/ultra96/boot/fsbl.elf"/>
+	<item key="app_system-flashType" value="qspi-x4-single"/>
+	<item key="app_system-verifyFlash" value="false"/>
+	<item key="app_system-blankCheck" value="false"/>
+	<item key="app_system-device" value="Auto Detect"/>
+	<item key="app_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="app_system"/>
+</section>

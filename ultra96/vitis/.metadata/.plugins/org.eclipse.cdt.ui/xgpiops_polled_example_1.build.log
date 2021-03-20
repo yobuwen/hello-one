@@ -1,0 +1,21 @@
+20:04:59 **** Incremental Build of configuration Debug for project xgpiops_polled_example_1 ****
+make all 
+Building file: ../src/xgpiops_polled_example.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_polled_example.o" -I/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xgpiops_polled_example.d" -MT"src/xgpiops_polled_example.o" -o "src/xgpiops_polled_example.o" "../src/xgpiops_polled_example.c"
+Finished building: ../src/xgpiops_polled_example.c
+ 
+Building target: xgpiops_polled_example_1.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "xgpiops_polled_example_1.elf"  ./src/xgpiops_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: xgpiops_polled_example_1.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size xgpiops_polled_example_1.elf  |tee "xgpiops_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40860	   2064	  20796	  63720	   f8e8	xgpiops_polled_example_1.elf
+Finished building: xgpiops_polled_example_1.elf.size
+ 
+
+20:04:59 Build Finished (took 699ms)
+

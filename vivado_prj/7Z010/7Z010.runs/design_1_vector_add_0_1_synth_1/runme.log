@@ -1,0 +1,895 @@
+
+*** Running vivado
+    with args -log design_1_vector_add_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_vector_add_0_1.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_vector_add_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/yobuwen/hello-one/vector_add/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_vector_add_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30770
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2422.305 ; gain = 0.000 ; free physical = 829 ; free virtual = 10711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_vector_add_0_1' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_1/synth/design_1_vector_add_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vector_add' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 17'b00000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 17'b00000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 17'b00000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 17'b00000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 17'b00000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 17'b00000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 17'b00000000001000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 17'b00000000010000000 
+	Parameter ap_ST_fsm_state10 bound to: 17'b00000000100000000 
+	Parameter ap_ST_fsm_state11 bound to: 17'b00000001000000000 
+	Parameter ap_ST_fsm_state12 bound to: 17'b00000010000000000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 17'b00000100000000000 
+	Parameter ap_ST_fsm_state15 bound to: 17'b00001000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 17'b00010000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 17'b00100000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 17'b01000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 17'b10000000000000000 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_A_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_A_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_A_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_A_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_A_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_A_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_A_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_B_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_B_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_B_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_B_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_B_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_B_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_B_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_C_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_C_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_C_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_C_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_A_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_B_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_C_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_control_s_axi' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_control_s_axi.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_control_s_axi' (1#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_write' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_fifo' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_fifo' (2#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_reg_slice' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_reg_slice' (3#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_fifo__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_fifo__parameterized0' (3#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_buffer' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_buffer' (4#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_fifo__parameterized1' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_fifo__parameterized1' (4#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_fifo__parameterized2' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_fifo__parameterized2' (4#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_write' (5#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_read' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_buffer__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_buffer__parameterized0' (5#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_reg_slice__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_reg_slice__parameterized0' (5#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_read' (6#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_a_m_axi_throttle' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi_throttle' (7#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_a_m_axi' (8#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_a_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_write' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_fifo' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_fifo' (9#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_reg_slice' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_reg_slice' (10#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_fifo__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_fifo__parameterized0' (10#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_buffer' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_buffer' (11#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_fifo__parameterized1' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_fifo__parameterized1' (11#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_fifo__parameterized2' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_fifo__parameterized2' (11#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_write' (12#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_read' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_buffer__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_buffer__parameterized0' (12#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_reg_slice__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_reg_slice__parameterized0' (12#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_read' (13#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_b_m_axi_throttle' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi_throttle' (14#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_b_m_axi' (15#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_b_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_write' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_fifo' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_fifo' (16#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_reg_slice' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_reg_slice' (17#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_fifo__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_fifo__parameterized0' (17#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_buffer' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_buffer' (18#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_fifo__parameterized1' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_fifo__parameterized1' (18#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_fifo__parameterized2' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_fifo__parameterized2' (18#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_write' (19#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_read' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_buffer__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_buffer__parameterized0' (19#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_reg_slice__parameterized0' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_reg_slice__parameterized0' (19#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_read' (20#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_c_m_axi_throttle' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi_throttle' (21#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_c_m_axi' (22#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_c_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vector_add_mux_32_32_1_1' [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_mux_32_32_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_mux_32_32_1_1' (23#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add_mux_32_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add' (24#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ipshared/7cee/hdl/verilog/vector_add.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vector_add_0_1' (25#1) [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_1/synth/design_1_vector_add_0_1.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2422.305 ; gain = 0.000 ; free physical = 5867 ; free virtual = 14796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2422.305 ; gain = 0.000 ; free physical = 5814 ; free virtual = 14752
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2422.305 ; gain = 0.000 ; free physical = 5814 ; free virtual = 14752
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2422.305 ; gain = 0.000 ; free physical = 5760 ; free virtual = 14698
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_1/constraints/vector_add_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_1/constraints/vector_add_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/design_1_vector_add_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/design_1_vector_add_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2581.031 ; gain = 0.000 ; free physical = 5700 ; free virtual = 14638
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2589.938 ; gain = 8.906 ; free physical = 5698 ; free virtual = 14636
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 5551 ; free virtual = 14507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 5550 ; free virtual = 14506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/design_1_vector_add_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 5548 ; free virtual = 14504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'vector_add_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'vector_add_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_a_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_a_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_b_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_b_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_c_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_add_c_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'vector_add_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'vector_add_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_a_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_a_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_b_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_b_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_c_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_add_c_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 5353 ; free virtual = 14311
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 12    
+	   2 Input   52 Bit       Adders := 6     
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 9     
+	   2 Input    8 Bit       Adders := 21    
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 24    
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               96 Bit    Registers := 18    
+	               64 Bit    Registers := 30    
+	               52 Bit    Registers := 6     
+	               36 Bit    Registers := 9     
+	               35 Bit    Registers := 9     
+	               34 Bit    Registers := 6     
+	               32 Bit    Registers := 23    
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 12    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 24    
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 158   
++---RAMs : 
+	               9K Bit	(256 X 36 bit)          RAMs := 3     
+	               8K Bit	(256 X 35 bit)          RAMs := 3     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 6     
+	   2 Input   64 Bit        Muxes := 24    
+	   2 Input   52 Bit        Muxes := 6     
+	   2 Input   36 Bit        Muxes := 3     
+	   2 Input   35 Bit        Muxes := 3     
+	   2 Input   34 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   17 Bit        Muxes := 1     
+	  18 Input   17 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 6     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 3     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 30    
+	   4 Input    8 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 119   
+	   3 Input    2 Bit        Muxes := 27    
+	   5 Input    2 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 174   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 5709 ; free virtual = 14676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/a_m_axi_U | bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/b_m_axi_U | bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/c_m_axi_U | bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7619 ; free virtual = 16589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7638 ; free virtual = 16617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/a_m_axi_U | bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/b_m_axi_U | bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/c_m_axi_U | bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------+------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/a_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/b_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/c_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7558 ; free virtual = 16540
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7521 ; free virtual = 16509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7520 ; free virtual = 16509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7523 ; free virtual = 16512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7523 ; free virtual = 16512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7522 ; free virtual = 16510
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7521 ; free virtual = 16509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[4]  | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[4]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[4]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[4]  | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[4]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[4]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[4]  | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[4]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[4]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   138|
+|2     |LUT1     |    31|
+|3     |LUT2     |   261|
+|4     |LUT3     |   395|
+|5     |LUT4     |   211|
+|6     |LUT5     |   153|
+|7     |LUT6     |   310|
+|8     |RAMB18E1 |     3|
+|9     |SRL16E   |    12|
+|10    |FDRE     |  1581|
+|11    |FDSE     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7521 ; free virtual = 16509
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2589.938 ; gain = 0.000 ; free physical = 7585 ; free virtual = 16573
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 2589.938 ; gain = 167.633 ; free physical = 7585 ; free virtual = 16574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2589.938 ; gain = 0.000 ; free physical = 7635 ; free virtual = 16623
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2589.938 ; gain = 0.000 ; free physical = 7545 ; free virtual = 16533
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 2589.938 ; gain = 167.750 ; free physical = 7680 ; free virtual = 16668
+INFO: [Common 17-1381] The checkpoint '/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/design_1_vector_add_0_1_synth_1/design_1_vector_add_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_vector_add_0_1, cache-ID = 79f9167fb8659a48
+INFO: [Coretcl 2-1174] Renamed 28 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/design_1_vector_add_0_1_synth_1/design_1_vector_add_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_vector_add_0_1_utilization_synth.rpt -pb design_1_vector_add_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  8 20:17:19 2021...

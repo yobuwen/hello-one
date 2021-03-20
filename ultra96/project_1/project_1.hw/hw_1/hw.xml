@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xczu3_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xczu3_0" gui_info="">
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/design_1_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="SysMon" gui_info="dashboard_1=[TEMPERATURE=-65281;VAUXP0_VAUXN0=-16711936;VAUXP1_VAUXN1=-39322;VAUXP2_VAUXN2=-16776961;VAUXP3_VAUXN3=-14336;VAUXP4_VAUXN4=-65536;VAUXP5_VAUXN5=-16711681;VAUXP6_VAUXN6=-3355393;VAUXP7_VAUXN7=-15815424;VAUXP8_VAUXN8=-3212288;VAUXP9_VAUXN9=-6410818;VAUXP10_VAUXN10=-4560343;VAUXP11_VAUXN11=-261752;VAUXP12_VAUXN12=-16582256;VAUXP13_VAUXN13=-256;VAUXP14_VAUXN14=-937733;VAUXP15_VAUXN15=-81916;VCC_PSAUX=-15426561;VCC_PSINTFP=-16776961;VCC_PSINTLP=-14336;VCCAUX=-65536;VCCBRAM=-16711681;VCCINT=-65281;VP_VN=-3355393;VUSER0=-15815424;VUSER1=-3212288;VUSER2=-6410818;VUSER3=-4560343;SCAN_RATE=5000;TRACK_TIME=1;]"/>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

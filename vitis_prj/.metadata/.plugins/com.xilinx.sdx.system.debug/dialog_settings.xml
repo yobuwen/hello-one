@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="vector_add_system-imgFile" value=""/>
+	<item key="vector_add_system-offSet" value=""/>
+	<item key="vector_add_system-initFile" value="/home/yobuwen/hello-one/vitis_prj/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf"/>
+	<item key="vector_add_system-flashType" value="qspi-x4-single"/>
+	<item key="vector_add_system-verifyFlash" value="false"/>
+	<item key="vector_add_system-blankCheck" value="false"/>
+	<item key="vector_add_system-device" value="Auto Detect"/>
+	<item key="vector_add_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="vector_add_system"/>
+</section>

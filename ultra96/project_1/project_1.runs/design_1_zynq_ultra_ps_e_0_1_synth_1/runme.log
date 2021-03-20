@@ -1,0 +1,419 @@
+
+*** Running vivado
+    with args -log design_1_zynq_ultra_ps_e_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_zynq_ultra_ps_e_0_1.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_zynq_ultra_ps_e_0_1.tcl -notrace
+Command: synth_design -top design_1_zynq_ultra_ps_e_0_1 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20765
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2742.391 ; gain = 31.902 ; free physical = 16459 ; free virtual = 22193
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_1' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:59]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:209]
+	Parameter C_MAXIGP0_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_MAXIGP1_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_MAXIGP2_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_SAXIGP0_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP1_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP2_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP3_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP4_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP5_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SAXIGP6_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_SD0_INTERNAL_BUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_SD1_INTERNAL_BUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_PL_CLK0_BUF bound to: FALSE - type: string 
+	Parameter C_PL_CLK1_BUF bound to: FALSE - type: string 
+	Parameter C_PL_CLK2_BUF bound to: FALSE - type: string 
+	Parameter C_PL_CLK3_BUF bound to: FALSE - type: string 
+	Parameter C_NUM_F2P_0_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_NUM_F2P_1_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_NUM_FABRIC_RESETS bound to: 0 - type: integer 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP2 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP3 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP4 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP5 bound to: 0 - type: integer 
+	Parameter C_USE_DIFF_RW_CLK_GP6 bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_EN_FIFO_ENET0 bound to: 0 - type: string 
+	Parameter C_EN_FIFO_ENET1 bound to: 0 - type: string 
+	Parameter C_EN_FIFO_ENET2 bound to: 0 - type: string 
+	Parameter C_EN_FIFO_ENET3 bound to: 0 - type: string 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_DEBUG_TEST bound to: 0 - type: integer 
+	Parameter C_DP_USE_AUDIO bound to: 0 - type: integer 
+	Parameter C_DP_USE_VIDEO bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PS8' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:63280]
+INFO: [Synth 8-6155] done synthesizing module 'PS8' (1#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:63280]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO0DATAOUT' does not match port width (8) of module 'PS8' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:4573]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO0DATAENA' does not match port width (8) of module 'PS8' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:4574]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO1DATAOUT' does not match port width (8) of module 'PS8' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:4586]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO1DATAENA' does not match port width (8) of module 'PS8' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:4587]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADO' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_BOOTMODE' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_CLK' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DONEB' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMA' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMACTN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMALERTN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBA' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBG' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCK' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKE' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCSN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDM' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQ' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQS' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQSN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMODT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMPARITY' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMRAMRSTN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERROROUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERRORSTATUS' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_INITB' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTCK' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDI' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDO' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTMS' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MIO' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PORB' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PROGB' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_RCALIBINOUT' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_SRSTB' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ZQ' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADI' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:3763]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' (2#1) [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_3_3.v:209]
+WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_3_3_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_1' (3#1) [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/synth/design_1_zynq_ultra_ps_e_0_1.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2792.297 ; gain = 81.809 ; free physical = 15913 ; free virtual = 21648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2811.141 ; gain = 100.652 ; free physical = 16636 ; free virtual = 22370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2811.141 ; gain = 100.652 ; free physical = 16636 ; free virtual = 22370
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2821.047 ; gain = 0.000 ; free physical = 16655 ; free virtual = 22390
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1.xdc] for cell 'inst'
+Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yobuwen/hello-one/ultra96/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.984 ; gain = 0.000 ; free physical = 16596 ; free virtual = 22331
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.984 ; gain = 0.000 ; free physical = 16596 ; free virtual = 22331
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2896.984 ; gain = 186.496 ; free physical = 16645 ; free virtual = 22380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2896.984 ; gain = 186.496 ; free physical = 16645 ; free virtual = 22380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/PS8_i. (constraint file  /home/yobuwen/hello-one/ultra96/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1.xdc, line 24).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yobuwen/hello-one/ultra96/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2896.984 ; gain = 186.496 ; free physical = 16645 ; free virtual = 22380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2896.984 ; gain = 186.496 ; free physical = 16645 ; free virtual = 22380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2896.984 ; gain = 186.496 ; free physical = 16639 ; free virtual = 22378
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 4448.336 ; gain = 1737.848 ; free physical = 15011 ; free virtual = 20751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 4448.336 ; gain = 1737.848 ; free physical = 15011 ; free virtual = 20751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 4468.375 ; gain = 1757.887 ; free physical = 15009 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[0]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[7]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[6]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[5]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[4]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[3]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[2]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_ctl_pipe[1]_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[4] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |   264|
+|2     |PS8  |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.312 ; gain = 1763.824 ; free physical = 15010 ; free virtual = 20749
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 4474.312 ; gain = 1677.980 ; free physical = 15047 ; free virtual = 20787
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 4474.320 ; gain = 1763.824 ; free physical = 15047 ; free virtual = 20787
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4474.320 ; gain = 0.000 ; free physical = 15131 ; free virtual = 20870
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4503.062 ; gain = 0.000 ; free physical = 15071 ; free virtual = 20810
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 4503.062 ; gain = 2080.812 ; free physical = 16262 ; free virtual = 22001
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/yobuwen/hello-one/ultra96/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/design_1_zynq_ultra_ps_e_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_zynq_ultra_ps_e_0_1, cache-ID = 1e60d7d313fe5287
+INFO: [Common 17-1381] The checkpoint '/home/yobuwen/hello-one/ultra96/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/design_1_zynq_ultra_ps_e_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_zynq_ultra_ps_e_0_1_utilization_synth.rpt -pb design_1_zynq_ultra_ps_e_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 20 16:13:14 2021...

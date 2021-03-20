@@ -1,0 +1,10 @@
+20:05:00 **** Incremental Build of configuration Debug for project xgpiops_polled_example_1_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_psu_cortexa53_0 -bifpath /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/yobuwen/hello-one/ultra96/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/Debug/system.bif --bitstream /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit --elf /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/Debug/xgpiops_polled_example_1.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1/_ide/bitstream/design_2_wrapper.bit
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/yobuwen/hello-one/ultra96/vitis/xgpiops_polled_example_1_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+20:05:10 Build Finished (took 9s.279ms)
+

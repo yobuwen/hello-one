@@ -1,0 +1,10 @@
+15:50:40 **** Build of configuration Debug for project app_system_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/ultra96_hw.xpfm -domains standalone_domain -bifpath /home/yobuwen/hello-one/ultra96/vitis/app_system_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/yobuwen/hello-one/ultra96/vitis/ultra96_hw/export/ultra96_hw/ultra96_hw.xpfm --sys_config ultra96_hw --bif /home/yobuwen/hello-one/ultra96/vitis/app_system_system/Debug/system.bif --bitstream /home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit --elf /home/yobuwen/hello-one/ultra96/vitis/app_system/Debug/app_system.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/yobuwen/hello-one/ultra96/vitis/app_system/_ide/bitstream/design_1_wrapper.bit
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/yobuwen/hello-one/ultra96/vitis/app_system_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:50:49 Build Finished (took 9s.366ms)
+

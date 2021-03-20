@@ -21,9 +21,22 @@
   <key attr.name="vert_type" attr.type="string" for="node" id="VT"/>
   <graph edgedefault="undirected" id="G" parse.edgeids="canonical" parse.nodeids="canonical" parse.order="nodesfirst">
     <node id="n0">
-      <data key="TU">active</data>
-      <data key="VH">2</data>
-      <data key="VT">PM</data>
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x000000001FFFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data_m_axi_b</data>
+      <data key="MX">/vector_add_0</data>
+      <data key="MI">m_axi_b</data>
+      <data key="MS">SEG_processing_system7_0_HP0_DDR_LOWOCM</data>
+      <data key="MV">yobuwen:hls:vector_add:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/processing_system7_0</data>
+      <data key="SI">S_AXI_HP0</data>
+      <data key="SS">HP0_DDR_LOWOCM</data>
+      <data key="SV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
     </node>
     <node id="n1">
       <data key="VH">2</data>
@@ -31,12 +44,83 @@
       <data key="VT">VR</data>
     </node>
     <node id="n2">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x000000001FFFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data_m_axi_a</data>
+      <data key="MX">/vector_add_0</data>
+      <data key="MI">m_axi_a</data>
+      <data key="MS">SEG_processing_system7_0_HP0_DDR_LOWOCM</data>
+      <data key="MV">yobuwen:hls:vector_add:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/processing_system7_0</data>
+      <data key="SI">S_AXI_HP0</data>
+      <data key="SS">HP0_DDR_LOWOCM</data>
+      <data key="SV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n3">
+      <data key="TU">active</data>
+      <data key="VH">2</data>
+      <data key="VT">PM</data>
+    </node>
+    <node id="n4">
+      <data key="BA">0x40000000</data>
+      <data key="BP">C_S_AXI_CONTROL_BASEADDR</data>
+      <data key="HA">0x4000FFFF</data>
+      <data key="HP">C_S_AXI_CONTROL_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_vector_add_0_Reg</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/vector_add_0</data>
+      <data key="SI">s_axi_control</data>
+      <data key="SS">Reg</data>
+      <data key="SV">yobuwen:hls:vector_add:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n5">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x000000001FFFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data_m_axi_c</data>
+      <data key="MX">/vector_add_0</data>
+      <data key="MI">m_axi_c</data>
+      <data key="MS">SEG_processing_system7_0_HP0_DDR_LOWOCM</data>
+      <data key="MV">yobuwen:hls:vector_add:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/processing_system7_0</data>
+      <data key="SI">S_AXI_HP0</data>
+      <data key="SS">HP0_DDR_LOWOCM</data>
+      <data key="SV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n6">
       <data key="VM">design_1</data>
       <data key="VT">BC</data>
     </node>
-    <edge id="e0" source="n2" target="n1">
+    <edge id="e0" source="n6" target="n1">
     </edge>
-    <edge id="e1" source="n1" target="n0">
+    <edge id="e1" source="n1" target="n3">
+    </edge>
+    <edge id="e2" source="n4" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e3" source="n2" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e4" source="n0" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e5" source="n5" target="n3">
+      <data key="EH">2</data>
     </edge>
   </graph>
 </graphml>

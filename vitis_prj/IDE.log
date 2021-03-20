@@ -1,0 +1,22 @@
+20:43:51 INFO  : Launching XSCT server: xsct -n  -interactive /home/yobuwen/hello-one/vitis_prj/temp_xsdb_launch_script.tcl
+20:43:51 INFO  : Registering command handlers for Vitis TCF services
+20:43:54 INFO  : Platform repository initialization has completed.
+20:43:56 INFO  : XSCT server has started successfully.
+20:43:56 INFO  : Successfully done setting XSCT server connection channel  
+20:43:57 INFO  : plnx-install-location is set to ''
+20:43:57 INFO  : Successfully done setting workspace for the tool. 
+20:43:57 INFO  : Successfully done query RDI_DATADIR 
+20:46:57 INFO  : Result from executing command 'getProjects': xc7z010_vector_add
+20:46:57 INFO  : Result from executing command 'getPlatforms': 
+20:47:37 INFO  : Result from executing command 'getProjects': xc7z010_vector_add
+20:47:37 INFO  : Result from executing command 'getPlatforms': xc7z010_vector_add|/home/yobuwen/hello-one/vitis_prj/xc7z010_vector_add/export/xc7z010_vector_add/xc7z010_vector_add.xpfm
+21:54:25 INFO  : Result from executing command 'getProjects': xc7z010_vector_add
+21:54:25 INFO  : Result from executing command 'getPlatforms': xc7z010_vector_add|/home/yobuwen/hello-one/vitis_prj/xc7z010_vector_add/export/xc7z010_vector_add/xc7z010_vector_add.xpfm
+21:57:40 INFO  : Result from executing command 'getProjects': design_1_wrapper
+21:57:40 INFO  : Result from executing command 'getPlatforms': 
+21:57:40 ERROR : Unexpected exception occurred while writing platform project 'xc7z010_vector_add' log.
+21:57:40 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+21:57:48 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+21:58:29 INFO  : Result from executing command 'getProjects': design_1_wrapper
+21:58:29 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/yobuwen/hello-one/vitis_prj/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+21:58:32 INFO  : Checking for BSP changes to sync application flags for project 'vector_add'...

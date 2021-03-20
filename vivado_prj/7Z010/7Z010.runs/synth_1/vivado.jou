@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Feb 24 22:25:25 2021
-# Process ID: 18267
+# Start of session at: Mon Mar  8 21:00:07 2021
+# Process ID: 9659
 # Current directory: /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/yobuwen/hello-one/vivado_prj/7Z010/7Z010.runs/synth_1/design_1_wrapper.vds

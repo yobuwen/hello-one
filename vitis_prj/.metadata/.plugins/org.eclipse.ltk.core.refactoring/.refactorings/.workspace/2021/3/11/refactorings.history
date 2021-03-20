@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;xc7z010_vector_add&apos;" deleteContents="true" description="Delete resource &apos;xc7z010_vector_add&apos;" element1="/xc7z010_vector_add" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1615211770142"/>
+</session>
