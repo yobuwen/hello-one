@@ -1,0 +1,34 @@
+timestamp=[2021-03-25 15:52:39], mode=WORKBENCH_START, duration=0:00:09.410, duration_ms=9410, data={}
+timestamp=[2021-03-25 15:52:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.482, duration_ms=482, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-03-25 15:52:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.594, duration_ms=3594, data={}
+timestamp=[2021-03-25 15:53:50], mode=PLATFORM_CREATION, duration=0:00:18.571, duration_ms=18571, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2021-03-25 15:54:51], mode=PLATFORM_GENERATION, duration=0:00:37.872, duration_ms=37872, data={name=ultra96_ptlinux}
+timestamp=[2021-03-25 15:57:46], mode=PLATFORM_GENERATION, duration=0:00:35.201, duration_ms=35201, data={name=ultra96_ptlinux}
+timestamp=[2021-03-25 16:01:35], mode=APP_CREATION, duration=0:00:03.711, duration_ms=3711, data={name=hello_a53, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=ultra96_ptlinux, application_type=application}
+timestamp=[2021-03-25 16:01:50], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:02:00], mode=BUILD, duration=0:00:09.333, duration_ms=9333, data={name=hello_a53_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:06:57], mode=PLATFORM_GENERATION, duration=0:00:10.373, duration_ms=10373, data={name=ultra96_ptlinux}
+timestamp=[2021-03-25 16:07:50], mode=APP_CREATION, duration=0:00:02.122, duration_ms=2122, data={name=hello_r5, project_type=sdk, os=standalone, processor=cortex-r5, runtime=C/C++, platform=ultra96_ptlinux, application_type=application}
+timestamp=[2021-03-25 16:07:58], mode=BUILD, duration=0:00:00.896, duration_ms=896, data={name=hello_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:08:07], mode=BUILD, duration=0:00:08.841, duration_ms=8841, data={name=hello_r5_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:09:09], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=hello_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:09:18], mode=BUILD, duration=0:00:08.610, duration_ms=8610, data={name=hello_r5_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:19:10], mode=BUILD, duration=0:00:00.704, duration_ms=704, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:19:20], mode=BUILD, duration=0:00:08.566, duration_ms=8566, data={name=hello_a53_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:22:17], mode=BUILD, duration=0:00:00.500, duration_ms=500, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:22:32], mode=BUILD, duration=0:00:00.694, duration_ms=694, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:23:42], mode=BUILD, duration=0:00:00.396, duration_ms=396, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:23:52], mode=BUILD, duration=0:00:08.661, duration_ms=8661, data={name=hello_a53_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:26:09], mode=APP_CREATION, duration=0:00:01.985, duration_ms=1985, data={name=empty_r5, project_type=sdk, os=standalone, processor=cortex-r5, runtime=C/C++, platform=ultra96_ptlinux, application_type=application}
+timestamp=[2021-03-25 16:33:37], mode=BUILD, duration=0:00:00.645, duration_ms=645, data={name=empty_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:33:46], mode=BUILD, duration=0:00:08.667, duration_ms=8667, data={name=empty_r5_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:41:11], mode=BUILD, duration=0:00:00.494, duration_ms=494, data={name=empty_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:41:20], mode=BUILD, duration=0:00:08.558, duration_ms=8558, data={name=empty_r5_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:55:06], mode=BUILD, duration=0:00:00.497, duration_ms=497, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:55:16], mode=BUILD, duration=0:00:08.763, duration_ms=8763, data={name=hello_a53_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:55:25], mode=BUILD, duration=0:00:00.399, duration_ms=399, data={name=empty_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 16:55:34], mode=BUILD, duration=0:00:08.763, duration_ms=8763, data={name=empty_r5_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 17:04:18], mode=APP_CREATION, duration=0:00:01.787, duration_ms=1787, data={name=empty_hello_r5, project_type=sdk, os=standalone, processor=cortex-r5, runtime=C/C++, platform=ultra96_ptlinux, application_type=application}
+timestamp=[2021-03-25 17:07:53], mode=BUILD, duration=0:00:00.398, duration_ms=398, data={name=hello_a53, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 17:07:54], mode=BUILD, duration=0:00:00.648, duration_ms=648, data={name=empty_hello_r5, configuration=Debug, clean_build=false}
+timestamp=[2021-03-25 17:08:04], mode=BUILD, duration=0:00:08.662, duration_ms=8662, data={name=hello_a53_system, configuration=Debug, clean_build=false}

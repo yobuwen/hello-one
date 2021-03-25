@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="empty_hello_r5" location="/home/yobuwen/hello-one/ultra96_ptlinux/vitis/empty_hello_r5" platform="/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="hello_a53_system" sysConfig="ultra96_ptlinux" runtime="C/C++" cpu="standalone_r5" cpuInstance="psu_cortexr5_0" os="standalone" mssSignature="fc32d05c608f8b15430185a7cea29eb8">
+  <configuration name="Debug" id="xilinx.gnu.arm.r5.exe.debug.664893335">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.r5.exe.release.1119163881" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

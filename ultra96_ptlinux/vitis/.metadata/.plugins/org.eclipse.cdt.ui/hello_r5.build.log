@@ -1,0 +1,21 @@
+16:09:08 **** Incremental Build of configuration Debug for project hello_r5 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/sw/ultra96_ptlinux/standalone_r5/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: hello_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/sw/ultra96_ptlinux/standalone_r5/bsplib/lib -o "hello_r5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hello_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size hello_r5.elf  |tee "hello_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9692	   1144	  22580	  33416	   8288	hello_r5.elf
+Finished building: hello_r5.elf.size
+ 
+
+16:09:09 Build Finished (took 591ms)
+

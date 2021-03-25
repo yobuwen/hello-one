@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="hello_r5_system" platform="/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" sysConfig="ultra96_ptlinux" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.717833431">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="hello_r5" domainName="standalone_r5" domainPrettyName="standalone_r5" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="hello_r5" domainName="standalone_r5" domainPrettyName="standalone_r5" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.2099620910">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="hello_r5" domainName="standalone_r5" domainPrettyName="standalone_r5" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

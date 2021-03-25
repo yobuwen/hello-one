@@ -1,0 +1,9 @@
+16:09:10 **** Incremental Build of configuration Debug for project hello_r5_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm -domains standalone_r5 -bifpath /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_r5_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm --sys_config ultra96_ptlinux --bif /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_r5_system/Debug/system.bif --no_bitstream --elf /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_r5/Debug/hello_r5.elf,psu_cortexr5_0
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_r5_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:09:18 Build Finished (took 8s.605ms)
+

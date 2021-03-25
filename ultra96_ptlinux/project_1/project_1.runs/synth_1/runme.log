@@ -1,0 +1,265 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32417
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2742.434 ; gain = 30.902 ; free physical = 3916 ; free virtual = 24539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.runs/synth_1/.Xil/Vivado-32353-yobuwen/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (1#1) [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.runs/synth_1/.Xil/Vivado-32353-yobuwen/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awaddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_wdata' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_wstrb' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_wlast' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_wvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_bready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_araddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_rready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_awqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp0_arqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awaddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_wdata' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_wstrb' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_wlast' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_wvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_bready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_araddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_rready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_awqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp1_arqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 26 given [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (2#1) [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (3#1) [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2783.371 ; gain = 71.840 ; free physical = 3688 ; free virtual = 24312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2799.215 ; gain = 87.684 ; free physical = 4420 ; free virtual = 25044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2799.215 ; gain = 87.684 ; free physical = 4418 ; free virtual = 25042
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2799.215 ; gain = 0.000 ; free physical = 4389 ; free virtual = 25013
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.059 ; gain = 0.000 ; free physical = 4354 ; free virtual = 24978
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.059 ; gain = 0.000 ; free physical = 4354 ; free virtual = 24978
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2883.059 ; gain = 171.527 ; free physical = 4414 ; free virtual = 25038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2883.059 ; gain = 171.527 ; free physical = 4414 ; free virtual = 25038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2883.059 ; gain = 171.527 ; free physical = 4414 ; free virtual = 25038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2883.059 ; gain = 171.527 ; free physical = 4412 ; free virtual = 25037
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2883.059 ; gain = 171.527 ; free physical = 4400 ; free virtual = 25028
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 3340.465 ; gain = 628.934 ; free physical = 3838 ; free virtual = 24466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 3340.465 ; gain = 628.934 ; free physical = 3838 ; free virtual = 24466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 3359.496 ; gain = 647.965 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_zynq_ultra_ps_e_0 |     1|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.434 ; gain = 653.902 ; free physical = 3837 ; free virtual = 24465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 3365.434 ; gain = 570.059 ; free physical = 3877 ; free virtual = 24505
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.441 ; gain = 653.902 ; free physical = 3877 ; free virtual = 24505
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3365.441 ; gain = 0.000 ; free physical = 3870 ; free virtual = 24498
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3390.184 ; gain = 0.000 ; free physical = 3904 ; free virtual = 24532
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 3402.152 ; gain = 979.859 ; free physical = 4038 ; free virtual = 24666
+INFO: [Common 17-1381] The checkpoint '/home/yobuwen/hello-one/ultra96_ptlinux/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 25 15:47:37 2021...

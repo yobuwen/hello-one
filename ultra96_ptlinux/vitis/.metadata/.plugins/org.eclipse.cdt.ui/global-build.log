@@ -1,0 +1,34 @@
+Nothing to build in platform 'ultra96_ptlinux'
+
+17:07:52 **** Incremental Build of configuration Debug for project hello_a53 ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:53 **** Build of configuration Debug for project empty_hello_r5 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/sw/ultra96_ptlinux/standalone_r5/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/sw/ultra96_ptlinux/standalone_r5/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: empty_hello_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/sw/ultra96_ptlinux/standalone_r5/bsplib/lib -o "empty_hello_r5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: empty_hello_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size empty_hello_r5.elf  |tee "empty_hello_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9756	   1144	  22580	  33480	   82c8	empty_hello_r5.elf
+Finished building: empty_hello_r5.elf.size
+ 
+17:07:55 **** Incremental Build of configuration Debug for project hello_a53_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm -domains standalone_domain,standalone_r5 -bifpath /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_a53_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/yobuwen/hello-one/ultra96_ptlinux/vitis/ultra96_ptlinux/export/ultra96_ptlinux/ultra96_ptlinux.xpfm --sys_config ultra96_ptlinux --bif /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_a53_system/Debug/system.bif --no_bitstream --elf /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_a53/Debug/hello_a53.elf,psu_cortexa53_0 --elf /home/yobuwen/hello-one/ultra96_ptlinux/vitis/empty_hello_r5/Debug/empty_hello_r5.elf,psu_cortexr5_0
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/yobuwen/hello-one/ultra96_ptlinux/vitis/hello_a53_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

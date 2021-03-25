@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="ultra96_ptlinux"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+ultra96_ptlinux
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="ultra96_ptlinux">
+        <sdx:configuration sdx:name="ultra96_ptlinux"
+                           sdx:displayName="ultra96_ptlinux"
+                           sdx:defaultProcessorGroup="standalone_r5"
+                           sdx:runtimes="cpp">
+            <sdx:description>ultra96_ptlinux</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="ultra96_ptlinux/boot/ultra96_ptlinux.bif"
+                            sdx:readme="ultra96_ptlinux/boot/generic.readme"
+                            sdx:qemuArguments="ultra96_ptlinux/qemu/pmu_args.txt:ultra96_ptlinux/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_domain"
+                            sdx:bif="ultra96_ptlinux/boot/ultra96_ptlinux.bif"
+                            sdx:readme="ultra96_ptlinux/boot/generic.readme"
+                            sdx:qemuArguments="ultra96_ptlinux/standalone_domain/qemu/pmu_args.txt:ultra96_ptlinux/standalone_domain/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_r5"
+                            sdx:bif="ultra96_ptlinux/boot/ultra96_ptlinux.bif"
+                            sdx:readme="ultra96_ptlinux/boot/generic.readme"
+                            sdx:qemuArguments="ultra96_ptlinux/standalone_r5/qemu/pmu_args.txt:ultra96_ptlinux/standalone_r5/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="ultra96_ptlinux/standalone_domain/bsplib/lib"
+                        sdx:bspIncludePaths="ultra96_ptlinux/standalone_domain/bspinclude/include"
+                        sdx:bspConfig="ultra96_ptlinux/standalone_domain/system.mss"
+                />
+            </sdx:processorGroup>
+            <sdx:processorGroup sdx:name="standalone_r5"
+                                sdx:displayName="standalone_r5"
+                                sdx:cpuType="cortex-r5"
+                                sdx:cpuInstance="psu_cortexr5_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="ultra96_ptlinux/standalone_r5/bsplib/lib"
+                        sdx:bspIncludePaths="ultra96_ptlinux/standalone_r5/bspinclude/include"
+                        sdx:bspConfig="ultra96_ptlinux/standalone_r5/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>
